@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+
+@font-face {
+    font-family: 'IRsans';
+    src: url('../fonts/woff/IRANSansWeb.woff');
+}
+
+@font-face {
+    font-family: 'IRsansBold';
+    src: url('../fonts/woff/IRANSansWeb_Bold.woff');
+}
+
+@font-face {
+    font-family: 'IRsansLight';
+    src: url('../fonts/woff/IRANSansWeb_Light.woff');
+}
+
+* {
+
+    color: '#4E4B4B';
+    font-family: 'IRsans'
+}
+
+body {
+    background-color: #f3f3f3
+}
+
+@tailwind utilities;
+
+/* npx tailwindcss -i ./src/tailwind.css -o ./dist/style.css --watch */
