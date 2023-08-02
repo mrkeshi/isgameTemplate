@@ -892,6 +892,46 @@ body {
   left: -6px;
 }
 
+.left-5 {
+  left: 1.25rem;
+}
+
+.-left-3 {
+  left: -0.75rem;
+}
+
+.-left-6 {
+  left: -1.5rem;
+}
+
+.-left-16 {
+  left: -4rem;
+}
+
+.-left-24 {
+  left: -6rem;
+}
+
+.-right-24 {
+  right: -6rem;
+}
+
+.right-24 {
+  right: 6rem;
+}
+
+.left-24 {
+  left: 6rem;
+}
+
+.-left-12 {
+  left: -3rem;
+}
+
+.-left-32 {
+  left: -8rem;
+}
+
 .z-40 {
   z-index: 40;
 }
@@ -2035,6 +2075,10 @@ body {
   overflow-x: hidden;
 }
 
+.overflow-y-hidden {
+  overflow-y: hidden;
+}
+
 .truncate {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -2292,6 +2336,11 @@ body {
 
 .bg-black-500 {
   background-color: rgb(78,75,78,0.65);
+}
+
+.bg-red-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(190 15 15 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-60 {
@@ -3144,6 +3193,10 @@ body {
   overflow-x: hidden;
 }
 
+.scrollbar-thin.overflow-y-hidden {
+  overflow-y: hidden;
+}
+
 .scrollbar-track-\[\#F5F4F4\] {
   --scrollbar-track: #F5F4F4 !important;
 }
@@ -3451,6 +3504,26 @@ body {
 @media not all and (min-width: 1024px) {
   .max-lg\:relative {
     position: relative;
+  }
+
+  .max-lg\:left-12 {
+    left: 3rem;
+  }
+
+  .max-lg\:left-0 {
+    left: 0px;
+  }
+
+  .max-lg\:-left-2 {
+    left: -0.5rem;
+  }
+
+  .max-lg\:-left-3 {
+    left: -0.75rem;
+  }
+
+  .max-lg\:left-2 {
+    left: 0.5rem;
   }
 
   .max-lg\:mt-8 {
