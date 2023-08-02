@@ -15,4 +15,4 @@ var select_shop_sort = /** @class */ (function () {
     }
     return select_shop_sort;
 }());
-new select_shop_sort();
+

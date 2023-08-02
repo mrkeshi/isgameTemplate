@@ -51,13 +51,16 @@
               </form>
             </div>
 
+<!-- navbar top contains 2 icon!! -->
 
             <div class="icon-top  ">
 
               <ul>
-                <div class=" flex  ">
+                <div class=" flex relative   ">
+
+
                   <div id="showusermanage" 
-                    class="bg-white z-20 h-auto w-[180px] pointer-events-none opacity-0 ease-linear transition-opacity appearance-none top-10 md:top-20 max-md:top-[85px] max-md:-left-1 md:left-1 shadow-md mt-4 absolute">
+                    class="bg-white z-20 h-auto w-[180px] pointer-events-none opacity-0 ease-linear transition-opacity appearance-none top-8 -left-6 max-lg:-left-3  shadow-md mt-4 absolute">
                     <ul class="">
                       <li class="py-3 pt-5 hover:bg-gray-300 text-mxl text-black-700"><a href="#" class="flex">
                           <span class="material-symbols-outlined  mx-2 text-2xl">
@@ -88,9 +91,12 @@
                         </a></li>
 
                     </ul>
+
                   </div>
+
+
                   <div id="showcardmanage"
-                    class="bg-white     z-20 h-auto  w-[350px] max-md:w-[300px] opacity-0 pointer-events-none ease-linear transition-opacity appearance-none top-10 md:top-24 max-md:top-[85px] max-md:-left-1 md:left-1 shadow-md mt-4 absolute">
+                    class="bg-white  z-20 h-auto  w-[350px] max-md:w-[300px] opacity-0 pointer-events-none ease-linear transition-opacity appearance-none -left-32 max-lg:-left-3 top-8  shadow-md mt-4 absolute">
                    <a href="#" class="text-gold-100 flex items-center absolute top-4 left-4 text-base ">
                    رفتن به سبد خرید<span class="material-symbols-outlined text-mxl max-md:text-sm ">
                     keyboard_double_arrow_left
@@ -193,7 +199,9 @@
                     </a>
                   </div>
                   </div>
-                  <li class="person_manage_icon relative ">
+
+
+                  <li class="person_manage_icon  ">
                     <a href="#">
                       <div class="flex items-center mx-1">
                         <div
@@ -222,6 +230,8 @@
 
                     </a>
                   </li>
+
+
                 </div>
               </ul>
 
@@ -447,92 +457,24 @@
     </main>
 
   </div>
-
+<script src="../dist/main.js"></script>
 
   <script>
 
-// Responsive Menu
-let filterBody=document.getElementById('filter-overflow');
-let hamber=document.querySelector('.hamber-logo');
-let SiteMenu=document.querySelector('.SiteMenu');
-let closeMenu=document.getElementById('closeMenu');
-let StatusMobile=false;
 
-class MobileMenu{
-  
-  constructor(){
-    hamber.addEventListener('click',()=>{
 
-      this.open();
 
-    });
-
-    closeMenu.addEventListener('click',()=>{
-      this.close()
-    })
-  }
-  open(){
-    console.log(filterBody)
-    filterBody.classList.toggle('hidden')
-    SiteMenu.style.right=(0+'%');
-    StatusMobile=true;
-  }
-  close(){
-    filterBody.classList.toggle('hidden')
-    StatusMobile=false;
-    SiteMenu.style.right=(-320+'px'); 
-  }
-
-}
-
-document.getElementById('search').addEventListener('focus',(e)=>{
-  e.target.style.zIndex=999
-  filterBody.classList.remove('hidden')
-})
-document.getElementById('search').addEventListener('focusout',(e)=>{
-  e.target.style.zIndex=0
-  filterBody.classList.add("hidden")
-})
 let Mobi=new MobileMenu()
-
-
-    let showmange = document.getElementById('showusermanage')
-    let person_manage_icon = document.querySelector('.person_manage_icon')
-    person_manage_icon.addEventListener('click', () => {
-      person_manage_icon.style.zIndex=99;
-      showmange.style.zIndex=99;
-      filterBody.classList.toggle('hidden')
-      showmange.classList.toggle('showusermanage')
-      if(showcard.classList.contains('showcarmanage')) showcard.classList.remove('showcarmanage')
-    })
-
-    let showcard = document.getElementById('showcardmanage');
-    let card_manage_icon = document.querySelector('.card_manage_icon');
-    card_manage_icon.addEventListener('click', () => {
-      card_manage_icon.style.zIndex=99;
-      showcard.style.zIndex=99;
-      showcard.classList.toggle('showcarmanage');
-      filterBody.classList.toggle('hidden')
-      if(showmange.classList.contains('showusermanage')) showusermanage.classList.remove('showusermanage')
-    })
-
+let Boxes=new MangeBoxDropDown()
     window.addEventListener('click', (event) => {
-      if (event.target.contains(filterBody) && showusermanage.classList.contains('showusermanage') ) {
-      
-        person_manage_icon.style.zIndex=1;
-        showmange.style.zIndex=1;
-        filterBody.classList.add('hidden')
-        showmange.classList.remove('showusermanage')
+      if(!Boxes.personBox.contains(event.target) && event.target.contains(filterBody)){
+        Boxes.closePersonBox()
       }
-      if (event.target.contains(filterBody) && showcard.classList.contains('showcarmanage') ) {
-    
-        card_manage_icon.style.zIndex=1;
-        showcard.style.zIndex=1;
-      filterBody.classList.add('hidden')
-        showcard.classList.remove('showcarmanage')
+      if(!Boxes.cardBox.contains(event.target) && event.target.contains(filterBody)){
+        Boxes.closeCardBox()
       }
-      if (!SiteMenu.contains(event.target)  && StatusMobile && !hamber.contains(event.target)){
-        console.log(StatusMobile)
+      // toggle menu mobile when click out:
+      if (!Mobi.SiteMenu.contains(event.target)  && Mobi.StatusMobile && !Mobi.hamber.contains(event.target)){
         Mobi.close()
         
       }
