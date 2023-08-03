@@ -53,10 +53,16 @@ class MobileMenu {
 }
 //  focusSearch
 document.getElementById('search').addEventListener('focus',(e)=>{
-    e.target.style.zIndex=999
+    if(document.getElementById('basic-addon2')){
+        document.getElementById('basic-addon2').style.zIndex=46
+    }
+    e.target.style.zIndex=45
     filterBody.classList.remove('hidden')
   })
   document.getElementById('search').addEventListener('focusout',(e)=>{
+    if(document.getElementById('basic-addon2')){
+        document.getElementById('basic-addon2').style.zIndex=0
+    }
     e.target.style.zIndex=0
     filterBody.classList.add("hidden")
   })
@@ -76,50 +82,47 @@ class MangeBoxDropDown{
     // boxes
     personBox= document.getElementById('showusermanage')
     cardBox= document.getElementById('showcardmanage')
-
+    // 
     constructor(){
-        this.personBoxIcon.addEventListener('click',()=>{
-               if(this.personBox.classList.contains('showusermanage')){
-             
-                this.closePersonBox()
-               }else{
-                this.openPersonBox()
-               } 
-        })
+        if(document.querySelector('.person_manage_icon')){
+            this.personBoxIcon.addEventListener('click',()=>{
+                if(this.personBox.classList.contains('showusermanage')){
+              
+                 this.closePersonBox()
+                }else{
+                 this.openPersonBox()
+                } 
+         })
+        }
+     
+
         this.cardBoxIcon.addEventListener('click',()=>{
-            if(this.cardBox.classList.contains('showcarmanage')){
-                this.closeCardBox()
-            }else{
-                this.openCardBox()
-
-            }
+            
+                if(this.cardBox.classList.contains('showcarmanage')){
+                    this.closeCardBox()
+                }else{
+                    this.openCardBox()
+                }
+            
         })
- 
-
     }
-
     openPersonBox(){
         this.personBoxIcon.style.zIndex=99
         this.personBox.style.zIndex=99
         this.personBox.classList.add('showusermanage')
         filterBody.classList.remove('hidden')
-
     }
-
     openCardBox(){
         this.cardBoxIcon.style.zIndex=99
         this.cardBox.style.zIndex=99
         this.cardBox.classList.add('showcarmanage')
         filterBody.classList.remove('hidden')
-
     }
-
     closePersonBox(){
         this.personBoxIcon.style.zIndex=0
         this.personBox.style.zIndex=0
         this.personBox.classList.remove('showusermanage')
         filterBody.classList.add('hidden')
-
     }
     closeCardBox(){
         this.cardBoxIcon.style.zIndex=0
