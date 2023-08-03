@@ -622,4 +622,38 @@ li.mx-4 a.text-white:hover span, btn-mo:hover span {
   .mobile_navbar nav ul div li .lg-responsive-bt {
     color: #FCD445;
   }
+}
+@media (max-width: 480px) {
+  .about-footer {
+    width: 100%;
+    margin-top: -20px;
+  }
+  .tables thead th:nth-child(2) {
+    display: none;
+  }
+  .tables tbody td:nth-child(2) {
+    display: none;
+  }
+  .tables tbody td {
+    padding: 10px;
+  }
+  .footer-table-card {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .footer-table-card a {
+    width: 100%;
+  }
+  .footer-table-card .child-card-table {
+    flex-wrap: wrap;
+    margin: 15px 0;
+  }
+  .footer-table-card .child-card-table input {
+    margin-right: 0;
+  }
+  .footer-table-card .child-card-table a {
+    margin: 15px 0;
+    width: 100%;
+    margin-bottom: 0;
+  }
 }/*# sourceMappingURL=custom_style.css.map */
