@@ -716,3 +716,46 @@ li.mx-4 a.text-white , btn-mo {
     
   }
 }
+
+@media (max-width:480px){
+  .about-footer{
+      width: 100%;
+      margin-top: -20px;
+  }
+  .tables{
+    thead{
+      th:nth-child(2){
+        display: none;
+        
+      }
+    }
+    tbody{
+      td:nth-child(2){
+        display: none;
+        
+      }
+      td{
+        padding: 10px;
+      }
+    }
+  }
+  .footer-table-card{
+    a{
+      width: 100%;
+    }
+    justify-content: center;
+    flex-wrap: wrap;
+    .child-card-table{
+      input{
+        margin-right: 0;
+      }
+      flex-wrap: wrap;
+      margin: 15px 0;
+      a{
+        margin: 15px 0;
+        width: 100%;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
