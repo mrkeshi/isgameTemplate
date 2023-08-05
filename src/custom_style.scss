@@ -356,24 +356,26 @@ margin: 5px;
     }
   }
   .search-modal{
-    transition: all 0.3s ease-in;
+    z-index: 999;
+    transition: all 0.01s ease-in;
   visibility: hidden;
  
     .box{
-      transition: all 0.3s ease-in;
+          z-index: 999;
+
       margin: 0;
       position: absolute;
-        top: -200px;
+
         left: 50%;
-      -ms-transform: translate(-50%,0) ;
-       transform: translate(-50%,0)  ;
+        -ms-transform:  translate(-50%,-50%) !important;
+      transform: translate(-50%,-50%) !important;
        pointer-events: none;
     }
    
  
   }
   .search-modal_show{
-    background-color: rgba(0,0,0,0.7) !important;
+    z-index: 999;
     visibility: visible !important;
     .box-show {
       top: 50% !important;
@@ -696,9 +698,12 @@ li.mx-4 a.text-white , btn-mo {
             align-items: self-start;
             margin-right: 25px;
             justify-content: flex-start;
-            height: auto;
+         
           flex-direction: column;
           li{
+            &:last-child{
+              margin-bottom: 0;
+            }
             text-align: right;
             margin: 17px 0;
             a{
@@ -715,6 +720,43 @@ li.mx-4 a.text-white , btn-mo {
     }
     
   }
+
+  .orginal-header{
+    
+    nav{
+    
+      ul{
+        
+        .div-center-nav-org{
+          transition: all 0.3s ease;
+          right: -460px;
+          width: 290px;
+          z-index: 99;
+          position: fixed;
+          padding: 15px;
+          height: 100vh ;
+          top: 0;
+      
+          flex-direction: column;
+          align-items: center;
+          li{
+            .items-center.mx-6{
+              margin-right: 16px ;
+
+            }
+            .shadow-narm{
+              margin-left: 5px;
+            }
+            a{
+              width: 100%;
+            }
+            width: 100%;
+              margin: 15px 0;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width:480px){
@@ -722,6 +764,7 @@ li.mx-4 a.text-white , btn-mo {
       width: 100%;
       margin-top: -20px;
   }
+ 
   .tables{
     thead{
       th:nth-child(2){
@@ -756,6 +799,15 @@ li.mx-4 a.text-white , btn-mo {
         width: 100%;
         margin-bottom: 0;
       }
+    }
+  }
+}
+
+@media (max-width:680px){
+  .about-footer,.access-footer,.Newsletters{
+    width: 100%;
+    h3{
+      font-size: 16px;
     }
   }
 }

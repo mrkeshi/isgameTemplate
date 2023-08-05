@@ -314,21 +314,21 @@
 }
 
 .search-modal {
-  transition: all 0.3s ease-in;
+  z-index: 999;
+  transition: all 0.01s ease-in;
   visibility: hidden;
 }
 .search-modal .box {
-  transition: all 0.3s ease-in;
+  z-index: 999;
   margin: 0;
   position: absolute;
-  top: -200px;
   left: 50%;
-  transform: translate(-50%, 0);
+  transform: translate(-50%, -50%) !important;
   pointer-events: none;
 }
 
 .search-modal_show {
-  background-color: rgba(0, 0, 0, 0.7) !important;
+  z-index: 999;
   visibility: visible !important;
 }
 .search-modal_show .box-show {
@@ -608,12 +608,14 @@ li.mx-4 a.text-white:hover span, btn-mo:hover span {
     align-items: self-start;
     margin-right: 25px;
     justify-content: flex-start;
-    height: auto;
     flex-direction: column;
   }
   .mobile_navbar nav ul div li {
     text-align: right;
     margin: 17px 0;
+  }
+  .mobile_navbar nav ul div li:last-child {
+    margin-bottom: 0;
   }
   .mobile_navbar nav ul div li a {
     font-weight: 600;
@@ -621,6 +623,31 @@ li.mx-4 a.text-white:hover span, btn-mo:hover span {
   }
   .mobile_navbar nav ul div li .lg-responsive-bt {
     color: #FCD445;
+  }
+  .orginal-header nav ul .div-center-nav-org {
+    transition: all 0.3s ease;
+    right: -460px;
+    width: 290px;
+    z-index: 99;
+    position: fixed;
+    padding: 15px;
+    height: 100vh;
+    top: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  .orginal-header nav ul .div-center-nav-org li {
+    width: 100%;
+    margin: 15px 0;
+  }
+  .orginal-header nav ul .div-center-nav-org li .items-center.mx-6 {
+    margin-right: 16px;
+  }
+  .orginal-header nav ul .div-center-nav-org li .shadow-narm {
+    margin-left: 5px;
+  }
+  .orginal-header nav ul .div-center-nav-org li a {
+    width: 100%;
   }
 }
 @media (max-width: 480px) {
@@ -655,5 +682,13 @@ li.mx-4 a.text-white:hover span, btn-mo:hover span {
     margin: 15px 0;
     width: 100%;
     margin-bottom: 0;
+  }
+}
+@media (max-width: 680px) {
+  .about-footer, .access-footer, .Newsletters {
+    width: 100%;
+  }
+  .about-footer h3, .access-footer h3, .Newsletters h3 {
+    font-size: 16px;
   }
 }/*# sourceMappingURL=custom_style.css.map */
