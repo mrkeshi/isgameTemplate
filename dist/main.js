@@ -52,20 +52,23 @@ class MobileMenu {
 
 }
 //  focusSearch
-document.getElementById('search').addEventListener('focus',(e)=>{
-    if(document.getElementById('basic-addon2')){
-        document.getElementById('basic-addon2').style.zIndex=46
-    }
-    e.target.style.zIndex=45
-    filterBody.classList.remove('hidden')
-  })
-  document.getElementById('search').addEventListener('focusout',(e)=>{
-    if(document.getElementById('basic-addon2')){
-        document.getElementById('basic-addon2').style.zIndex=0
-    }
-    e.target.style.zIndex=0
-    filterBody.classList.add("hidden")
-  })
+if(document.getElementById('search')){
+    document.getElementById('search').addEventListener('focus',(e)=>{
+        if(document.getElementById('basic-addon2')){
+            document.getElementById('basic-addon2').style.zIndex=46
+        }
+        e.target.style.zIndex=45
+        filterBody.classList.remove('hidden')
+      })
+      document.getElementById('search').addEventListener('focusout',(e)=>{
+        if(document.getElementById('basic-addon2')){
+            document.getElementById('basic-addon2').style.zIndex=0
+        }
+        e.target.style.zIndex=0
+        filterBody.classList.add("hidden")
+      })
+}
+
   
 
 // check focus out
@@ -95,16 +98,18 @@ class MangeBoxDropDown{
          })
         }
      
-
-        this.cardBoxIcon.addEventListener('click',()=>{
+        if(document.querySelector('.card_manage_icon')){
+                this.cardBoxIcon.addEventListener('click',()=>{
             
-                if(this.cardBox.classList.contains('showcarmanage')){
-                    this.closeCardBox()
-                }else{
-                    this.openCardBox()
-                }
-            
-        })
+                    if(this.cardBox.classList.contains('showcarmanage')){
+                        this.closeCardBox()
+                    }else{
+                        this.openCardBox()
+                    }
+                
+            })
+            }
+      
     }
     openPersonBox(){
         this.personBoxIcon.style.zIndex=99

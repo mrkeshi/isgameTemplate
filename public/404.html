@@ -20,7 +20,7 @@
 
   <div class="container xl:px-20 px-3 mx-auto  ">
     <!-- Start Header Menu-->
-    <header class="relative" >
+    <header class="relative " >
       <!-- Top Navbar-->
       <div class="header-top px-4 lg:mt-12 md:mt-8 max-md:mt-3 bg-white  rounded-3xl ">
         <div class=" mx-sm:px-7 lg:w-5/6 w-full mx-auto ">
@@ -249,9 +249,9 @@
     <svg class="top-4 left-4 hover:opacity-50 absolute cursor-pointer lg:hidden"  id="closeMenu"  width="15" height="15" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M16 2L9 9M9 9L2 16M9 9L16 16M9 9L2 2" stroke="#353F53" stroke-width="2.88235" stroke-linecap="round" stroke-linejoin="round"></path>
   </svg>
-  <nav>
-    <ul>
-      <div class="flex text-black-500 text-mxl justify-center py-5 lg:h-[76px]  items-center  ">
+  <nav class= >
+    <ul class="">
+      <div class="flex  text-black-500 text-mxl justify-center py-5 lg:h-[76px]  items-center max-lg:h-[100vh] " >
 
         <div style="margin-right: -8px !important;width: 95%; "class="relative max-lg:mt-8 max-lg:mb-3 lg:hidden  ">
           <div class="absolute inset-y-0 left-3 top-3 flex items-center pointer-events-none">
@@ -262,7 +262,10 @@
           <input type="search" class="  p-3 w-full h-11 transition ease-linear text-sm bg-gray-300  text-black-700 border border-gray-300 rounded-2xl bg-gray-50 focus-visible:outline-none focus:border-gray-500 relative" placeholder="جست و جو کنید" required="">
         </div>
           <hr class="text-black-500 w-full -mr-3 my-4 lg:hidden">
-        <li class="xl:mx-8 mx-5 hover:opacity-75 flex justify-center items-end">
+        <div class="flex text-black-500 text-mxl justify-center mx-0 lg:h-[76px] items-center h-full overflow-y-auto scrollbar scrollbar-thumb-gold-100 scrollbar-track-gray-500 scrollbar-w-[3px] overflow-x-hidden scrollbar-track-rounded-md scrollbar-thumb-rounded-lg  max-lg:w-[95%]  max-lg:h-[screen]" style="margin-right: 0">
+
+      
+          <li class="xl:mx-8 mx-5 hover:opacity-75 flex justify-center items-end">
         
           <a href="#" class="flex items-end">
             <span class="material-symbols-outlined text-3xl text-black-500 ml-2 lg:hidden">
@@ -296,8 +299,6 @@
               </span>
             ترینر
           </a></li>
-
-
           <li class="xl:mx-8 mx-6 hover:opacity-75 flex items-end">
             
           <a href="#" class="flex items-end">
@@ -316,7 +317,7 @@
           درباره ما</a>
         </li>
 
-
+      </div>
       </div>
     </ul>
   </nav>
