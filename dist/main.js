@@ -54,7 +54,7 @@ class MobileMenu {
 class DashbaordMobile{
     SiteMenu=document.querySelector('.userDashboard')
     closeMenu=document.querySelector('#closeMenuDashboard')
-    StatusMobile=false
+    StatusMobile=false;
     hamber=document.getElementById('openDashboardMenu')
     
     constructor(){
@@ -67,9 +67,9 @@ class DashbaordMobile{
     }
     open(){
         filterBody.classList.remove('hidden')
-        this.SiteMenu.style.left =0
-        console.log('open')
-
+        document.querySelector('.userDashboard').style.left =0
+        console.log('open fast')
+        
         this.StatusMobile = true;
     }
     close() {

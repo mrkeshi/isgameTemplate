@@ -760,12 +760,14 @@ li.mx-4 a.text-white , btn-mo {
   }
 
   .userDashboard{
+
+
     z-index: 99;
     left: -320px;
+    position: fixed;
     margin: 0;
   height: auto;
     width: 320px;
-    transition:all 0.3s ease-in-out ;
 
     top: 0;
     aside{
@@ -853,6 +855,7 @@ li.mx-4 a.text-white , btn-mo {
 }
 @media (max-width:720px){
   .userDashboard{
+    position: fixed;
     width: 260px;
     aside{
       div.h-52{
