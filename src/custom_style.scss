@@ -683,7 +683,8 @@ li.mx-4 a.text-white , btn-mo {
     z-index: 80;
     position: fixed;
     width: 290px;
-    
+
+  
   border-radius: 0;
     background-color:  white;
     transition: all 0.3s ease;
@@ -741,7 +742,7 @@ li.mx-4 a.text-white , btn-mo {
           align-items: center;
           li{
             .items-center.mx-6{
-              margin-right: 16px ;
+              margin-right: 12px ;
 
             }
             .shadow-narm{
@@ -757,12 +758,51 @@ li.mx-4 a.text-white , btn-mo {
       }
     }
   }
+
+  .userDashboard{
+    z-index: 99;
+    left: -320px;
+    margin: 0;
+  height: auto;
+    width: 320px;
+    transition:all 0.3s ease-in-out ;
+
+    top: 0;
+    aside{
+      .menu{
+        padding: 8px 2px;
+        ul{
+          li{
+            margin: 30px;
+          }
+        }
+      }
+     
+      div.h-52{
+        .text-white.mt-2 ,.flex.justify-center{
+          position: relative;
+            
+        }
+        height: 170px;
+        img{
+          width: 60px;
+          height: 60px;
+          position: relative;
+          left: -10px;
+          border: 2px solid white;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width:480px){
   .about-footer{
       width: 100%;
       margin-top: -20px;
+  }
+  .mobile_navbar,.orginal-header nav ul .div-center-nav-org{
+    width: 245px;
   }
  
   .tables{
@@ -808,6 +848,28 @@ li.mx-4 a.text-white , btn-mo {
     width: 100%;
     h3{
       font-size: 16px;
+    }
+  }
+}
+@media (max-width:720px){
+  .userDashboard{
+    width: 260px;
+    aside{
+      div.h-52{
+        .text-white.mt-2 ,.flex.justify-center{
+          position: relative;
+          font-size: 15px;  
+        }
+        
+      }
+      .menu{
+        ul{
+          li{
+            margin: 28px 20px;
+          }
+        }
+      }
+     
     }
   }
 }
