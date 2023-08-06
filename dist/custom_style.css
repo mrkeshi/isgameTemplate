@@ -641,7 +641,7 @@ li.mx-4 a.text-white:hover span, btn-mo:hover span {
     margin: 15px 0;
   }
   .orginal-header nav ul .div-center-nav-org li .items-center.mx-6 {
-    margin-right: 16px;
+    margin-right: 12px;
   }
   .orginal-header nav ul .div-center-nav-org li .shadow-narm {
     margin-left: 5px;
@@ -649,11 +649,42 @@ li.mx-4 a.text-white:hover span, btn-mo:hover span {
   .orginal-header nav ul .div-center-nav-org li a {
     width: 100%;
   }
+  .userDashboard {
+    z-index: 99;
+    left: -320px;
+    margin: 0;
+    height: auto;
+    width: 320px;
+    transition: all 0.3s ease-in-out;
+    top: 0;
+  }
+  .userDashboard aside .menu {
+    padding: 8px 2px;
+  }
+  .userDashboard aside .menu ul li {
+    margin: 30px;
+  }
+  .userDashboard aside div.h-52 {
+    height: 170px;
+  }
+  .userDashboard aside div.h-52 .text-white.mt-2, .userDashboard aside div.h-52 .flex.justify-center {
+    position: relative;
+  }
+  .userDashboard aside div.h-52 img {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    left: -10px;
+    border: 2px solid white;
+  }
 }
 @media (max-width: 480px) {
   .about-footer {
     width: 100%;
     margin-top: -20px;
+  }
+  .mobile_navbar, .orginal-header nav ul .div-center-nav-org {
+    width: 245px;
   }
   .tables thead th:nth-child(2) {
     display: none;
@@ -690,5 +721,17 @@ li.mx-4 a.text-white:hover span, btn-mo:hover span {
   }
   .about-footer h3, .access-footer h3, .Newsletters h3 {
     font-size: 16px;
+  }
+}
+@media (max-width: 720px) {
+  .userDashboard {
+    width: 260px;
+  }
+  .userDashboard aside div.h-52 .text-white.mt-2, .userDashboard aside div.h-52 .flex.justify-center {
+    position: relative;
+    font-size: 15px;
+  }
+  .userDashboard aside .menu ul li {
+    margin: 28px 20px;
   }
 }/*# sourceMappingURL=custom_style.css.map */
