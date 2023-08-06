@@ -652,10 +652,10 @@ li.mx-4 a.text-white:hover span, btn-mo:hover span {
   .userDashboard {
     z-index: 99;
     left: -320px;
+    position: fixed;
     margin: 0;
     height: auto;
     width: 320px;
-    transition: all 0.3s ease-in-out;
     top: 0;
   }
   .userDashboard aside .menu {
@@ -725,6 +725,7 @@ li.mx-4 a.text-white:hover span, btn-mo:hover span {
 }
 @media (max-width: 720px) {
   .userDashboard {
+    position: fixed;
     width: 260px;
   }
   .userDashboard aside div.h-52 .text-white.mt-2, .userDashboard aside div.h-52 .flex.justify-center {
