@@ -39,7 +39,6 @@ class MobileMenu {
         })
     }
     open() {
-        console.log(filterBody)
         filterBody.classList.remove('hidden')
         this.SiteMenu.style.right = (0 + '%');
         this.StatusMobile = true;
@@ -51,6 +50,35 @@ class MobileMenu {
     }
 
 }
+// dashboard user responsive menu
+class DashbaordMobile{
+    SiteMenu=document.querySelector('.userDashboard')
+    closeMenu=document.querySelector('#closeMenuDashboard')
+    StatusMobile=false
+    hamber=document.getElementById('openDashboardMenu')
+    
+    constructor(){
+        this.hamber.addEventListener('click',()=>{
+            this.open()
+        })
+        this.closeMenu.addEventListener('click',()=>{
+            this.close()
+        })
+    }
+    open(){
+        filterBody.classList.remove('hidden')
+        this.SiteMenu.style.left =0
+        console.log('open')
+
+        this.StatusMobile = true;
+    }
+    close() {
+        filterBody.classList.add('hidden')
+         this.StatusMobile = false;
+         this.SiteMenu.style.left = (-320 + 'px');
+     }
+}
+
 //  focusSearch
 if(document.getElementById('search')){
     document.getElementById('search').addEventListener('focus',(e)=>{

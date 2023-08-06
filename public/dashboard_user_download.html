@@ -18,9 +18,9 @@
       <div
         class="navbar-top orginal-header max-lg:m-4 bg-white w-full h-[90px] rounded-md my-14 flex justify-center mx-auto shadow-md items-center px-4 max-lg:my-8 max-lg:-mb-8 max-lg:w-auto	 ">
 
-        <nav class="w-full pl-4 ">
+        <nav class="w-full max-lg:pl-0 pl-4 ">
           <ul class="flex justify-between items-center ">
-            <div class="flex div-center-nav-org max-lg:h-[100vh] max-lg:bg-white SiteMenu">
+            <div class="flex div-center-nav-org max-lg:h-[100vh] max-lg:bg-white SiteMenu h-full overflow-y-auto scrollbar scrollbar-thumb-gold-100 scrollbar-track-gray-500 scrollbar-w-[3px] overflow-x-hidden scrollbar-track-rounded-md scrollbar-thumb-rounded-lg">
               <svg class="top-4 left-4 hover:opacity-50 absolute cursor-pointer lg:hidden" id="closeMenu" width="15" height="15" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M16 2L9 9M9 9L2 16M9 9L16 16M9 9L2 2" stroke="#353F53" stroke-width="2.88235" stroke-linecap="round" stroke-linejoin="round"></path>
               </svg>
@@ -31,7 +31,7 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
                   </svg>
                 </div>
-                <input type="search" class=" mt-2  p-3 w-full h-11 transition ease-linear text-sm bg-gray-300  text-black-700 border border-gray-300 rounded-2xl bg-gray-50 focus-visible:outline-none focus:border-gray-500 relative" placeholder="جست و جو کنید" required="">
+                <input type="search" class=" mt-2  p-3 w-full h-11 transition ease-linear text-sm bg-gray-300  text-black-700 border border-gray-300 rounded-2xl bg-gray-50 focus-visible:outline-none focus:border-gray-500 relative max-md:-mr-[6px]" placeholder="جست و جو کنید" required="">
               </div>
               <hr class="text-black-500 w-full mr-2 my-3 lg:hidden">
 
@@ -219,12 +219,18 @@
  </div>
  <!-- end search box -->
 
-    <main>
-      <div class="flex mt-20 h-[700px] max-lg:h-auto max-lg:flex-col ">
+    <main class="">
+      <div class="flex mt-20 h-[700px] max-lg:h-auto max-lg:flex-col  ">
 
-        <div class="sidebar w-1/4 bg-white  ml-5 max-lg:hidden">
-          <aside class="">
+        <div class="sidebar w-1/4 bg-white  ml-5 userDashboard fixed " >
+          <aside class="overflow-y-auto scrollbar scrollbar-thumb-gold-100 scrollbar-track-gray-500 scrollbar-w-[3px] overflow-x-hidden scrollbar-track-rounded-md scrollbar-thumb-rounded-lg max-lg:h-[100vh]">
               <div class="h-52 bg-gold-500 -py-5 rounded-b-full w-full relative">
+                <svg class="top-3 left-3 hover:opacity-50 absolute cursor-pointer lg:hidden" id="closeMenuDashboard" width="13"
+                height="13" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 2L9 9M9 9L2 16M9 9L16 16M9 9L2 2" stroke="white" stroke-width="2.88235" stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+              </svg>
+              
                 <div class="w-[81px] h-[120px]  center   rounded-full">
                         <img src="../images/me.png" class=" rounded-full w-[81px] h-[81px] border-[3px] border-white" alt="">
                         <h4 class="text-white w-[95px] mt-2">
@@ -245,8 +251,8 @@
                         </div>
                 </div>
               </div>
-              <div class="menu -mt-4  p-6">
-                <ul>
+              <div class="menu -mt-4  p-6  ">
+                <ul class="">
                   <li class="my-9 text-gold-500">
                     <a class="flex items-center text-black-500 text-mxl ease-in transition hover:text-gold-500 text-gold-500 " href="#">
                       <span class="material-symbols-outlined mx-[7px] text-[24px] text-gold-500">
@@ -325,14 +331,36 @@
               </div>
           </aside>
         </div>
-        <a href="#" class="lg:hidden text-xl text-black-500 font-bold text-right mr-4 mb-8">ایزگیم > حساب کاربری > <span class="text-gold-500">دانلود ها</span></a>
-        <div class="w-3/4 mr-5 bg-white max-lg:w-auto max-lg:h-auto max-lg:mx-3">
+        <div class="flex justify-start mb-8  flex-col">
+          <a href="#" class="lg:hidden text-xl text-black-500 font-bold text-right mr-4 ">ایزگیم > حساب کاربری > <span class="">دانلود ها</span></a>
+
+
+          <div class="hamber-logso lg:hidden hover:opacity-70  ml-4  flex items-center justify-end rounded-full mt-4 ">
+            <div class="cursor-pointer flex items-center" id="openDashboardMenu">
+              <span class="text-gray-900 text-base text-black-500">منوی حساب کاربری</span>
+              <svg width="24" class="text-gold-500 mr-2 dark:text-white" height="15" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 2.5H21.5M2 9H21.5M2 15.5H21.5" stroke="currentColor" stroke-width="3.65625" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+            </div>
+        
+          </div>
+
+        </div>
+       
+        <div class="w-3/4 mr-5 bg-white max-lg:w-auto max-lg:h-auto max-lg:mx-4 ">
            
           <div class="h-screen bg-gradient-to-br from-pink-50 to-indigo-100 grid ">
             <div class="w-full mx-auto rounded ">
             <div class="bg-white p-10 shadow-sm max-lg:p-8 max-md:p-6 max-sm:p-4">
              
-        
+              <h2 class="text-black-700 text-[17px] max-lg:text-xl font-IRsansBold flex items-center">
+                <span class="material-symbols-outlined text-[24px] text-black-700 mx-2 mb-1">
+                  <span class="material-symbols-outlined">
+                    download
+                    </span>
+                  </span>
+                 دانلودی ها
+              </h2>
                 <!-- What is term -->
                 <div class="transition hover:bg-indigo-50 mt-6 border-gray-300 border-2">
                 <!-- header -->
@@ -347,7 +375,7 @@
                       </span>    
                 </div>
                 <!-- Content -->
-                <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
+                <div class="accordion-content px-5 pt-0 max-md:px-2 overflow-hidden max-h-0">
                   <div class="h-auto mt-10 h-20">
 
                     <a href="#" class="bg-gold-500 transition ease-in border max-md:text-base border-gold-500 hover:bg-white hover:text-gold-500 text-center w-[135px] text-white mt-10  py-[12px] px-4 rounded  text-mxl ">
@@ -357,7 +385,7 @@
                 </div>
                 </div>
         
-                <div class="transition hover:bg-indigo-50 mt-12 max-lg:mt-8 max-md:mt-4 border-gray-300 border-2">
+                <div class="transition hover:bg-indigo-50 mt-12 max-lg:mt-8 max-md:mt-6 border-gray-300 border-2">
                   <!-- header -->
                   <div class="accordion-header cursor-pointer transition flex space-x-5 px-5 max-lg:px-2 items-center h-16 max-md:h-14 bg-gray-300  justify-between ">
                            
@@ -585,7 +613,11 @@
 
 <script src="../dist/main.js"></script>
   <script>
+
+
+
     let mobilemenu=new MobileMenu()
+    const ResponsiveDashboard=new DashbaordMobile()
     const accordionHeader = document.querySelectorAll(".accordion-header");
     accordionHeader.forEach((header) => {
     header.addEventListener("click", function () {
@@ -623,7 +655,8 @@
 
     })
 
-    let Boxes=new MangeBoxDropDown()
+    const Boxes=new MangeBoxDropDown()
+
     window.addEventListener('click', (event) => {
       if(!Boxes.personBox.contains(event.target) && event.target.contains(filterBody)){
         Boxes.closePersonBox()
@@ -633,6 +666,12 @@
       }
       if(!mobilemenu.SiteMenu.contains(event.target) && mobilemenu.StatusMobile && event.target.contains(filterBody)){
         mobilemenu.close()
+      }
+      if(!mobilemenu.SiteMenu.contains(event.target) && mobilemenu.StatusMobile && event.target.contains(filterBody)){
+        mobilemenu.close()
+      }
+      if(!ResponsiveDashboard.SiteMenu.contains(event.target) && ResponsiveDashboard.StatusMobile && event.target.contains(filterBody)){
+        ResponsiveDashboard.close()
       }
      
     })
