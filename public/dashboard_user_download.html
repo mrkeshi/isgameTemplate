@@ -222,7 +222,7 @@
     <main class="">
       <div class="flex mt-20 h-[700px] max-lg:h-auto max-lg:flex-col  ">
 
-        <div class="sidebar w-1/4 bg-white  ml-5 userDashboard transition-all ease-in " >
+        <div class="sidebar w-1/4 max-xl:w-1/3 bg-white  ml-5 userDashboard transition-all ease-in " >
           <aside class="overflow-y-auto scrollbar scrollbar-thumb-gold-100 scrollbar-track-gray-500 scrollbar-w-[3px] overflow-x-hidden scrollbar-track-rounded-md scrollbar-thumb-rounded-lg max-lg:h-[100vh]">
               <div class="h-52 bg-gold-500 -py-5 rounded-b-full w-full relative">
                 <svg class="top-3 left-3 hover:opacity-50 absolute cursor-pointer lg:hidden" id="closeMenuDashboard" width="13"
@@ -347,7 +347,7 @@
 
         </div>
        
-        <div class="w-3/4 mr-5 bg-white max-lg:w-auto max-lg:h-auto max-lg:mx-4 ">
+        <div class="w-3/4 max-xl:w-2/3 mr-5 bg-white max-lg:w-auto max-lg:h-auto max-lg:mx-4 ">
            
           <div class="h-screen bg-gradient-to-br from-pink-50 to-indigo-100 grid ">
             <div class="w-full mx-auto rounded ">
@@ -412,6 +412,8 @@
         </div>
             
         </div>
+
+
       </div>
 
 
@@ -667,9 +669,7 @@
       if(!mobilemenu.SiteMenu.contains(event.target) && mobilemenu.StatusMobile && event.target.contains(filterBody)){
         mobilemenu.close()
       }
-      if(!mobilemenu.SiteMenu.contains(event.target) && mobilemenu.StatusMobile && event.target.contains(filterBody)){
-        mobilemenu.close()
-      }
+   
       if(!ResponsiveDashboard.SiteMenu.contains(event.target) && ResponsiveDashboard.StatusMobile && event.target.contains(filterBody)){
         ResponsiveDashboard.close()
       }

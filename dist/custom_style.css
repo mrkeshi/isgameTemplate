@@ -722,6 +722,22 @@ li.mx-4 a.text-white:hover span, btn-mo:hover span {
   .about-footer h3, .access-footer h3, .Newsletters h3 {
     font-size: 16px;
   }
+  .scrollwidth {
+    scrollbar-width: 5px;
+    overflow: auto;
+  }
+  .scrollwidth::-webkit-scrollbar {
+    width: 2px !important;
+  }
+  .scrollwidth::-webkit-scrollbar-track {
+    width: 2px !important;
+  }
+  .scrollwidth::-webkit-scrollbar-thumb {
+    width: 2px !important;
+  }
+  .scrollwidth::-webkit-scrollbar-thumb:hover {
+    width: 2px !important;
+  }
 }
 @media (max-width: 720px) {
   .userDashboard {

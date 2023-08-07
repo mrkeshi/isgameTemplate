@@ -16,22 +16,38 @@
 
 </head>
 
-<body class="">
-  <div class="container p-10 px-12  mx-auto">
+<body class="relative">
+  <div class="z-40 w-full  h-full fixed top-0 right-0 backdrop-filter bg-opacity-60 bg-[#2f3c53] hidden" id="filter-overflow"></div>
+
+  <div class="container mx-auto">
     <!-- Start Nabar Menu -->
     <header>
       <div
-        class="navbar-top bg-white w-full h-[90px] rounded-md my-14 flex justify-center mx-auto shadow-md items-center px-4	 ">
+        class="navbar-top orginal-header max-lg:m-4 bg-white w-full h-[90px] rounded-md my-14 flex justify-center mx-auto shadow-md items-center px-4 max-lg:my-8 max-lg:-mb-8 max-lg:w-auto	 ">
 
-        <nav class="w-full pl-4">
-          <ul class="flex justify-between">
-            <div class="flex">
+        <nav class="w-full max-lg:pl-0 pl-4 ">
+          <ul class="flex justify-between items-center ">
+            <div class="flex div-center-nav-org max-lg:h-[100vh] max-lg:bg-white SiteMenu h-full overflow-y-auto scrollbar scrollbar-thumb-gold-100 scrollbar-track-gray-500 scrollbar-w-[3px] overflow-x-hidden scrollbar-track-rounded-md scrollbar-thumb-rounded-lg">
+              <svg class="top-4 left-4 hover:opacity-50 absolute cursor-pointer lg:hidden" id="closeMenu" width="15" height="15" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 2L9 9M9 9L2 16M9 9L16 16M9 9L2 2" stroke="#353F53" stroke-width="2.88235" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+              
+              <div style="margin-right: 10px  " class="relative max-lg:mt-8 max-lg:mb-3 lg:hidden w-[95%] ">
+                <div class="absolute inset-y-0 left-3 top-3 flex items-center pointer-events-none">
+                  <svg aria-hidden="true" class="w-4 h-4 text-black-700 " fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                  </svg>
+                </div>
+                <input type="search" class=" mt-2  p-3 w-full h-11 transition ease-linear text-sm bg-gray-300  text-black-700 border border-gray-300 rounded-2xl bg-gray-50 focus-visible:outline-none focus:border-gray-500 relative max-md:-mr-[6px]" placeholder="جست و جو کنید" required="">
+              </div>
+              <hr class="text-black-500 w-full mr-2 my-3 lg:hidden">
+
               <li>
                 <a href="#">
                   <div class="flex items-center mx-6">
                     <div
-                      class="w-8 h-8 rounded-full bg-gold-100   text-white flex justify-center items-center shadow-narm">
-                      <span class="material-symbols-outlined text-[22px] mb-1">
+                      class="w-8 h-8 max-sm:w-[26px] max-sm:h-[26px] rounded-full bg-gold-100   text-white flex justify-center items-center shadow-narm">
+                      <span class="material-symbols-outlined text-[22px] max-sm:text-[19px] mb-1">
                         home
                       </span>
                     </div>
@@ -44,8 +60,8 @@
                 <a href="#">
                   <div class="flex items-center mx-6 hover:text-red-100 ease-in transition">
                     <div
-                      class="w-8 h-8 rounded-full bg-red-100  text-white flex justify-center items-center shadow-narm">
-                      <span class="material-symbols-outlined text-[22px]">
+                      class="w-8 h-8 max-sm:w-[26px] max-sm:h-[26px] rounded-full bg-red-100  text-white flex justify-center items-center shadow-narm">
+                      <span class="material-symbols-outlined text-[22px] max-sm:text-[19px]">
                         shopping_bag
                       </span>
                     </div>
@@ -58,8 +74,8 @@
                 <a href="#">
                   <div class="flex items-center mx-6 hover:text-blue-300 ease-in transition">
                     <div
-                      class="w-8 h-8 rounded-full bg-blue-300  text-white flex justify-center items-center shadow-narm">
-                      <span class="material-symbols-outlined text-[22px] ">
+                      class="w-8 h-8 max-sm:w-[26px] max-sm:h-[26px] rounded-full bg-blue-300  text-white flex justify-center items-center shadow-narm">
+                      <span class="material-symbols-outlined text-[22px] max-sm:text-[19px] ">
                         public
                       </span>
                     </div>
@@ -72,8 +88,8 @@
                 <a href="#">
                   <div class="flex items-center mx-6 hover:text-purple ease-in transition">
                     <div
-                      class="w-8 h-8 rounded-full bg-purple  text-white flex justify-center items-center shadow-narm">
-                      <span class="material-symbols-outlined text-[22px] ">
+                      class="w-8 h-8 max-sm:w-[26px] max-sm:h-[26px] rounded-full bg-purple  text-white flex justify-center items-center shadow-narm">
+                      <span class="material-symbols-outlined text-[22px] max-sm:text-[19px] ">
                         settings
                       </span>
                     </div>
@@ -85,8 +101,8 @@
               <li>
                 <a href="#">
                   <div class="flex items-center mx-6 hover:text-green ease-in transition">
-                    <div class="w-8 h-8 rounded-full bg-green  text-white flex justify-center items-center shadow-narm">
-                      <span class="material-symbols-outlined text-[22px] ">
+                    <div class="w-8 h-8 max-sm:w-[26px] max-sm:h-[26px] rounded-full bg-green  text-white flex justify-center items-center shadow-narm">
+                      <span class="material-symbols-outlined text-[22px]  ">
                         gamepad
                       </span>
                     </div>
@@ -97,59 +113,76 @@
               </li>
 
             </div>
+            <!-- hamburger icon -->
+            <div class="hamber-logo lg:hidden hover:opacity-70 cursor-pointer ">
+              <svg width="24" class="text-black-700 dark:text-white" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 2.5H21.5M2 9H21.5M2 15.5H21.5" stroke="currentColor" stroke-width="3.65625" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+            </div>
+<!-- end hamburger icon -->
+            <!-- logo -->
+            <div class="lg:hidden">
+              <a href="#" class="logo  ">
+                <h2 class="lg:text-4xl text-[22px] text-gray-100 font-IRsansBold	">IS<span class="text-gold-500 font-IRsansBold">G</span>AME</h2>
+              </a>
+            </div>
+            <!-- end logo -->
+            <!-- icon top -->
+
             <div class="flex relative">
-              <div id="showusermanage"
-                class="bg-white    z-20 h-auto w-[180px] pointer-events-none opacity-0 ease-linear transition-opacity appearance-none top-8 -right-4 shadow-md mt-4 absolute">
-                <ul class="">
-                  <li class="py-3 pt-5 hover:bg-gray-300 text-mxl text-black-700"><a href="#" class="flex">
-                      <span class="material-symbols-outlined  mx-2 text-2xl">
-                        login
-                      </span>
-                      ورود
+              <div id="showusermanage" 
+              class="bg-white z-20 h-auto w-[180px] pointer-events-none opacity-0 ease-linear transition-opacity appearance-none top-8 -left-6 max-lg:-left-3  shadow-md mt-4 absolute">
+              <ul class="">
+                <li class="py-3 pt-5 hover:bg-gray-300 text-mxl text-black-700"><a href="#" class="flex">
+                    <span class="material-symbols-outlined  mx-2 text-2xl">
+                      login
+                    </span>
+                    ورود
 
-                    </a></li>
-                  <li class="py-3 text-mxl hover:bg-gray-300 text-black-700"><a class="flex" href="#">
-                      <span class="material-symbols-outlined  mx-2 text-2xl">
-                        shopping_cart
+                  </a></li>
+                <li class="py-3 text-mxl hover:bg-gray-300 text-black-700"><a class="flex" href="#">
+                    <span class="material-symbols-outlined  mx-2 text-2xl">
+                      shopping_cart
 
-                      </span>
-                      سبد خرید
-                    </a></li>
-                  <li class="py-3 text-mxl hover:bg-gray-300 text-black-700"><a href="#" class="flex">
-                      <span class="material-symbols-outlined  mx-2 text-2xl">
-                        manage_accounts
-                      </span> پروفایل
-                    </a></li>
-                  <li class="py-3 pb-5 text-mxl hover:bg-gray-300 text-red-100"><a href="#" class="flex">
+                    </span>
+                    سبد خرید
+                  </a></li>
+                <li class="py-3 text-mxl hover:bg-gray-300 text-black-700"><a href="#" class="flex">
+                    <span class="material-symbols-outlined  mx-2 text-2xl">
+                      manage_accounts
+                    </span> پروفایل
+                  </a></li>
+                <li class="py-3 pb-5 text-mxl hover:bg-gray-300 text-red-100"><a href="#" class="flex">
 
-                      <span class="material-symbols-outlined  mx-2 text-2xl">
-                        logout
+                    <span class="material-symbols-outlined  mx-2 text-2xl">
+                      logout
 
 
-                      </span> خروج
-                    </a></li>
+                    </span> خروج
+                  </a></li>
 
-                </ul>
-              </div>
-              <li class="person_manage_icon">
-                <a href="#">
-                  <div class="flex items-center mx-1">
-                    <div
-                      class="w-8 h-8 rounded-full bg-gray-300  transition ease-linear text-black-700 flex justify-center items-center hover:text-white hover:bg-black-700">
-                      <span class="material-symbols-outlined text-[22px]">
-                        person
-                      </span>
-                    </div>
+              </ul>
 
+            </div>
+            <li class="person_manage_icon   ">
+              <a href="#">
+                <div class="flex items-center mx-1">
+                  <div
+                    class="w-9 h-9 rounded-full bg-gray-300 text-black-700 flex justify-center items-center hover:text-white hover:bg-black-700 ease-in transition">
+                    <span class="material-symbols-outlined text-[22px]">
+                      person
+                    </span>
                   </div>
 
-                </a>
-              </li>
-              <li>
+                </div>
+
+              </a>
+            </li>
+              <li class="max-lg:hidden">
                 <a href="#">
                   <div class="flex items-center mx-1">
                     <div id="btnsearch"
-                      class="w-8 h-8 rounded-full bg-gray-300  transition ease-linear text-black-700 flex justify-center items-center hover:text-white hover:bg-black-700">
+                      class="w-9 h-9 rounded-full bg-gray-300  transition ease-linear text-black-700 flex justify-center items-center hover:text-white hover:bg-black-700">
                       <span class="material-symbols-outlined text-[22px] ">
                         search
                       </span>
@@ -161,6 +194,8 @@
               </li>
               <li>
             </div>
+
+          <!-- end icon top -->
           </ul>
         </nav>
       </div>
@@ -193,12 +228,12 @@
     <!-- End Navbar Menu -->
     <main>
       <section>
-        <div class="main px-10 mx-auto">
+        <div class="main px-10 max-lg:px-4 mx-auto">
 
-          <div class=" flex h-[500px] mx-auto ">
+          <div class=" flex  mx-auto ">
             <!-- Slider main container -->
 
-            <div class="slider_container w-3/5  mx- h-[500px] relative">
+            <div class="slider_container w-3/5  relative">
 
               <!-- Slider main container -->
               <!-- Slider main container -->
@@ -361,7 +396,7 @@
                       <div class="swiper-slide">
                         <div class="slide  justify-center items-center h-full ">
                           <img src="../images/20.jpg" alt="" class="h-full absolute brightness-30 -z-20  w-full rounded-[10px] ">
-                          <div class="p-5 flex justify-center h-full mb-6 items-center flex-col  ">
+                          <div class="p-3 flex justify-center h-full mb-6 items-center flex-col  ">
                             <h2  class="text-[19px] text-white font-IRsansBold">ترینر بازی ماشینی</h2>
                             <p class="text-xl mt-5 px-2 text-white font-IRsansLight leading-7 text-center">
                               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
@@ -390,7 +425,7 @@
                       <div class="swiper-slide">
                         <div class="slide  justify-center items-center h-full ">
                           <img src="../images/3.png" alt="" class="h-full absolute brightness-30 -z-20  w-full rounded-[10px] ">
-                          <div class="p-5 flex justify-center h-full mb-6 items-center flex-col  ">
+                          <div class="p-3 flex justify-center h-full mb-6 items-center flex-col  ">
                             <h2  class="text-[19px] text-white font-IRsansBold">ترینر بازی  واگن قطاری</h2>
                             <p class="text-xl mt-5 px-2 text-white font-IRsansLight leading-7 text-center">
                               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
@@ -419,7 +454,7 @@
                       <div class="swiper-slide">
                         <div class="slide  justify-center items-center h-full ">
                           <img src="../images/13.webp" alt="" class="h-full absolute brightness-30 -z-20  w-full rounded-[10px] ">
-                          <div class="p-5 flex justify-center h-full mb-6 items-center flex-col  ">
+                          <div class="p-3 flex justify-center h-full mb-6 items-center flex-col  ">
                             <h2  class="text-[19px] text-white font-IRsansBold">چیت بازی اساسین کرید</h2>
                             <p class="text-xl mt-5 px-2 text-white font-IRsansLight leading-7 text-center">
                               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
@@ -519,7 +554,7 @@
                 class="posts flex flex-col mt-3 overflow-y-auto h-[440px] scrollbar scrollbar-thumb-gold-100 scrollbar-track-[#F5F4F4] scrollbar-w-[3px] scrollbar-track-rounded-md scrollbar-thumb-rounded">
                 <li>
 
-                  <div class="post flex items-center w-full  mb-7">
+                  <div class="post flex items-center w-full  mb-3">
                     <div class="img h-[48px] w-[48PX]">
                       <img src="../images/lates_post.jpg" alt="" class="h-[48px] w-[48PX] rounded">
                     </div>
@@ -542,7 +577,7 @@
                 </li>
                 <li>
 
-                  <div class="post flex items-center mb-7">
+                  <div class="post flex items-center mb-4">
                     <div class="img">
                       <img src="../images/lates_post.jpg" alt="" class="h-[48px] w-[48PX] rounded">
                     </div>
@@ -563,7 +598,7 @@
                 </li>
                 <li>
 
-                  <div class="post flex items-center mb-7">
+                  <div class="post flex items-center mb-4">
                     <div class="img">
                       <img src="../images/lates_post.jpg" alt="" class="h-[48px] w-[48PX] rounded">
                     </div>
@@ -584,7 +619,7 @@
                 </li>
                 <li>
 
-                  <div class="post flex items-center mb-7">
+                  <div class="post flex items-center mb-4">
                     <div class="img">
                       <img src="../images/lates_post.jpg" alt="" class="h-[48px] w-[48PX] rounded">
                     </div>
@@ -605,7 +640,7 @@
                 </li>
                 <li>
 
-                  <div class="post flex items-center mb-7">
+                  <div class="post flex items-center mb-4">
                     <div class="img">
                       <img src="../images/lates_post.jpg" alt="" class="h-[48px] w-[48PX] rounded">
                     </div>
@@ -626,7 +661,7 @@
                 </li>
                 <li>
 
-                  <div class="post flex items-center mb-7">
+                  <div class="post flex items-center mb-4">
                     <div class="img">
                       <img src="../images/lates_post.jpg" alt="" class="h-[48px] w-[48PX] rounded">
                     </div>
@@ -647,7 +682,7 @@
                 </li>
                 <li>
 
-                  <div class="post flex items-center mb-7">
+                  <div class="post flex items-center mb-4">
                     <div class="img">
                       <img src="../images/lates_post.jpg" alt="" class="h-[48px] w-[48PX] rounded">
                     </div>
@@ -668,7 +703,7 @@
                 </li>
                 <li>
 
-                  <div class="post flex items-center mb-7">
+                  <div class="post flex items-center mb-4">
                     <div class="img">
                       <img src="../images/lates_post.jpg" alt="" class="h-[48px] w-[48PX] rounded">
                     </div>
@@ -689,7 +724,7 @@
                 </li>
                 <li>
 
-                  <div class="post flex items-center mb-7">
+                  <div class="post flex items-center mb-4">
                     <div class="img">
                       <img src="../images/lates_post.jpg" alt="" class="h-[48px] w-[48PX] rounded">
                     </div>
@@ -782,7 +817,7 @@
             <!-- Start Social link Network -->
             <section>
               <div
-                class="social-box shadow-narm justify-between flex mt-14 bg-gradient-to-r p-4 from-[#4f0fbe] to-[#B113BC] rounded-[8px] h-[92px] ">
+                class="social-box shadow-narm justify-between flex mt-12 bg-gradient-to-r p-4 from-[#4f0fbe] to-[#B113BC] rounded-[8px] h-[86px] ">
                 <div class="flex flex-col">
                   <span class="text-white text-base">اینیستاگرام ما</span>
                   <span
@@ -798,7 +833,7 @@
             <section class="mb-10">
 
               <div
-                class="social-box shadow-narm justify-between flex mt-8 bg-gradient-to-r p-4 from-[#4056E6] to-[#1AA6EE] rounded-[8px] h-[92px] ">
+                class="social-box shadow-narm justify-between flex mt-6 bg-gradient-to-r p-4 from-[#4056E6] to-[#1AA6EE] rounded-[8px] h-[86px] ">
                 <div class="flex flex-col">
                   <span class="text-white text-base">تلگرام ما</span>
                   <span
@@ -840,12 +875,12 @@
             <div class="flex flex-col w-full">
               <!-- Start Article -->
               <article class="mb-8">
-                <div class="box bg-white h-72 rounded-[10px] p-2 flex relative">
-                  <img src="../images/image_post_2.png" class="w-64 h-full p-4 brightness-75 transition ease hover:brightness-100  " alt="">
+                <div class="box bg-white h-[250px] rounded-[10px] p-2 flex max-2xl:h-[300px] relative">
+                  <img src="../images/image_post_2.png" class="w-[250px] h-full p-4 brightness-75 transition ease hover:brightness-100  " alt="">
                   <div class="post">
                     <header>
                       <a href="#">
-                        <h1 class="text-black-700 text-[18px] font-IRsansBold m-4 mb-5 hover:opacity-80 ">Stay Human 2 Dying Light دانلود ترینر
+                        <h1 class="text-black-700 text-[17px] font-IRsansBold m-4 hover:opacity-80 ">Stay Human 2 Dying Light دانلود ترینر
                           بازی</h1>
                       </a>
                      
@@ -876,7 +911,7 @@
                         </div>
                       </div>
                     </header>
-                    <p class="text-mxl p-4 pt-3 text-black-500 leading-8 ">
+                    <p class="text-[14.5px] p-3 pb-0 pt-1 text-black-500 leading-7 ">
                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
                       چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
                       نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در بیشتری را برای
@@ -891,12 +926,12 @@
                 </div>
               </article>
               <article class="mb-8">
-                <div class="box bg-white h-72 rounded-[10px] p-2 flex relative">
-                  <img src="../images/image_post_1.png" class="w-64 h-full p-4 brightness-75 transition ease hover:brightness-100 " alt="">
+                <div class="box bg-white h-[250px] rounded-[10px] p-2 flex max-2xl:h-[300px] relative">
+                  <img src="../images/image_post_1.png" class="w-[250px] h-full p-4 brightness-75 transition ease hover:brightness-100 " alt="">
                   <div class="post">
                     <header>
                       <a href="#">
-                        <h1 class="text-black-700 text-[18px] font-IRsansBold m-4 mb-5 hover:opacity-80 ">Stay Human 2 Dying Light دانلود ترینر
+                        <h1 class="text-black-700 text-[17px] font-IRsansBold m-4 hover:opacity-80 ">Stay Human 2 Dying Light دانلود ترینر
                           بازی</h1>
                       </a>
                      
@@ -927,7 +962,7 @@
                         </div>
                       </div>
                     </header>
-                    <p class="text-mxl p-4 pt-3 text-black-500 leading-8 ">
+                    <p class="text-[14.5px] p-3 pb-0 pt-1 text-black-500 leading-7 ">
                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
                       چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
                       نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در بیشتری را برای
@@ -942,12 +977,12 @@
                 </div>
               </article>
               <article class="mb-8">
-                <div class="box bg-white h-72 rounded-[10px] p-2 flex relative">
-                  <img src="../images/image_post_2.png" class="w-64 h-full p-4 brightness-75 transition ease hover:brightness-100  " alt="">
+                <div class="box bg-white h-[250px] rounded-[10px] p-2 flex max-2xl:h-[300px] relative">
+                  <img src="../images/image_post_2.png" class="w-[250px] h-full p-4 brightness-75 transition ease hover:brightness-100  " alt="">
                   <div class="post">
                     <header>
                       <a href="#">
-                        <h1 class="text-black-700 text-[18px] font-IRsansBold m-4 mb-5 hover:opacity-80 ">Stay Human 2 Dying Light دانلود ترینر
+                        <h1 class="text-black-700 text-[17px] font-IRsansBold m-4 hover:opacity-80 ">Stay Human 2 Dying Light دانلود ترینر
                           بازی</h1>
                       </a>
                      
@@ -978,7 +1013,7 @@
                         </div>
                       </div>
                     </header>
-                    <p class="text-mxl p-4 pt-3 text-black-500 leading-8 ">
+                    <p class="text-[14.5px] p-3 pb-0 pt-1 text-black-500 leading-7 ">
                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
                       چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
                       نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در بیشتری را برای
@@ -993,12 +1028,12 @@
                 </div>
               </article>
               <article class="mb-8">
-                <div class="box bg-white h-72 rounded-[10px] p-2 flex relative">
-                  <img src="../images/image_post_1.png" class="w-64 h-full p-4 brightness-75 transition ease hover:brightness-100 " alt="">
+                <div class="box bg-white h-[250px] rounded-[10px] p-2 flex max-2xl:h-[300px] relative">
+                  <img src="../images/image_post_1.png" class="w-[250px] h-full p-4 brightness-75 transition ease hover:brightness-100 " alt="">
                   <div class="post">
                     <header>
                       <a href="#">
-                        <h1 class="text-black-700 text-[18px] font-IRsansBold m-4 mb-5 hover:opacity-80 ">Stay Human 2 Dying Light دانلود ترینر
+                        <h1 class="text-black-700 text-[17px] font-IRsansBold m-4 hover:opacity-80 ">Stay Human 2 Dying Light دانلود ترینر
                           بازی</h1>
                       </a>
                      
@@ -1029,7 +1064,7 @@
                         </div>
                       </div>
                     </header>
-                    <p class="text-mxl p-4 pt-3 text-black-500 leading-8 ">
+                    <p class="text-[14.5px] p-3 pb-0 pt-1 text-black-500 leading-7 ">
                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
                       چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
                       نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در بیشتری را برای
@@ -1044,12 +1079,12 @@
                 </div>
               </article>
               <article class="mb-8">
-                <div class="box bg-white h-72 rounded-[10px] p-2 flex relative">
+                <div class="box bg-white h-[250px] rounded-[10px] p-2 flex max-2xl:h-[300px] relative">
                   <img src="../images/image_post_3.png" class="w-64 h-full p-4 " alt="">
                   <div class="post">
                     <header>
                       <a href="#">
-                        <h1 class="text-black-700 text-[18px] font-IRsansBold m-4 mb-5 hover:opacity-80 ">Stay Human 2 Dying Light دانلود ترینر
+                        <h1 class="text-black-700 text-[17px] font-IRsansBold m-4 hover:opacity-80 ">Stay Human 2 Dying Light دانلود ترینر
                           بازی</h1>
                       </a>
                      
@@ -1080,7 +1115,7 @@
                         </div>
                       </div>
                     </header>
-                    <p class="text-mxl p-4 pt-3 text-black-500 leading-8 ">
+                    <p class="text-[14.5px] p-3 pb-0 pt-1 text-black-500 leading-7 ">
                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
                       چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
                       نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در بیشتری را برای
@@ -1094,13 +1129,13 @@
                   </div>
                 </div>
               </article>
-              <article class="mb-8">
-                <div class="box bg-white h-72 rounded-[10px] p-2 flex relative">
+              <article class="mb-8 ">
+                <div class="box bg-white h-[250px] rounded-[10px] p-2 flex max-2xl:h-[300px] relative">
                   <img src="../images/image_post_1.png" class="w-64 h-full p-4" alt="">
                   <div class="post">
                     <header>
                       <a href="#">
-                        <h1 class="text-black-700 text-[18px] font-IRsansBold m-4 mb-5 hover:opacity-80 ">Stay Human 2 Dying Light دانلود ترینر
+                        <h1 class="text-black-700 text-[17px] font-IRsansBold m-4 hover:opacity-80 ">Stay Human 2 Dying Light دانلود ترینر
                           بازی</h1>
                       </a>
                      
@@ -1131,7 +1166,7 @@
                         </div>
                       </div>
                     </header>
-                    <p class="text-mxl p-4 pt-3 text-black-500 leading-8 ">
+                    <p class="text-[14.5px] p-3 pb-0 pt-1 text-black-500 leading-7 ">
                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
                       چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
                       نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در بیشتری را برای
@@ -1146,12 +1181,12 @@
                 </div>
               </article>
                <article class="mb-8">
-                <div class="box bg-white h-72 rounded-[10px] p-2 flex relative">
-                  <img src="../images/image_post_3.png" class="w-64 h-full p-4 brightness-75 transition ease hover:brightness-100" alt="">
+                <div class="box bg-white h-[250px] rounded-[10px] p-2 flex max-2xl:h-[300px] relative">
+                  <img src="../images/image_post_3.png" class="w-[250px] h-full p-4 brightness-75 transition ease hover:brightness-100" alt="">
                   <div class="post">
                     <header>
                       <a href="#">
-                        <h1 class="text-black-700 text-[18px] font-IRsansBold m-4 mb-5 hover:opacity-80 ">Stay Human 2 Dying Light دانلود ترینر
+                        <h1 class="text-black-700 text-[17px] font-IRsansBold m-4 hover:opacity-80 ">Stay Human 2 Dying Light دانلود ترینر
                           بازی</h1>
                       </a>
                      
@@ -1182,7 +1217,7 @@
                         </div>
                       </div>
                     </header>
-                    <p class="text-mxl p-4 pt-3 text-black-500 leading-8 ">
+                    <p class="text-[14.5px] p-3 pb-0 pt-1 text-black-500 leading-7 ">
                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
                       چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
                       نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در بیشتری را برای
@@ -1208,32 +1243,31 @@
 
     </main>
   </div><br><br>
-
   <footer class="relative  ">
     <svg viewBox="0 -20 700 110" width="100%" height="110" preserveAspectRatio="none">
       <path transform="translate(0, -20)" d="M0,10 c80,-22 240,0 350,18 c90,17 260,7.5 350,-20 v50 h-700"
         fill="#FFCD17" />
       <path d="M0,10 c80,-18 230,-12 350,7 c80,13 260,17 350,-5 v100 h-700z" fill="white" />
     </svg>
-  
-  
-    <div class="footer-div w-full  bg-white h-auto py-4 -pt-2 flex flex-col">
-  
-  
-  
-      <div class="boxs flex  justify-around">
-        
-        <div class="about-footer flex  w-1/4  flex-col">
+
+
+    <div class="footer-div w-full  bg-white h-auto py-4 -pt-2 flex flex-col ">
+
+
+
+      <div class="boxs flex  justify-around  flex-wrap max-lg:px-8 max-md:px-4 max-lg:justify-between">
+
+        <div class="about-footer flex  w-1/4 max-xl:w-[350px]  flex-col max-lg:mb-8">
           <div class="flex items-center">
             <div class="icon mt-1">
               <span class="material-symbols-outlined text-gold-500 text-[26px] ml-2">
                 group
               </span>
-  
+
             </div>
             <h3 class="text-black-700 text-[17px] ">درباره ما</h3>
           </div>
-  
+
           <p class="text-right text-mxl leading-8 mt-2 text-black-500">وبسایت ایزگیم در تابستان سال 1401 به منظور یک
             پروژه تمرینی و نمونه کاری تاسیس گردید.
             هدف از طراحی ایزگیم کمک به کاربران فارسی عاشق و علاقه مند گیم بود.
@@ -1243,77 +1277,77 @@
               <span class="material-symbols-outlined text-red-100 text-[26px] ml-2 mt-1">
                 email
               </span>
-  
+
             </div>
             <h3 class="text-black-700 text-[17px] ">ایمیل پشتیبانی</h3>
           </div>
-  
+
           <a href="#" class="text-right text-mxl leading-8 mt-2 text-black-500">
             paressep28@gmail.com
           </a>
         </div>
-  
-        <div class="access-footer flex w-1/4 flex-col">
+
+        <div class="access-footer flex w-1/5 max-xl:w-[290px] flex-col max-lg:mb-8">
           <div class="flex">
             <div class="icon ">
               <span class="material-symbols-outlined text-purple text-[26px] ml-2">
                 control_point_duplicate
               </span>
-  
+
             </div>
             <h3 class="text-black-700 text-[17px] ">دسترسی سریع</h3>
           </div>
-  
+
           <ul class="flex flex-col flex-wrap h-44">
             <li class="ml-4 mt-6"><a href="#" class="text-black-500 text-mxl hover:opacity-70">محصولات</a></li>
             <li class="ml-4 mt-6"><a href="#" class="text-black-500 text-mxl hover:opacity-70">سبد خرید</a></li>
             <li class="ml-4 mt-6"><a href="#" class="text-black-500 text-mxl hover:opacity-70">چیت</a></li>
             <li class="ml-4 mt-6"><a href="#" class="text-black-500 text-mxl hover:opacity-70">بلاگ</a></li>
             <li class="ml-4 mt-6"><a href="#" class="text-black-500 text-mxl hover:opacity-70">حساب کاربری</a></li>
-  
+
           </ul>
         </div>
-  
-  
-  
-        <div class="Newsletters flex  w-1/4 flex-col">
+
+
+
+        <div class="Newsletters flex  w-1/4 max-xl:w-[350px] flex-col max-lg:mb-8">
           <div class="flex">
             <div class="icon ">
               <span class="material-symbols-outlined text-green text-[26px] ml-2">
                 alternate_email
               </span>
-  
+
             </div>
             <h3 class="text-black-700 text-[17px] "> عضویت در خبرنامه</h3>
           </div>
           <p class="text-base text-black-500 ">لطفا جهت عضویت در خبرنامه ایمیل خود را وارد نمایید</p>
           <div class="form-floating mt-4 mb-3 relative">
             <input type="email" class="form-control
-                block
-                w-full
-                px-3
-                py-1.5
-                text-base
-                font-normal
-                text-black-700
-                bg-gray-300 bg-clip-padding
-                border border-gray-300 
-                rounded
-                transition
-                ease-in-out m-0 focus:text-black-500 h-[50px] focus:bg-white focus:border-green focus:outline-none"
+              block
+              w-full
+              px-3
+              py-1.5
+              text-base
+              font-normal
+              text-black-700
+              bg-gray-300 bg-clip-padding
+              border border-gray-300 
+              rounded
+              transition
+              ease-in-out m-0 focus:text-black-500 h-[50px] focus:bg-white focus:border-green focus:outline-none"
               id="floatingInput" placeholder="name@example.com">
             <button
               class="bg-green text-base text-white  p-2 px-4 h-[50px]  absolute left-0 top-0 border-b-none ">ثبت</button>
           </div>
         </div>
-  
-  
-  
-  
+
+
+
+
       </div>
-      <hr class="bg-gray-300 my-8 mb-6 w-5/6 text-gray-300 text-center mx-auto h-[2px]">
-      <div class="flex w-full items-center justify-center">
-        <ul class="flex">
+      <hr class="bg-gray-300 max-md:my-4 my-8 mb-6 w-5/6 text-gray-300 text-center mx-auto h-[2px]">
+      <div class="flex w-full items-center justify-center flex-wrap">
+        <ul class="flex max-md:hidden">
           <li class="mx-6"><a href="#" class="text-black-500 text-mxl hover:opacity-70">خانه</a></li>
           <li class="mx-6"><a href="#" class="text-black-500 text-mxl hover:opacity-70">بلاگ</a></li>
           <li class="mx-6"><a href="#" class="text-black-500 text-mxl hover:opacity-70">ویدئو</a></li>
@@ -1323,7 +1357,7 @@
         <div class="logo w-24 h-24 mx-10">
           <img src="../images/logo.png" alt="logo" title="logo">
         </div>
-        <ul class="flex">
+        <ul class="flex max-md:hidden">
           <li class="mx-6"><a href="#" class="text-black-500 text-mxl hover:opacity-70">فروشگاه</a></li>
           <li class="mx-6"><a href="#" class="text-black-500 text-mxl hover:opacity-70">چیت</a></li>
           <li class="mx-6"><a href="#" class="text-black-500 text-mxl hover:opacity-70">دسته</a></li>
@@ -1335,47 +1369,69 @@
         <div class="socail_box flex  mb-0 mt-2 w-full h-9 justify-center">
           <a href="#">
             <div class="telegram ease-in transition fill-gray-700 hover:fill-[#32AFE6]">
-  
+
               <svg xmlns="http://www.w3.org/2000/svg" class="w-[24px] h-[24px] mx-2" viewBox="0 0 496 512" fill="">
-                <!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M248,8C111.033,8,0,119.033,0,256S111.033,504,248,504,496,392.967,496,256,384.967,8,248,8ZM362.952,176.66c-3.732,39.215-19.881,134.378-28.1,178.3-3.476,18.584-10.322,24.816-16.948,25.425-14.4,1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25,5.342-39.5,3.652-3.793,67.107-61.51,68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608,69.142-14.845,10.194-26.894,9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7,18.45-13.7,108.446-47.248,144.628-62.3c68.872-28.647,83.183-33.623,92.511-33.789,2.052-.034,6.639.474,9.61,2.885a10.452,10.452,0,0,1,3.53,6.716A43.765,43.765,0,0,1,362.952,176.66Z"></path></svg>
+                <!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M248,8C111.033,8,0,119.033,0,256S111.033,504,248,504,496,392.967,496,256,384.967,8,248,8ZM362.952,176.66c-3.732,39.215-19.881,134.378-28.1,178.3-3.476,18.584-10.322,24.816-16.948,25.425-14.4,1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25,5.342-39.5,3.652-3.793,67.107-61.51,68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608,69.142-14.845,10.194-26.894,9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7,18.45-13.7,108.446-47.248,144.628-62.3c68.872-28.647,83.183-33.623,92.511-33.789,2.052-.034,6.639.474,9.61,2.885a10.452,10.452,0,0,1,3.53,6.716A43.765,43.765,0,0,1,362.952,176.66Z">
+                </path>
+              </svg>
             </div>
           </a>
-   
-   <a href="#">
-    <div class="instagram ease-in transition fill-gray-700 hover:fill-[#E23BDC]">
-      <svg xmlns="http://www.w3.org/2000/svg" class="w-[24px] h-[24px] mx-2"  viewBox="0 0 448 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>                    <!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M248,8C111.033,8,0,119.033,0,256S111.033,504,248,504,496,392.967,496,256,384.967,8,248,8ZM362.952,176.66c-3.732,39.215-19.881,134.378-28.1,178.3-3.476,18.584-10.322,24.816-16.948,25.425-14.4,1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25,5.342-39.5,3.652-3.793,67.107-61.51,68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608,69.142-14.845,10.194-26.894,9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7,18.45-13.7,108.446-47.248,144.628-62.3c68.872-28.647,83.183-33.623,92.511-33.789,2.052-.034,6.639.474,9.61,2.885a10.452,10.452,0,0,1,3.53,6.716A43.765,43.765,0,0,1,362.952,176.66Z">
-      </div>
-   </a>
-        
-  
-  
-  <a href="#">
-  
-  
-    <div class="twitter ease-in transition fill-gray-700 hover:fill-[#31A6F5]">
-      <svg xmlns="http://www.w3.org/2000/svg" class="w-[24px] h-[24px] mx-2"  viewBox="0 0 512 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>                
-      </div>
-  </a>
-  
-  <a href="#">
-    <div class="facebook ease-in transition fill-gray-700 hover:fill-[#4E49D4]">
-      <svg xmlns="http://www.w3.org/2000/svg"  class="w-[23px] h-[24px] mx-2" viewBox="0 0 320 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>    
-    
-    </div>
-  </a>
-          
-      </div>
-  
-  
+
+          <a href="#">
+            <div class="instagram ease-in transition fill-gray-700 hover:fill-[#E23BDC]">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-[24px] h-[24px] mx-2"
+                viewBox="0 0 448 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                </path>
+              </svg>
+              <!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
+              <path
+                d="M248,8C111.033,8,0,119.033,0,256S111.033,504,248,504,496,392.967,496,256,384.967,8,248,8ZM362.952,176.66c-3.732,39.215-19.881,134.378-28.1,178.3-3.476,18.584-10.322,24.816-16.948,25.425-14.4,1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25,5.342-39.5,3.652-3.793,67.107-61.51,68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608,69.142-14.845,10.194-26.894,9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7,18.45-13.7,108.446-47.248,144.628-62.3c68.872-28.647,83.183-33.623,92.511-33.789,2.052-.034,6.639.474,9.61,2.885a10.452,10.452,0,0,1,3.53,6.716A43.765,43.765,0,0,1,362.952,176.66Z">
+            </div>
+          </a>
+
+
+
+          <a href="#">
+
+
+            <div class="twitter ease-in transition fill-gray-700 hover:fill-[#31A6F5]">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-[24px] h-[24px] mx-2"
+                viewBox="0 0 512 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                </path>
+              </svg>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="facebook ease-in transition fill-gray-700 hover:fill-[#4E49D4]">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-[23px] h-[24px] mx-2"
+                viewBox="0 0 320 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                </path>
+              </svg>
+
+            </div>
+          </a>
+
+        </div>
+
+
         <div class="copyright-cell text-black-500 text-mxl text-center mt-2">
-          تمامی حقوق متعلق به 
+          تمامی حقوق متعلق به
           <a href="#" class="text-gold-500">آقای کاف</a>
           می باشد.
         </div>
       </div>
     </div>
-  
-  
+
+
   </footer>
 
 
@@ -1385,28 +1441,46 @@
 
   <!-- <script type="module" src="../dist/main.js"></script> -->
 
+  <script src="../dist/main.js"></script>
   <script>
-    let seatcrmodal = document.querySelector('.search-modal');
+
+
+let seatcrmodal = document.querySelector('.search-modal');
     let formsearch = seatcrmodal.querySelector('#formsea');
     let btnsearch = document.getElementById('btnsearch');
-
+    let checkopenedsearc=false
     function closeSearch() {
-      seatcrmodal.classList.toggle('search-modal_show')
+      seatcrmodal.classList.remove('search-modal_show')
+      filterBody.classList.add('hidden')
+       checkopenedsearc=false
+
     }
-
-
     btnsearch.addEventListener('click', () => {
-      seatcrmodal.classList.toggle('search-modal_show')
+      seatcrmodal.classList.add('search-modal_show')
+      filterBody.classList.remove('hidden')
+      checkopenedsearc=true
+
     })
 
-    let showmange = document.getElementById('showusermanage');
-    let person_manage_icon = document.querySelector('.person_manage_icon');
-    person_manage_icon.addEventListener('click', () => {
+    const Boxes=new MangeBoxDropDown()
+    const mobilemenu=new MobileMenu()
+
+    window.addEventListener('click', (event) => {
+      if(!Boxes.personBox.contains(event.target) && event.target.contains(filterBody)){
+        Boxes.closePersonBox()
+      }
+      if(!formsearch.contains(event.target) && !event.target.classList.contains('material-symbols-outlined') && checkopenedsearc==true){
+        closeSearch()
+      }
+      if(!mobilemenu.SiteMenu.contains(event.target) && mobilemenu.StatusMobile && event.target.contains(filterBody)){
+        mobilemenu.close()
+      }
      
-      showmange.classList.toggle('showusermanage')
     })
-  </script>
-  <script>
+      
+
+
+
     const swiper = new Swiper('#swiper', {
       // Optional parameters
 
@@ -1446,7 +1520,10 @@
       // And if we need scrollbar
 
     });
-  </script>
+ 
+ 
+ 
+ </script>
 </body>
 
 </html>
