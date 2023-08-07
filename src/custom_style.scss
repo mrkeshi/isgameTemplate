@@ -852,6 +852,25 @@ li.mx-4 a.text-white , btn-mo {
       font-size: 16px;
     }
   }
+  
+  .scrollwidth{
+    scrollbar-width:5px;
+
+
+    overflow: auto;
+    &::-webkit-scrollbar {
+      width: 2px !important;
+    }
+    &::-webkit-scrollbar-track{
+      width: 2px !important;
+    }
+    &::-webkit-scrollbar-thumb {
+      width: 2px !important;    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      width: 2px !important;}
+  }
+
 }
 @media (max-width:720px){
   .userDashboard{
@@ -874,5 +893,10 @@ li.mx-4 a.text-white , btn-mo {
       }
      
     }
+  }
+}
+@media (max-width:1280px) {
+  .userDashboard{
+
   }
 }
