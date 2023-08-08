@@ -592,6 +592,33 @@ li.mx-4 a.text-white:hover span, btn-mo:hover span {
   opacity: 50%;
 }
 
+@media (max-width: 1280px) {
+  .home_page {
+    padding: 0 !important;
+  }
+  .home_page .aside {
+    width: 35%;
+    margin-left: 12px;
+  }
+  .home_page .articles {
+    width: 65%;
+    margin-right: 12px;
+  }
+  .home_page .articles .posts article .box {
+    height: 250px;
+  }
+  .home_page .articles .posts article .box p {
+    display: -webkit-box;
+    max-width: auto;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .home_page .articles .posts article .box img {
+    width: 200px;
+    height: 220px;
+  }
+}
 @media (max-width: 1024px) {
   .mobile_navbar {
     z-index: 80;
@@ -677,6 +704,77 @@ li.mx-4 a.text-white:hover span, btn-mo:hover span {
     left: -10px;
     border: 2px solid white;
   }
+  .home_page {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    padding: 0 !important;
+  }
+  .home_page .aside {
+    margin: 0;
+    width: 100%;
+  }
+  .home_page .articles {
+    width: 100%;
+    margin: 0;
+  }
+  .home_page .articles .posts article .box {
+    height: 250px;
+  }
+  .home_page .articles .posts article .box p {
+    display: -webkit-box;
+    max-width: auto;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .home_page .articles .posts article .box img {
+    width: 200px;
+    height: 220px;
+  }
+}
+@media (max-width: 720px) {
+  .userDashboard {
+    position: fixed;
+    width: 260px;
+  }
+  .userDashboard aside div.h-52 .text-white.mt-2, .userDashboard aside div.h-52 .flex.justify-center {
+    position: relative;
+    font-size: 15px;
+  }
+  .userDashboard aside .menu ul li {
+    margin: 28px 20px;
+  }
+}
+@media (max-width: 680px) {
+  .about-footer, .access-footer, .Newsletters {
+    width: 100%;
+  }
+  .about-footer h3, .access-footer h3, .Newsletters h3 {
+    font-size: 16px;
+  }
+  .scrollwidth {
+    scrollbar-width: 5px;
+    overflow: auto;
+  }
+  .scrollwidth::-webkit-scrollbar {
+    width: 2px !important;
+  }
+  .scrollwidth::-webkit-scrollbar-track {
+    width: 2px !important;
+  }
+  .scrollwidth::-webkit-scrollbar-thumb {
+    width: 2px !important;
+  }
+  .scrollwidth::-webkit-scrollbar-thumb:hover {
+    width: 2px !important;
+  }
+  .pagination.my-8.flex.justify-center.items-center span {
+    margin: auto 0;
+  }
+  .pagination.my-8.flex.justify-center.items-center .material-symbols-outlined.text-2xl {
+    padding: 6px;
+    font-size: 20px;
+  }
 }
 @media (max-width: 480px) {
   .about-footer {
@@ -713,42 +811,5 @@ li.mx-4 a.text-white:hover span, btn-mo:hover span {
     margin: 15px 0;
     width: 100%;
     margin-bottom: 0;
-  }
-}
-@media (max-width: 680px) {
-  .about-footer, .access-footer, .Newsletters {
-    width: 100%;
-  }
-  .about-footer h3, .access-footer h3, .Newsletters h3 {
-    font-size: 16px;
-  }
-  .scrollwidth {
-    scrollbar-width: 5px;
-    overflow: auto;
-  }
-  .scrollwidth::-webkit-scrollbar {
-    width: 2px !important;
-  }
-  .scrollwidth::-webkit-scrollbar-track {
-    width: 2px !important;
-  }
-  .scrollwidth::-webkit-scrollbar-thumb {
-    width: 2px !important;
-  }
-  .scrollwidth::-webkit-scrollbar-thumb:hover {
-    width: 2px !important;
-  }
-}
-@media (max-width: 720px) {
-  .userDashboard {
-    position: fixed;
-    width: 260px;
-  }
-  .userDashboard aside div.h-52 .text-white.mt-2, .userDashboard aside div.h-52 .flex.justify-center {
-    position: relative;
-    font-size: 15px;
-  }
-  .userDashboard aside .menu ul li {
-    margin: 28px 20px;
   }
 }/*# sourceMappingURL=custom_style.css.map */
