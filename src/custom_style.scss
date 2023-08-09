@@ -866,7 +866,18 @@ li.mx-4 a.text-white , btn-mo {
       }
     }
   }
+  .image-games{
+    li{
+      div{
+display: none !important;
+      }
+    }
+
+  }
 }
+
+
+
 @media (max-width:720px){
   .userDashboard{
     position: fixed;
@@ -890,45 +901,10 @@ li.mx-4 a.text-white , btn-mo {
     }
   }
 }
-@media (max-width:680px){
-  .about-footer,.access-footer,.Newsletters{
-    width: 100%;
-    h3{
-      font-size: 16px;
-    }
-  }
-  
-  .scrollwidth{
-    scrollbar-width:5px;
 
 
-    overflow: auto;
-    &::-webkit-scrollbar {
-      width: 2px !important;
-    }
-    &::-webkit-scrollbar-track{
-      width: 2px !important;
-    }
-    &::-webkit-scrollbar-thumb {
-      width: 2px !important;    }
 
-    &::-webkit-scrollbar-thumb:hover {
-      width: 2px !important;}
-  }
-  .pagination.my-8.flex.justify-center.items-center{
-    span{
-      margin: auto 0;
-    }
-    .material-symbols-outlined.text-2xl{
-        padding: 6px;
-      font-size: 20px;
-    }
-  }
-  
-
-}
-
-@media (max-width:480px){
+@media (max-width:500px){
   .about-footer{
       width: 100%;
       margin-top: -20px;
@@ -973,5 +949,112 @@ li.mx-4 a.text-white , btn-mo {
       }
     }
   }
-}
+  .articles{
+    background-color: #DE4A4A;
+  
 
+   
+    .box{
+      height: 350px ;
+      img{
+        width: 120px 
+      }
+    
+    }  }
+
+
+ .image-games{
+    li{
+ &:hover{
+  div{
+    display: flex;
+          }
+ }
+    }
+
+  }
+
+#swiper{
+.content-slider{
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  margin-bottom: 14px;
+  &::before{
+    display: none;
+  }
+}
+  }
+}
+@media (max-width:680px){
+  .about-footer,.access-footer,.Newsletters{
+    width: 100%;
+    h3{
+      font-size: 16px;
+    }
+  }
+  .scrollwidth{
+    scrollbar-width:5px;
+
+
+    overflow: auto;
+    &::-webkit-scrollbar {
+      width: 2px ;
+    }
+    &::-webkit-scrollbar-track{
+      width: 2px ;
+    }
+    &::-webkit-scrollbar-thumb {
+      width: 2px ;    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      width: 2px ;}
+  }
+  .pagination.my-8.flex.justify-center.items-center{
+    span{
+      margin: auto 0;
+    }
+    .material-symbols-outlined.text-2xl{
+        padding: 6px;
+      font-size: 20px;
+    }
+  }
+  .home_page{
+    .aside{
+      width: 100%;
+    }
+
+    .articles{
+      background-color: #4F0FBE !important;
+      width: 100%;
+      margin: 0;
+      .posts{
+        article{
+  .box{
+flex-direction: column;
+justify-content: center;
+align-content: center;
+text-align: center;
+    width: 100%;
+    img{
+      width: 170px;
+      padding: 0;
+      border-radius: 0px ;
+      margin: auto;
+    }
+    .post{
+      p{
+        text-align: 13px !important;
+      }
+    }
+  }
+}  
+        }
+
+      }
+  } 
+
+
+
+}
