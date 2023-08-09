@@ -203,7 +203,7 @@
     </header>
 
     <!-- search box -->
-    <div class="fixed w-full h-screen bg-black-700  search-modal  	 top-0 z-[9999] right-0"
+    <div class="fixed w-full h-screen bg-black-700  search-modal  lg:h	 top-0 z-[9999] right-0"
       style="background-color: rgba(0,0,0,0);">
       <div class="bg-white shadow-lg rounded w-[450px] p-5 h-auto box box-show transition ease-in" id="formsea">
         <div class="w-full md:w-full flex flex-col mt-2  ">
@@ -226,7 +226,7 @@
 
 
     <!-- End Navbar Menu -->
-    <main>
+    <main class="overflow-x-hidden">
       <section>
         <div class="main px-6 max-lg:px-4 mx-auto max-xl:px-0">
           <div class=" flex  mx-auto items-center max-lg:flex-wrap max-lg:mt-20 max-md:mt-14">
@@ -373,18 +373,18 @@
       </section>
 
 
-      <div class="flex p-2 mt-12 max-xl:mt-8 home_page max-lg:mx-0 max-sm:mx-4 w-auto">
-        <div class="aside ml-6  max-xl:ml-2 ">
+      <div class="flex p-2 mt-12 home_page max-xl:mt-6  max-sm:mt-4  max-lg:mx-0  ">
+        <div class="aside ml-6  max-xl:ml-0 ">
           <!-- Start Sidebar -->
-          <aside>
+          <aside class="max-sm:mx-4">
 
             <!-- start last cheat  -->
 
-            <section class="mb-10 max-sm:mb-6">
+            <section class="mb-10 max-sm:mb-6 ">
  
 
 
-                <div class="last_cheats relative w-full h-[320px] rounded-[10px] ">
+                <div class="last_cheats relative  h-[320px] max-sm:h-[300px] rounded-[10px] ">
                   <div id="swiper2" class="swiper  h-full rounded-[10px]  ">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper ">
@@ -393,26 +393,26 @@
                         <div class="slide  justify-center items-center h-full ">
                           <img src="../images/20.jpg" alt="" class="h-full absolute brightness-30 -z-20  w-full rounded-[10px] ">
                           <div class="p-3 flex justify-center h-full mb-6 items-center flex-col  max-sm:mb-4 ">
-                            <h2  class="text-[18px]  max-xl:text-[17px] text-white font-IRsansBold">ترینر بازی ماشینی</h2>
-                            <p class="text-xl mt-5 px-2 text-white font-IRsansLight leading-7 text-center max-xl:text-mxl">
+                            <h2  class="text-[18px]  max-xl:text-[17px] max-sm:text-xl text-white font-IRsansBold">ترینر بازی ماشینی</h2>
+                            <p class="text-xl max-sm:text-base mt-5 px-2 text-white font-IRsansLight leading-7 text-center max-xl:text-mxl">
                               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
                               صنعت چاپ، و با استفاده از طراحان گرافیک است،
                               چاپگرها و متون بلکه روزنامه و مجله در ستون و
                               ..سطرآنچنان که لازم است، و برای شرایط فعلی 
                               <span class="text-gold-500">[...]</span>
                             </p>
-                            <div class="mt-7 flex items-center justify-around w-[330px] max-sm:w-full">
+                            <div class="mt-7 max-sm:mt-6 max-sm:mb-1 flex items-center justify-around w-[330px] max-sm:w-full">
                                   <div class="flex flex-col">
-                                      <span class="text-gold-500 text-[17px]  max-xl:text-xl font-IRsansBold">354</span>
-                                      <span class="text-[17px] font-IRsansBold  max-xl:text-xl text-white">فروش</span>
+                                      <span class="text-gold-500 text-[17px]  max-xl:text-xl font-IRsansBold max-sm:text-mxl">354</span>
+                                      <span class="text-[17px] font-IRsansBold  max-xl:text-xl text-white max-sm:text-mxl">فروش</span>
                                   </div>
                                   <div class="flex flex-col  font-IRsansBold ">
-                                    <span class="text-gold-500 text-[17px]  max-xl:text-xl font-IRsansBold">84%</span>
-                                    <span class="text-[17px] font-IRsansBold  max-xl:text-xl text-white">رضایت</span>
+                                    <span class="text-gold-500 text-[17px]  max-xl:text-xl font-IRsansBold max-sm:text-mxl">84%</span>
+                                    <span class="text-[17px] font-IRsansBold  max-xl:text-xl text-white max-sm:text-mxl">رضایت</span>
                                 </div>
                                 <span class="text-white"> |</span>
         
-                                <span class="text-gold-500 text-[17px] max-xl:text-xl font-IRsansBold">130,000  تومان</span>
+                                <span class="text-gold-500 text-[17px] max-xl:text-xl font-IRsansBold max-sm:text-mxl">130,000  تومان</span>
         
                             </div>
                           </div>
@@ -749,7 +749,7 @@
             <!-- Start CateGory SideBar -->
 
             <section>
-              <div class="lates_post bg-white shadow-md rounded-[10px] px-8 py-6  flex flex-col mb-10 max-sm:mb-6">
+              <div class="lates_post bg-white shadow-md rounded-[10px] px-8 py-6  flex flex-col mb-10 max-sm:mb-6 max-sm:p-4">
                 <div class="header-title mb-2  items-center relative -right-2 ">
                   <div class="flex items-center">
                     <div class="bg-gray-300 w-[38px] h-[38px] text-center p-2 ml-2 rounded-md ">
@@ -757,45 +757,45 @@
                         category
                       </span>
                     </div>
-                    <h4 class="text-[17px] font-bold text-black-300 mx-[6px]">دسته بندی</h4>
+                    <h4 class="text-[17px] font-bold text-black-300 mx-[6px] max-sm:text-xl">دسته بندی</h4>
                   </div>
-                  <div class="py-3 px-3 mt-6 category-home relative h-auto">
+                  <div class="py-3 px-3 mt-6 category-home relative h-auto max-sm:mt-4">
                     <ul class="flex flex-col relative z-2">
-                      <li class="flex items-center py-4">
+                      <li class="flex items-center py-4 max-sm:py-3">
                         <span class="w-4 h-4 border-[3px] bg-white rounded-full  border-gray-500 shadow-narm "></span>
-                        <a href="#" class="text-mxl font-IRsansBold mx-4 text-black-500">ترینر بازی</a>
+                        <a href="#" class="text-mxl font-IRsansBold mx-4 text-black-500 max-sm:text-mxl">ترینر بازی</a>
                       </li>
-                      <li class="flex items-center py-4">
+                      <li class="flex items-center py-4  max-sm:py-3">
                         <span class="w-4 h-4 border-[3px] bg-white rounded-full  border-gray-500 shadow-narm "></span>
-                        <a href="#" class="text-mxl font-IRsansBold mx-4 text-black-500">چیت vip</a>
+                        <a href="#" class="text-mxl font-IRsansBold mx-4 text-black-500  max-sm:text-mxl">چیت vip</a>
                       </li>
-                      <li class="flex items-center py-4">
+                      <li class="flex items-center py-4  max-sm:py-3">
                         <span class="w-4 h-4 border-[3px] bg-white rounded-full  border-gray-500 shadow-narm "></span>
-                        <a href="#" class="text-mxl font-IRsansBold mx-4 text-black-500">آموزش ساخت چیت</a>
+                        <a href="#" class="text-mxl font-IRsansBold mx-4 text-black-500  max-sm:text-mxl">آموزش ساخت چیت</a>
                       </li>
-                      <li class="flex items-center py-4">
+                      <li class="flex items-center py-4  max-sm:py-3">
                         <span class="w-4 h-4 border-[3px] bg-white rounded-full  border-gray-500 shadow-narm "></span>
-                        <a href="#" class="text-mxl font-IRsansBold mx-4 text-black-500">چیت vip</a>
+                        <a href="#" class="text-mxl font-IRsansBold mx-4 text-black-500  max-sm:text-mxl">چیت vip</a>
                       </li>
-                      <li class="flex items-center py-4">
+                      <li class="flex items-center py-4  max-sm:py-3">
                         <span class="w-4 h-4 border-[3px] bg-white rounded-full  border-gray-500 shadow-narm "></span>
-                        <a href="#" class="text-mxl font-IRsansBold mx-4 text-black-500">چیت vip</a>
+                        <a href="#" class="text-mxl font-IRsansBold mx-4 text-black-500  max-sm:text-mxl">چیت vip</a>
                       </li>
-                      <li class="flex items-center py-4">
+                      <li class="flex items-center py-4  max-sm:py-3">
                         <span class="w-4 h-4 border-[3px] bg-white rounded-full  border-gray-500 shadow-narm "></span>
-                        <a href="#" class="text-mxl font-IRsansBold mx-4 text-black-500">چیت vip</a>
+                        <a href="#" class="text-mxl font-IRsansBold mx-4 text-black-500  max-sm:text-mxl">چیت vip</a>
                       </li>
-                      <li class="flex items-center py-4">
+                      <li class="flex items-center py-4  max-sm:py-3">
                         <span class="w-4 h-4 border-[3px] bg-white rounded-full  border-gray-500 shadow-narm "></span>
-                        <a href="#" class="text-mxl font-IRsansBold mx-4 text-black-500">چیت vip</a>
+                        <a href="#" class="text-mxl font-IRsansBold mx-4 text-black-500  max-sm:text-mxl">چیت vip</a>
                       </li>
-                      <li class="flex items-center py-4">
+                      <li class="flex items-center py-4  max-sm:py-3">
                         <span class="w-4 h-4 border-[3px] bg-white rounded-full  border-gray-500 shadow-narm "></span>
-                        <a href="#" class="text-mxl font-IRsansBold mx-4 text-black-500">چیت vip</a>
+                        <a href="#" class="text-mxl font-IRsansBold mx-4 text-black-500  max-sm:text-mxl">چیت vip</a>
                       </li>
-                      <li class="flex items-center py-4">
+                      <li class="flex items-center py-4  max-sm:py-3">
                         <span class="w-4 h-4 border-[3px] bg-white rounded-full  border-gray-500 shadow-narm "></span>
-                        <a href="#" class="text-mxl font-IRsansBold mx-4 text-black-500">چیت vip</a>
+                        <a href="#" class="text-mxl font-IRsansBold mx-4 text-black-500  max-sm:text-mxl">چیت vip</a>
                       </li>
                     </ul>
                   </div>
@@ -852,7 +852,7 @@
                       ads_click
                     </span>
                   </div>
-                  <h4 class="text-[17px] font-bold text-black-300 mx-[6px]">تبلیغات</h4>
+                  <h4 class="text-[17px] font-bold text-black-300 mx-[6px] max-sm:text-mxl">تبلیغات</h4>
 
                 </div>
                 <img src="../images/banner-for-hamyarpng.png" height="100%" width="100%" alt="تبلیغات"
@@ -866,8 +866,8 @@
           <!-- End Sidebar -->
         </div>
         <!-- Start Section posts -->
-        <div class="article mr-8 bg-gray-300  ">
-          <section class="posts">
+        <div class="article mr-8 bg-gray-300  max-lg:mr-0 ">
+          <section class="posts max-sm:mx-4 ">
             <div class="flex flex-col w-full">
               <!-- Start Article -->
               <article class="mb-8 max-sm:mb-6">
@@ -876,11 +876,11 @@
                   <div class="post">
                     <header>
                       <a href="#">
-                        <h2 class="text-black-700 text-[17px] font-IRsansBold m-4 hover:opacity-80 max-sm:text-center max-sm:m-0">Stay Human 2 Dying Light دانلود ترینر
+                        <h2 class="text-black-700 text-[17px] font-IRsansBold m-4 hover:opacity-80  max-sm:mt-3">Stay Human 2 Dying Light دانلود ترینر
                           بازی</h2>
                       </a>
                      
-                      <div class="details flex items-center px-3 w-3/4 justify-between -mt-2  max-sm:flex-wrap max-sm:w-full max-sm:justify-center mx-auto">
+                      <div class="details flex items-center px-3 w-3/4 justify-between -mt-2  max-sm:flex-wrap max-sm:w-full max-sm:justify-center max-sm:w-full max-sm:my-1">
                         <div class="date flex items-center">
                           <span class="material-symbols-outlined text-red-500 text-2xl">
                             calendar_month
@@ -907,15 +907,20 @@
                         </div>
                       </div>
                     </header>
+                    <div class="flex w-full">
+
+                    </div>
                     <p class="text-[15px] p-3 pb-0 pt-1 text-black-500 leading-7 max-xl:leading-6  max-xl:text-base  ">
                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
                       چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
                       نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در بیشتری را برای
                       طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد
-                    </p>
+                    </p> <a href="#" class="text-gold-500 text-[14px] sm:hidden  max-sm:py-6">ادامه مطلب  </a>
+
+
                     <div class="btn-continue absolute left-6 bottom-7">
                       <a href="#"
-                        class="bg-transparent font-light transition ease-in  hover:bg-gold-500 text-gold-500  hover:text-white py-1.5 px-4 max-xl:px-2 max-lg:py-0 border border-gold-500 hover:border-transparent rounded text-base">
+                        class="bg-transparent max-sm:hidden font-light transition ease-in  hover:bg-gold-500 text-gold-500  hover:text-white py-1.5 px-4  border border-gold-500 hover:border-transparent rounded text-base">
                         ادامه مطلب</a>
                     </div>
                   </div>
@@ -923,16 +928,16 @@
               </article>
 
               <article class="mb-8 max-sm:mb-6">
-                <div class="box bg-white h-[250px] rounded-[10px] p-2 flex max-2xl:h-[290px] relative">
-                  <img src="../images/image_post_1.png" class="w-[230px] h-full p-4 brightness-75 transition ease hover:brightness-100 " alt="">
+                <div class="box bg-white h-[250px] rounded-[10px] p-2 flex max-2xl:h-[290px]  relative ">
+                  <img src="../images/image_post_2.png" class="w-[230px] h-full p-4 max-sm:p-2 brightness-75 transition ease hover:brightness-100   max-lg:w-[200px]" alt="">
                   <div class="post">
                     <header>
                       <a href="#">
-                        <h1 class="text-black-700 text-[17px] font-IRsansBold m-4 hover:opacity-80 ">Stay Human 2 Dying Light دانلود ترینر
-                          بازی</h1>
+                        <h2 class="text-black-700 text-[17px] font-IRsansBold m-4 hover:opacity-80  max-sm:mt-3">Stay Human 2 Dying Light دانلود ترینر
+                          بازی</h2>
                       </a>
                      
-                      <div class="details flex items-center px-3 w-3/4 justify-between -mt-2  max-sm:flex-wrap max-sm:w-full max-sm:justify-center max-sm:w-full">
+                      <div class="details flex items-center px-3 w-3/4 justify-between -mt-2  max-sm:flex-wrap max-sm:w-full max-sm:justify-center max-sm:w-full max-sm:my-1">
                         <div class="date flex items-center">
                           <span class="material-symbols-outlined text-red-500 text-2xl">
                             calendar_month
@@ -959,31 +964,36 @@
                         </div>
                       </div>
                     </header>
-                    <p class="text-[14.5px] p-3 pb-0 pt-1 text-black-500 leading-7 max-xl:leading-6  max-xl:text-base ">
+                    <div class="flex w-full">
+
+                    </div>
+                    <p class="text-[15px] p-3 pb-0 pt-1 text-black-500 leading-7 max-xl:leading-6  max-xl:text-base  ">
                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
                       چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
                       نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در بیشتری را برای
                       طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد
-                    </p>
+                    </p> <a href="#" class="text-gold-500 text-[14px] sm:hidden  max-sm:py-6">ادامه مطلب  </a>
+
+
                     <div class="btn-continue absolute left-6 bottom-7">
                       <a href="#"
-                        class="bg-transparent font-light transition ease-in  hover:bg-gold-500 text-gold-500  hover:text-white py-1.5 px-4 border border-gold-500 hover:border-transparent rounded text-base">
+                        class="bg-transparent max-sm:hidden font-light transition ease-in  hover:bg-gold-500 text-gold-500  hover:text-white py-1.5 px-4  border border-gold-500 hover:border-transparent rounded text-base">
                         ادامه مطلب</a>
                     </div>
                   </div>
                 </div>
               </article>
               <article class="mb-8 max-sm:mb-6">
-                <div class="box bg-white h-[250px] rounded-[10px] p-2 flex max-2xl:h-[290px] relative">
-                  <img src="../images/image_post_2.png" class="w-[230px] h-full p-4 brightness-75 transition ease hover:brightness-100   max-lg:w-[200px]" alt="">
+                <div class="box bg-white h-[250px] rounded-[10px] p-2 flex max-2xl:h-[290px]  relative ">
+                  <img src="../images/image_post_2.png" class="w-[230px] h-full p-4 max-sm:p-2 brightness-75 transition ease hover:brightness-100   max-lg:w-[200px]" alt="">
                   <div class="post">
                     <header>
                       <a href="#">
-                        <h1 class="text-black-700 text-[17px] font-IRsansBold m-4 hover:opacity-80 ">Stay Human 2 Dying Light دانلود ترینر
-                          بازی</h1>
+                        <h2 class="text-black-700 text-[17px] font-IRsansBold m-4 hover:opacity-80  max-sm:mt-3">Stay Human 2 Dying Light دانلود ترینر
+                          بازی</h2>
                       </a>
                      
-                      <div class="details flex items-center px-3 w-3/4 justify-between -mt-2  max-sm:flex-wrap max-sm:w-full max-sm:justify-center max-sm:w-full">
+                      <div class="details flex items-center px-3 w-3/4 justify-between -mt-2  max-sm:flex-wrap max-sm:w-full max-sm:justify-center max-sm:w-full max-sm:my-1">
                         <div class="date flex items-center">
                           <span class="material-symbols-outlined text-red-500 text-2xl">
                             calendar_month
@@ -1010,31 +1020,36 @@
                         </div>
                       </div>
                     </header>
-                    <p class="text-[14.5px] p-3 pb-0 pt-1 text-black-500 leading-7 max-xl:leading-6  max-xl:text-base ">
+                    <div class="flex w-full">
+
+                    </div>
+                    <p class="text-[15px] p-3 pb-0 pt-1 text-black-500 leading-7 max-xl:leading-6  max-xl:text-base  ">
                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
                       چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
                       نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در بیشتری را برای
                       طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد
-                    </p>
+                    </p> <a href="#" class="text-gold-500 text-[14px] sm:hidden  max-sm:py-6">ادامه مطلب  </a>
+
+
                     <div class="btn-continue absolute left-6 bottom-7">
                       <a href="#"
-                        class="bg-transparent font-light transition ease-in  hover:bg-gold-500 text-gold-500  hover:text-white py-1.5 px-4 border border-gold-500 hover:border-transparent rounded text-base">
+                        class="bg-transparent max-sm:hidden font-light transition ease-in  hover:bg-gold-500 text-gold-500  hover:text-white py-1.5 px-4  border border-gold-500 hover:border-transparent rounded text-base">
                         ادامه مطلب</a>
                     </div>
                   </div>
                 </div>
               </article>
               <article class="mb-8 max-sm:mb-6">
-                <div class="box bg-white h-[250px] rounded-[10px] p-2 flex max-2xl:h-[290px] relative">
-                  <img src="../images/image_post_1.png" class="w-[230px] h-full p-4 brightness-75 transition ease hover:brightness-100 " alt="">
+                <div class="box bg-white h-[250px] rounded-[10px] p-2 flex max-2xl:h-[290px]  relative ">
+                  <img src="../images/image_post_2.png" class="w-[230px] h-full p-4 max-sm:p-2 brightness-75 transition ease hover:brightness-100   max-lg:w-[200px]" alt="">
                   <div class="post">
                     <header>
                       <a href="#">
-                        <h1 class="text-black-700 text-[17px] font-IRsansBold m-4 hover:opacity-80 ">Stay Human 2 Dying Light دانلود ترینر
-                          بازی</h1>
+                        <h2 class="text-black-700 text-[17px] font-IRsansBold m-4 hover:opacity-80  max-sm:mt-3">Stay Human 2 Dying Light دانلود ترینر
+                          بازی</h2>
                       </a>
                      
-                      <div class="details flex items-center px-3 w-3/4 justify-between -mt-2  max-sm:flex-wrap max-sm:w-full max-sm:justify-center max-sm:w-full">
+                      <div class="details flex items-center px-3 w-3/4 justify-between -mt-2  max-sm:flex-wrap max-sm:w-full max-sm:justify-center max-sm:w-full max-sm:my-1">
                         <div class="date flex items-center">
                           <span class="material-symbols-outlined text-red-500 text-2xl">
                             calendar_month
@@ -1061,31 +1076,36 @@
                         </div>
                       </div>
                     </header>
-                    <p class="text-[14.5px] p-3 pb-0 pt-1 text-black-500 leading-7 max-xl:leading-6  max-xl:text-base ">
+                    <div class="flex w-full">
+
+                    </div>
+                    <p class="text-[15px] p-3 pb-0 pt-1 text-black-500 leading-7 max-xl:leading-6  max-xl:text-base  ">
                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
                       چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
                       نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در بیشتری را برای
                       طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد
-                    </p>
+                    </p> <a href="#" class="text-gold-500 text-[14px] sm:hidden  max-sm:py-6">ادامه مطلب  </a>
+
+
                     <div class="btn-continue absolute left-6 bottom-7">
                       <a href="#"
-                        class="bg-transparent font-light transition ease-in  hover:bg-gold-500 text-gold-500  hover:text-white py-1.5 px-4 border border-gold-500 hover:border-transparent rounded text-base">
+                        class="bg-transparent max-sm:hidden font-light transition ease-in  hover:bg-gold-500 text-gold-500  hover:text-white py-1.5 px-4  border border-gold-500 hover:border-transparent rounded text-base">
                         ادامه مطلب</a>
                     </div>
                   </div>
                 </div>
               </article>
               <article class="mb-8 max-sm:mb-6">
-                <div class="box bg-white h-[250px] rounded-[10px] p-2 flex max-2xl:h-[290px] relative">
-                  <img src="../images/image_post_3.png" class="w-64 h-full p-4 " alt="">
+                <div class="box bg-white h-[250px] rounded-[10px] p-2 flex max-2xl:h-[290px]  relative ">
+                  <img src="../images/image_post_2.png" class="w-[230px] h-full p-4 max-sm:p-2 brightness-75 transition ease hover:brightness-100   max-lg:w-[200px]" alt="">
                   <div class="post">
                     <header>
                       <a href="#">
-                        <h1 class="text-black-700 text-[17px] font-IRsansBold m-4 hover:opacity-80 ">Stay Human 2 Dying Light دانلود ترینر
-                          بازی</h1>
+                        <h2 class="text-black-700 text-[17px] font-IRsansBold m-4 hover:opacity-80  max-sm:mt-3">Stay Human 2 Dying Light دانلود ترینر
+                          بازی</h2>
                       </a>
                      
-                      <div class="details flex items-center px-3 w-3/4 justify-between -mt-2  max-sm:flex-wrap max-sm:w-full max-sm:justify-center max-sm:w-full">
+                      <div class="details flex items-center px-3 w-3/4 justify-between -mt-2  max-sm:flex-wrap max-sm:w-full max-sm:justify-center max-sm:w-full max-sm:my-1">
                         <div class="date flex items-center">
                           <span class="material-symbols-outlined text-red-500 text-2xl">
                             calendar_month
@@ -1112,31 +1132,36 @@
                         </div>
                       </div>
                     </header>
-                    <p class="text-[14.5px] p-3 pb-0 pt-1 text-black-500 leading-7 max-xl:leading-6  max-xl:text-base ">
+                    <div class="flex w-full">
+
+                    </div>
+                    <p class="text-[15px] p-3 pb-0 pt-1 text-black-500 leading-7 max-xl:leading-6  max-xl:text-base  ">
                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
                       چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
                       نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در بیشتری را برای
                       طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد
-                    </p>
+                    </p> <a href="#" class="text-gold-500 text-[14px] sm:hidden  max-sm:py-6">ادامه مطلب  </a>
+
+
                     <div class="btn-continue absolute left-6 bottom-7">
                       <a href="#"
-                        class="bg-transparent font-light transition ease-in  hover:bg-gold-500 text-gold-500  hover:text-white py-1.5 px-4 border border-gold-500 hover:border-transparent rounded text-base">
+                        class="bg-transparent max-sm:hidden font-light transition ease-in  hover:bg-gold-500 text-gold-500  hover:text-white py-1.5 px-4  border border-gold-500 hover:border-transparent rounded text-base">
                         ادامه مطلب</a>
                     </div>
                   </div>
                 </div>
               </article>
-              <article class="mb-8 ">
-                <div class="box bg-white h-[250px] rounded-[10px] p-2 flex max-2xl:h-[290px] relative">
-                  <img src="../images/image_post_1.png" class="w-64 h-full p-4" alt="">
+              <article class="mb-8 max-sm:mb-6">
+                <div class="box bg-white h-[250px] rounded-[10px] p-2 flex max-2xl:h-[290px]  relative ">
+                  <img src="../images/image_post_2.png" class="w-[230px] h-full p-4 max-sm:p-2 brightness-75 transition ease hover:brightness-100   max-lg:w-[200px]" alt="">
                   <div class="post">
                     <header>
                       <a href="#">
-                        <h1 class="text-black-700 text-[17px] font-IRsansBold m-4 hover:opacity-80 ">Stay Human 2 Dying Light دانلود ترینر
-                          بازی</h1>
+                        <h2 class="text-black-700 text-[17px] font-IRsansBold m-4 hover:opacity-80  max-sm:mt-3">Stay Human 2 Dying Light دانلود ترینر
+                          بازی</h2>
                       </a>
                      
-                      <div class="details flex items-center px-3 w-3/4 justify-between -mt-2  max-sm:flex-wrap max-sm:w-full max-sm:justify-center max-sm:w-full">
+                      <div class="details flex items-center px-3 w-3/4 justify-between -mt-2  max-sm:flex-wrap max-sm:w-full max-sm:justify-center max-sm:w-full max-sm:my-1">
                         <div class="date flex items-center">
                           <span class="material-symbols-outlined text-red-500 text-2xl">
                             calendar_month
@@ -1163,31 +1188,36 @@
                         </div>
                       </div>
                     </header>
-                    <p class="text-[14.5px] p-3 pb-0 pt-1 text-black-500 leading-7 max-xl:leading-6  max-xl:text-base ">
+                    <div class="flex w-full">
+
+                    </div>
+                    <p class="text-[15px] p-3 pb-0 pt-1 text-black-500 leading-7 max-xl:leading-6  max-xl:text-base  ">
                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
                       چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
                       نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در بیشتری را برای
                       طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد
-                    </p>
+                    </p> <a href="#" class="text-gold-500 text-[14px] sm:hidden  max-sm:py-6">ادامه مطلب  </a>
+
+
                     <div class="btn-continue absolute left-6 bottom-7">
                       <a href="#"
-                        class="bg-transparent font-light transition ease-in  hover:bg-gold-500 text-gold-500  hover:text-white py-1.5 px-4 border border-gold-500 hover:border-transparent rounded text-base">
+                        class="bg-transparent max-sm:hidden font-light transition ease-in  hover:bg-gold-500 text-gold-500  hover:text-white py-1.5 px-4  border border-gold-500 hover:border-transparent rounded text-base">
                         ادامه مطلب</a>
                     </div>
                   </div>
                 </div>
               </article>
-               <article class="mb-8 max-sm:mb-6">
-                <div class="box bg-white h-[250px] rounded-[10px] p-2 flex max-2xl:h-[290px] relative">
-                  <img src="../images/image_post_3.png" class="w-[230px] h-full p-4 brightness-75 transition ease hover:brightness-100" alt="">
+              <article class="mb-8 max-sm:mb-6">
+                <div class="box bg-white h-[250px] rounded-[10px] p-2 flex max-2xl:h-[290px]  relative ">
+                  <img src="../images/image_post_2.png" class="w-[230px] h-full p-4 max-sm:p-2 brightness-75 transition ease hover:brightness-100   max-lg:w-[200px]" alt="">
                   <div class="post">
                     <header>
                       <a href="#">
-                        <h1 class="text-black-700 text-[17px] font-IRsansBold m-4 hover:opacity-80 ">Stay Human 2 Dying Light دانلود ترینر
-                          بازی</h1>
+                        <h2 class="text-black-700 text-[17px] font-IRsansBold m-4 hover:opacity-80  max-sm:mt-3">Stay Human 2 Dying Light دانلود ترینر
+                          بازی</h2>
                       </a>
                      
-                      <div class="details flex items-center px-3 w-3/4 justify-between -mt-2  max-sm:flex-wrap max-sm:w-full max-sm:justify-center max-sm:w-full">
+                      <div class="details flex items-center px-3 w-3/4 justify-between -mt-2  max-sm:flex-wrap max-sm:w-full max-sm:justify-center max-sm:w-full max-sm:my-1">
                         <div class="date flex items-center">
                           <span class="material-symbols-outlined text-red-500 text-2xl">
                             calendar_month
@@ -1214,15 +1244,132 @@
                         </div>
                       </div>
                     </header>
-                    <p class="text-[14.5px] p-3 pb-0 pt-1 text-black-500 leading-7 max-xl:leading-6  max-xl:text-base ">
+                    <div class="flex w-full">
+
+                    </div>
+                    <p class="text-[15px] p-3 pb-0 pt-1 text-black-500 leading-7 max-xl:leading-6  max-xl:text-base  ">
                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
                       چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
                       نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در بیشتری را برای
                       طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد
-                    </p>
+                    </p> <a href="#" class="text-gold-500 text-[14px] sm:hidden  max-sm:py-6">ادامه مطلب  </a>
+
+
                     <div class="btn-continue absolute left-6 bottom-7">
                       <a href="#"
-                        class="bg-transparent font-light transition ease-in  hover:bg-gold-500 text-gold-500  hover:text-white py-1.5 px-4 border border-gold-500 hover:border-transparent rounded text-base">
+                        class="bg-transparent max-sm:hidden font-light transition ease-in  hover:bg-gold-500 text-gold-500  hover:text-white py-1.5 px-4  border border-gold-500 hover:border-transparent rounded text-base">
+                        ادامه مطلب</a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="mb-8 max-sm:mb-6">
+                <div class="box bg-white h-[250px] rounded-[10px] p-2 flex max-2xl:h-[290px]  relative ">
+                  <img src="../images/image_post_2.png" class="w-[230px] h-full p-4 max-sm:p-2 brightness-75 transition ease hover:brightness-100   max-lg:w-[200px]" alt="">
+                  <div class="post">
+                    <header>
+                      <a href="#">
+                        <h2 class="text-black-700 text-[17px] font-IRsansBold m-4 hover:opacity-80  max-sm:mt-3">Stay Human 2 Dying Light دانلود ترینر
+                          بازی</h2>
+                      </a>
+                     
+                      <div class="details flex items-center px-3 w-3/4 justify-between -mt-2  max-sm:flex-wrap max-sm:w-full max-sm:justify-center max-sm:w-full max-sm:my-1">
+                        <div class="date flex items-center">
+                          <span class="material-symbols-outlined text-red-500 text-2xl">
+                            calendar_month
+                          </span>
+                          <span class="text-black-500 text-sm mx-2">
+                            5 آذر 1399
+                          </span>
+                        </div>
+                        <div class="tag flex items-center">
+                          <span class="material-symbols-outlined text-green text-2xl">
+                            bookmark
+                          </span>
+                          <span class="text-black-500 text-sm mx-2">
+                            چیت و ترینر
+                          </span>
+                        </div>
+                        <div class="tag flex items-center">
+                          <span class="material-symbols-outlined text-purple text-2xl">
+                            comment
+                          </span>
+                          <span class="text-black-500 text-sm mx-2">
+                            5
+                          </span>
+                        </div>
+                      </div>
+                    </header>
+                    <div class="flex w-full">
+
+                    </div>
+                    <p class="text-[15px] p-3 pb-0 pt-1 text-black-500 leading-7 max-xl:leading-6  max-xl:text-base  ">
+                      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                      چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
+                      نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در بیشتری را برای
+                      طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد
+                    </p> <a href="#" class="text-gold-500 text-[14px] sm:hidden  max-sm:py-6">ادامه مطلب  </a>
+
+
+                    <div class="btn-continue absolute left-6 bottom-7">
+                      <a href="#"
+                        class="bg-transparent max-sm:hidden font-light transition ease-in  hover:bg-gold-500 text-gold-500  hover:text-white py-1.5 px-4  border border-gold-500 hover:border-transparent rounded text-base">
+                        ادامه مطلب</a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="mb-8 max-sm:mb-6">
+                <div class="box bg-white h-[250px] rounded-[10px] p-2 flex max-2xl:h-[290px]  relative ">
+                  <img src="../images/image_post_2.png" class="w-[230px] h-full p-4 max-sm:p-2 brightness-75 transition ease hover:brightness-100   max-lg:w-[200px]" alt="">
+                  <div class="post">
+                    <header>
+                      <a href="#">
+                        <h2 class="text-black-700 text-[17px] font-IRsansBold m-4 hover:opacity-80  max-sm:mt-3">Stay Human 2 Dying Light دانلود ترینر
+                          بازی</h2>
+                      </a>
+                     
+                      <div class="details flex items-center px-3 w-3/4 justify-between -mt-2  max-sm:flex-wrap max-sm:w-full max-sm:justify-center max-sm:w-full max-sm:my-1">
+                        <div class="date flex items-center">
+                          <span class="material-symbols-outlined text-red-500 text-2xl">
+                            calendar_month
+                          </span>
+                          <span class="text-black-500 text-sm mx-2">
+                            5 آذر 1399
+                          </span>
+                        </div>
+                        <div class="tag flex items-center">
+                          <span class="material-symbols-outlined text-green text-2xl">
+                            bookmark
+                          </span>
+                          <span class="text-black-500 text-sm mx-2">
+                            چیت و ترینر
+                          </span>
+                        </div>
+                        <div class="tag flex items-center">
+                          <span class="material-symbols-outlined text-purple text-2xl">
+                            comment
+                          </span>
+                          <span class="text-black-500 text-sm mx-2">
+                            5
+                          </span>
+                        </div>
+                      </div>
+                    </header>
+                    <div class="flex w-full">
+
+                    </div>
+                    <p class="text-[15px] p-3 pb-0 pt-1 text-black-500 leading-7 max-xl:leading-6  max-xl:text-base  ">
+                      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                      چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
+                      نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در بیشتری را برای
+                      طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد
+                    </p> <a href="#" class="text-gold-500 text-[14px] sm:hidden  max-sm:py-6">ادامه مطلب  </a>
+
+
+                    <div class="btn-continue absolute left-6 bottom-7">
+                      <a href="#"
+                        class="bg-transparent max-sm:hidden font-light transition ease-in  hover:bg-gold-500 text-gold-500  hover:text-white py-1.5 px-4  border border-gold-500 hover:border-transparent rounded text-base">
                         ادامه مطلب</a>
                     </div>
                   </div>
