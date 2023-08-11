@@ -1329,6 +1329,10 @@ body {
   margin-top: -0.25rem;
 }
 
+.-mr-4 {
+  margin-right: -1rem;
+}
+
 .block {
   display: block;
 }
@@ -1927,6 +1931,22 @@ body {
 
 .w-56 {
   width: 14rem;
+}
+
+.w-\[220PX\] {
+  width: 220PX;
+}
+
+.w-\[200PX\] {
+  width: 200PX;
+}
+
+.w-\[180PX\] {
+  width: 180PX;
+}
+
+.w-\[90px\] {
+  width: 90px;
 }
 
 .min-w-0 {
@@ -2628,6 +2648,10 @@ body {
 
 .pt-16 {
   padding-top: 4rem;
+}
+
+.pt-14 {
+  padding-top: 3.5rem;
 }
 
 .text-left {
@@ -3492,6 +3516,11 @@ body {
     margin: 0.5rem;
   }
 
+  .max-xl\:mx-14 {
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+  }
+
   .max-xl\:mr-4 {
     margin-right: 1rem;
   }
@@ -3512,12 +3541,28 @@ body {
     margin-top: -0.75rem;
   }
 
+  .max-xl\:ml-2 {
+    margin-left: 0.5rem;
+  }
+
+  .max-xl\:mt-16 {
+    margin-top: 4rem;
+  }
+
+  .max-xl\:mt-14 {
+    margin-top: 3.5rem;
+  }
+
   .max-xl\:h-\[430px\] {
     height: 430px;
   }
 
   .max-xl\:h-\[80px\] {
     height: 80px;
+  }
+
+  .max-xl\:h-\[400px\] {
+    height: 400px;
   }
 
   .max-xl\:w-\[550px\] {
@@ -3556,6 +3601,38 @@ body {
     width: 80px;
   }
 
+  .max-xl\:w-\[65\%\] {
+    width: 65%;
+  }
+
+  .max-xl\:w-\[35\%\] {
+    width: 35%;
+  }
+
+  .max-xl\:w-\[69\%\] {
+    width: 69%;
+  }
+
+  .max-xl\:w-\[31\%\] {
+    width: 31%;
+  }
+
+  .max-xl\:w-96 {
+    width: 24rem;
+  }
+
+  .max-xl\:w-\[360px\] {
+    width: 360px;
+  }
+
+  .max-xl\:w-\[320px\] {
+    width: 320px;
+  }
+
+  .max-xl\:w-\[340px\] {
+    width: 340px;
+  }
+
   .max-xl\:border-\[4px\] {
     border-width: 4px;
   }
@@ -3566,6 +3643,10 @@ body {
 
   .max-xl\:p-9 {
     padding: 2.25rem;
+  }
+
+  .max-xl\:p-3 {
+    padding: 0.75rem;
   }
 
   .max-xl\:px-0 {
@@ -3586,6 +3667,19 @@ body {
   .max-xl\:py-2 {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+  }
+
+  .max-xl\:px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .max-xl\:pb-1 {
+    padding-bottom: 0.25rem;
+  }
+
+  .max-xl\:pt-10 {
+    padding-top: 2.5rem;
   }
 
   .max-xl\:text-\[19px\] {
@@ -3647,6 +3741,16 @@ body {
   .max-lg\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
+  }
+
+  .max-lg\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .max-lg\:mx-10 {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
   }
 
   .max-lg\:mt-8 {
@@ -3717,6 +3821,26 @@ body {
     margin-top: 3.5rem;
   }
 
+  .max-lg\:mt-6 {
+    margin-top: 1.5rem;
+  }
+
+  .max-lg\:mr-6 {
+    margin-right: 1.5rem;
+  }
+
+  .max-lg\:mt-12 {
+    margin-top: 3rem;
+  }
+
+  .max-lg\:-mr-6 {
+    margin-right: -1.5rem;
+  }
+
+  .max-lg\:-mr-4 {
+    margin-right: -1rem;
+  }
+
   .max-lg\:hidden {
     display: none;
   }
@@ -3735,6 +3859,18 @@ body {
 
   .max-lg\:h-auto {
     height: auto;
+  }
+
+  .max-lg\:h-\[350px\] {
+    height: 350px;
+  }
+
+  .max-lg\:h-\[320px\] {
+    height: 320px;
+  }
+
+  .max-lg\:h-\[80px\] {
+    height: 80px;
   }
 
   .max-lg\:w-\[95\%\] {
@@ -3793,6 +3929,10 @@ body {
     justify-content: flex-start;
   }
 
+  .max-lg\:justify-center {
+    justify-content: center;
+  }
+
   .max-lg\:justify-between {
     justify-content: space-between;
   }
@@ -3812,6 +3952,10 @@ body {
 
   .max-lg\:p-0 {
     padding: 0px;
+  }
+
+  .max-lg\:p-2 {
+    padding: 0.5rem;
   }
 
   .max-lg\:px-4 {
@@ -3848,6 +3992,26 @@ body {
 
   .max-lg\:pt-0 {
     padding-top: 0px;
+  }
+
+  .max-lg\:pt-2 {
+    padding-top: 0.5rem;
+  }
+
+  .max-lg\:pt-12 {
+    padding-top: 3rem;
+  }
+
+  .max-lg\:pt-10 {
+    padding-top: 2.5rem;
+  }
+
+  .max-lg\:pt-8 {
+    padding-top: 2rem;
+  }
+
+  .max-lg\:text-center {
+    text-align: center;
   }
 
   .max-lg\:text-\[24px\] {
@@ -3998,6 +4162,10 @@ body {
     height: 60px;
   }
 
+  .max-md\:h-\[75px\] {
+    height: 75px;
+  }
+
   .max-md\:w-\[300px\] {
     width: 300px;
   }
@@ -4030,8 +4198,16 @@ body {
     width: 60px;
   }
 
+  .max-md\:justify-start {
+    justify-content: flex-start;
+  }
+
   .max-md\:justify-center {
     justify-content: center;
+  }
+
+  .max-md\:justify-around {
+    justify-content: space-around;
   }
 
   .max-md\:p-3 {
@@ -4069,6 +4245,16 @@ body {
   .max-md\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  .max-md\:py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .max-md\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   .max-md\:text-center {
@@ -4261,6 +4447,22 @@ body {
     height: 420px;
   }
 
+  .max-sm\:h-\[250px\] {
+    height: 250px;
+  }
+
+  .max-sm\:h-\[270px\] {
+    height: 270px;
+  }
+
+  .max-sm\:h-\[240px\] {
+    height: 240px;
+  }
+
+  .max-sm\:h-\[220px\] {
+    height: 220px;
+  }
+
   .max-sm\:w-6 {
     width: 1.5rem;
   }
@@ -4321,6 +4523,10 @@ body {
     justify-content: center;
   }
 
+  .max-sm\:justify-between {
+    justify-content: space-between;
+  }
+
   .max-sm\:p-1 {
     padding: 0.25rem;
   }
@@ -4331,6 +4537,10 @@ body {
 
   .max-sm\:p-2 {
     padding: 0.5rem;
+  }
+
+  .max-sm\:p-3 {
+    padding: 0.75rem;
   }
 
   .max-sm\:px-2 {
@@ -4418,6 +4628,10 @@ body {
     font-size: 30px;
   }
 
+  .max-sm\:text-\[17px\] {
+    font-size: 17px;
+  }
+
   .max-sm\:font-normal {
     font-weight: 400;
   }
@@ -4427,6 +4641,22 @@ body {
   .sm\:-mx-6 {
     margin-left: -1.5rem;
     margin-right: -1.5rem;
+  }
+
+  .sm\:ml-3 {
+    margin-left: 0.75rem;
+  }
+
+  .sm\:mr-3 {
+    margin-right: 0.75rem;
+  }
+
+  .sm\:ml-2 {
+    margin-left: 0.5rem;
+  }
+
+  .sm\:mr-2 {
+    margin-right: 0.5rem;
   }
 
   .sm\:hidden {
@@ -4454,6 +4684,10 @@ body {
 
   .md\:mb-4 {
     margin-bottom: 1rem;
+  }
+
+  .md\:mt-6 {
+    margin-top: 1.5rem;
   }
 
   .md\:w-full {
@@ -4505,12 +4739,21 @@ body {
     margin-right: -2rem;
   }
 
+  .lg\:my-6 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
   .lg\:mt-12 {
     margin-top: 3rem;
   }
 
   .lg\:mb-10 {
     margin-bottom: 2.5rem;
+  }
+
+  .lg\:mb-6 {
+    margin-bottom: 1.5rem;
   }
 
   .lg\:hidden {
@@ -4560,6 +4803,22 @@ body {
 
   .xl\:w-96 {
     width: 24rem;
+  }
+
+  .xl\:w-3\/5 {
+    width: 60%;
+  }
+
+  .xl\:w-2\/5 {
+    width: 40%;
+  }
+
+  .xl\:w-2\/3 {
+    width: 66.666667%;
+  }
+
+  .xl\:w-1\/3 {
+    width: 33.333333%;
   }
 
   .xl\:px-20 {
