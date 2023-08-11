@@ -1569,6 +1569,10 @@ body {
   height: 380px;
 }
 
+.h-\[400px\] {
+  height: 400px;
+}
+
 .h-\[1px\] {
   height: 1px;
 }
@@ -1923,10 +1927,6 @@ body {
 
 .w-56 {
   width: 14rem;
-}
-
-.w-screen {
-  width: 100vw;
 }
 
 .min-w-0 {
@@ -3462,6 +3462,22 @@ body {
     height: 290px;
   }
 
+  .max-2xl\:h-full {
+    height: 100%;
+  }
+
+  .max-2xl\:w-2\/5 {
+    width: 40%;
+  }
+
+  .max-2xl\:w-3\/5 {
+    width: 60%;
+  }
+
+  .max-2xl\:justify-center {
+    justify-content: center;
+  }
+
   .max-2xl\:p-12 {
     padding: 3rem;
   }
@@ -3697,6 +3713,10 @@ body {
     margin-top: 0px;
   }
 
+  .max-lg\:mt-14 {
+    margin-top: 3.5rem;
+  }
+
   .max-lg\:hidden {
     display: none;
   }
@@ -3854,6 +3874,10 @@ body {
     font-size: 17px;
   }
 
+  .max-lg\:text-2xl {
+    font-size: 20px;
+  }
+
   .max-lg\:text-\[\#000\] {
     --tw-text-opacity: 1;
     color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -3934,6 +3958,10 @@ body {
     margin-bottom: 1.5rem;
   }
 
+  .max-md\:mt-8 {
+    margin-top: 2rem;
+  }
+
   .max-md\:hidden {
     display: none;
   }
@@ -3962,6 +3990,14 @@ body {
     height: 65px;
   }
 
+  .max-md\:h-\[55px\] {
+    height: 55px;
+  }
+
+  .max-md\:h-\[60px\] {
+    height: 60px;
+  }
+
   .max-md\:w-\[300px\] {
     width: 300px;
   }
@@ -3988,6 +4024,10 @@ body {
 
   .max-md\:w-4\/5 {
     width: 80%;
+  }
+
+  .max-md\:w-\[60px\] {
+    width: 60px;
   }
 
   .max-md\:justify-center {
@@ -4070,6 +4110,14 @@ body {
   .max-md\:text-\[34px\] {
     font-size: 34px;
   }
+
+  .max-md\:text-\[26px\] {
+    font-size: 26px;
+  }
+
+  .max-md\:text-\[17px\] {
+    font-size: 17px;
+  }
 }
 
 @media not all and (min-width: 640px) {
@@ -4083,6 +4131,18 @@ body {
 
   .max-sm\:left-5 {
     left: 1.25rem;
+  }
+
+  .max-sm\:right-2 {
+    right: 0.5rem;
+  }
+
+  .max-sm\:top-2 {
+    top: 0.5rem;
+  }
+
+  .max-sm\:left-0 {
+    left: 0px;
   }
 
   .max-sm\:mx-2 {
@@ -4103,11 +4163,6 @@ body {
   .max-sm\:my-1 {
     margin-top: 0.25rem;
     margin-bottom: 0.25rem;
-  }
-
-  .max-sm\:mx-8 {
-    margin-left: 2rem;
-    margin-right: 2rem;
   }
 
   .max-sm\:mr-0 {
@@ -4142,12 +4197,24 @@ body {
     margin-top: 0.75rem;
   }
 
+  .max-sm\:mt-1 {
+    margin-top: 0.25rem;
+  }
+
   .max-sm\:mt-2 {
     margin-top: 0.5rem;
   }
 
-  .max-sm\:mt-1 {
-    margin-top: 0.25rem;
+  .max-sm\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .max-sm\:ml-0 {
+    margin-left: 0px;
+  }
+
+  .max-sm\:mt-8 {
+    margin-top: 2rem;
   }
 
   .max-sm\:hidden {
@@ -4178,8 +4245,20 @@ body {
     height: 300px;
   }
 
-  .max-sm\:h-\[280px\] {
-    height: 280px;
+  .max-sm\:h-\[55px\] {
+    height: 55px;
+  }
+
+  .max-sm\:h-\[45px\] {
+    height: 45px;
+  }
+
+  .max-sm\:h-9 {
+    height: 2.25rem;
+  }
+
+  .max-sm\:h-\[420px\] {
+    height: 420px;
   }
 
   .max-sm\:w-6 {
@@ -4206,8 +4285,32 @@ body {
     width: 700px;
   }
 
+  .max-sm\:w-\[55px\] {
+    width: 55px;
+  }
+
+  .max-sm\:w-\[45px\] {
+    width: 45px;
+  }
+
+  .max-sm\:w-9 {
+    width: 2.25rem;
+  }
+
+  .max-sm\:w-\[90\%\] {
+    width: 90%;
+  }
+
+  .max-sm\:w-28 {
+    width: 7rem;
+  }
+
   .max-sm\:flex-col {
     flex-direction: column;
+  }
+
+  .max-sm\:flex-col-reverse {
+    flex-direction: column-reverse;
   }
 
   .max-sm\:flex-wrap {
@@ -4235,6 +4338,11 @@ body {
     padding-right: 0.5rem;
   }
 
+  .max-sm\:py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
   .max-sm\:py-6 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
@@ -4245,14 +4353,9 @@ body {
     padding-right: 0px;
   }
 
-  .max-sm\:py-3 {
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-  }
-
-  .max-sm\:py-4 {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+  .max-sm\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .max-sm\:pt-1 {
@@ -4291,20 +4394,28 @@ body {
     font-size: 13px;
   }
 
-  .max-sm\:text-\[16px\] {
-    font-size: 16px;
-  }
-
   .max-sm\:text-base {
     font-size: 14px;
+  }
+
+  .max-sm\:text-mxl {
+    font-size: 15px;
+  }
+
+  .max-sm\:text-\[16px\] {
+    font-size: 16px;
   }
 
   .max-sm\:text-\[21px\] {
     font-size: 21px;
   }
 
-  .max-sm\:text-mxl {
-    font-size: 15px;
+  .max-sm\:text-2xl {
+    font-size: 20px;
+  }
+
+  .max-sm\:text-\[30px\] {
+    font-size: 30px;
   }
 
   .max-sm\:font-normal {
