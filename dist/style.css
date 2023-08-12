@@ -4400,6 +4400,10 @@ body {
     margin-top: 2.5rem;
   }
 
+  .max-sm\:mb-0 {
+    margin-bottom: 0px;
+  }
+
   .max-sm\:hidden {
     display: none;
   }
