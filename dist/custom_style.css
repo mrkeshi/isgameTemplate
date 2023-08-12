@@ -885,4 +885,25 @@ li.mx-4 a.text-white:hover span, btn-mo:hover span {
   .rating {
     width: 110px;
   }
+  .answer-comment {
+    position: relative;
+    margin-right: 10px;
+  }
+  .answer-comment::before {
+    content: "";
+    width: 10px;
+    height: 1px;
+    right: -10px;
+    top: 35px;
+  }
+  .answer-comment::after {
+    content: "";
+    display: block;
+    height: 77px;
+    width: 1px;
+    background-color: #FFCD17;
+    position: absolute;
+    right: -10px;
+    top: -41px;
+  }
 }/*# sourceMappingURL=custom_style.css.map */
