@@ -419,8 +419,8 @@ Joan of Arc انگلیس را شکست دهید و یا در نقش چنگیزخ
   </div>
 
   <div class="input-group relative flex flex-wrap items-stretch w-96 mb-4 rounded my-6 mt-0 mx-auto max-sm:w-full">
-    <input type="search" class="form-control relative flex-auto min-w-0 block  px-3 py-1 text-base font-normal text-black-500 bg-gray-300 h-[55px]  bg-clip-padding border-none rounded-full transition ease-in-out m-0  text-left px-6 focus:outline-none w-[300px] max-sm:w-full" placeholder="https://mr-keshi.ir" aria-label="Search" aria-describedby="button-addon2">
-    <span class="input-group-text flex items-center px-3 py-1.5  text-base font-normal right-1 top-3  text-gray-700 text-center whitespace-nowrap rounded absolute " id="basic-addon2">
+    <input type="search" class="form-control relative flex-auto min-w-0 block  px-3 py-1 text-base font-normal text-black-500 bg-gray-300 h-[55px]  bg-clip-padding border-none rounded-full transition ease-in-out m-0  text-left px-6 focus:outline-none w-[300px] max-sm:w-full" placeholder="https://mr-keshi.ir" aria-label="Search" aria-describedby="button-addon2" id="myInput">
+    <span onclick=CopyTextClipBoard() class="input-group-text flex items-center px-3 py-1.5  text-base font-normal right-1 top-3  text-gray-700 text-center whitespace-nowrap rounded absolute " id="basic-addon2">
       <span class="material-symbols-outlined text-black-500 relative bottom-1 text-3xl cursor-pointer">
         content_copy
         </span>
@@ -477,7 +477,7 @@ Joan of Arc انگلیس را شکست دهید و یا در نقش چنگیزخ
       </section>
            <!-- Start Tag Box -->
            <section>
-            <div class="bg-white w-full rounded p-8 max-lg:mt-6 lg:my-6 flex max-md:p-4">
+            <div class="bg-white w-full rounded p-8 max-lg:mt-6 lg:my-6 flex max-md:p-4  max-md:py-6 max-sm:py-">
              
 
               <div class="post-tags flex items-center flex-wrap">
@@ -968,7 +968,7 @@ group
       <div class="about_us w-[440px] max-xl:w-[340px] max-sm:w-full max-md:mb-6 max-sm:mb-4 max-md:w-full">
         <h1 class="text-3xl font-bold font-IRsansBold text-black-300 ">
           Is<strong class="text-gold-500">Game</strong>.ir</h1>
-          <p class="text-right text-black-500 text-mxl font-light leading-8">
+          <p class="text-right text-black-500 text-mxl font-light leading-8 text-[14.5px]">
             تیم برنامه نویسی آقای کاف با هدف افزایش سطح کیفی آموزش
             برنامه نویسی برای ورود به بازار کار شما عزیزان و ایجاد یک
             مرجع کامل در زمینه آموزش دوره محور زبان های برنامه نویسی
@@ -1109,6 +1109,20 @@ let Boxes=new MangeBoxDropDown()
     }
   })
 
+  function CopyTextClipBoard() {
+
+
+var copyText = document.getElementById("myInput");
+
+
+copyText.select();
+copyText.setSelectionRange(0, 99999)
+
+
+navigator.clipboard.writeText(copyText.value);
+
+
+}
 
 </script>
 

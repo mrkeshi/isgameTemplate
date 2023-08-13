@@ -767,6 +767,9 @@ li.mx-4 a.text-white:hover span, btn-mo:hover span {
     width: 100%;
     margin-top: -20px;
   }
+  .about-footer p {
+    font-size: 14.5px;
+  }
   .mobile_navbar, .orginal-header nav ul .div-center-nav-org {
     width: 245px;
   }

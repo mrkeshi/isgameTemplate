@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>وبسایت ایزگیم - مرجع دانلود چیت و ترینر</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="../dist/custom_style.css">
     <link rel="stylesheet" href="../dist/style.css">
+
+    <link rel="stylesheet" href="../dist/custom_style.css">
 </head>
-<body>
-  <div class=" w-full mx-auto">
+<body class="relative">
+  <div class="z-40 w-full  h-full fixed top-0 right-0 backdrop-filter bg-opacity-60 bg-[#2f3c53] hidden" id="filter-overflow"></div>
+
+  <div class="container mx-auto">
     <!-- Start Nabar Menu -->
     <header>
       <div
@@ -215,76 +218,75 @@
     <!-- End Navbar Menu -->
 
 
-  </div><br><br>
 
 <main>
-  <div class="container mx-auto mt-8">
-    <div class="article">
+  <div class=" mx-auto mt-8 max-lg:px-4">
+    <div class="article ">
 
     <!-- Start Single Product -->
-    <div class="product">
+    <div class="product max-lg:mt-14">
       <!-- Start Slide Product Deatil -->
       <div class="slide-product-deatil p-4 bg-white rounded w-full h-auto relative">
-        <div class="price absolute left-8 top-8 flex items-center">
-          <div class="text-black-500  text-xl font-light absolute right-[-60px] -top-2">
+        <div class="price absolute left-8 top-8 flex items-center   ">
+          <div class="text-black-500 max-sm:text-sm max-sm:right-[-50px]  text-xl font-light absolute right-[-60px] -top-2 max-lg:text-white">
             <s>181,000</s>
         </div>
-          <span class="text-gold-100 text-[17px] font-IRsansBold">119,000</span>
-          <span class="text-mxl mx-1 text-black-500">تومان</span>
+          <span class="text-gold-100 text-[17px] font-IRsansBold max-sm:rounded-sm max-sm:bg-white max-sm:text-base">119,000</span>
+          <span class="text-mxl mx-1 text-black-500 max-lg:text-white">تومان</span>
           <div class="div">
      
           </div>
         </div>
-        <div class="flex">
-          <div class="img w-2/5 ">
-            <img src="../images/single_product_images.jpg" class=" rounded" alt="">
+        <div class="flex h-full max-lg:flex-col">
+          <div class="img w-2/5 h-full max-lg:w-full">
+            <img src="../images/single_product_images.jpg" class=" rounded max-xl:h-72 max-lg:h-[350px] max-xl:w-full max-sm:h-auto" alt="" >
           </div>
-          <div class="contect p-6 w-3/5 ">
-            <h1 class="text-[19px] mr-2 font-IRsansBold mb-4 hover:opacity-75">اخرین چیت بازی زولا + آنتی بن</h1>
-            <p class="text-black-500 text-base text-right mt-4 leading-7 mr-2">
+          <div class="contect p-6 w-3/5  max-lg:w-full max-lg:px-0 max-lg:py-4">
+            <h1 class="text-[19px] mr-2 font-IRsansBold mb-4 hover:opacity-75 max-xl:text-lxl max-md:text-[17px] max-md:text-center max-md:mt-2 max-sm:my-0">اخرین چیت بازی زولا + آنتی بن</h1>
+            <p class="text-black-500 text-mxl text-right mt-4 leading-7 mr-2 max-xl:text-base">
               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
             </p>
-            <div class="flex justify-center items-center mt-8">
-              <div class="text-center mx-4 flex items-center py-2 px-[10px] border border-dashed border-[#E3DEDE]">
-                <span class="material-symbols-outlined text-black-700 text-[32px]">
+            <div class="flex justify-center items-center mt-8 max-sm:mt-4 max-sm:flex-wrap">
+              <div class="text-center mx-2 flex items-center w-[135px] max-sm:w-full max-sm:mb-2 h-16 justify-center border border-dashed border-[#E3DEDE]">
+                <span class="material-symbols-outlined text-black-700 text-[30px]">
                   local_mall
                   </span>
                   <div class="flex flex-col text-right mx-3">
-                    <span class="text-black-700 text-base">تعداد فروش</span>
+                    <span class="text-black-700 text-base"> فروش</span>
                     <span class="text-gold-500 text-mxl"> 29</span>
 
                   </div>
               </div>
-              <div class="text-center mx-4 flex items-center py-2 px-3 border border-dashed border-[#E3DEDE]">
-                <span class="material-symbols-outlined text-black-700 text-[28px]">
+              <div class="text-center mx-2 flex items-center w-[135px] max-sm:w-full max-sm:mb-2 h-16 justify-center  border border-dashed border-[#E3DEDE]">
+                <span class="material-symbols-outlined text-black-700 text-[28px] ">
                   mark_unread_chat_alt
                   </span>
-                  <div class="flex flex-col text-right mx-4">
-                    <span class="text-black-700 text-base">نظرات </span>
+                  <div class="flex flex-col text-right mx-2">
+                    <span class="text-black-700 text-base max-sm:text-mxl">نظرات </span>
                     <span class="text-gold-500 text-mxl"> 6</span>
 
                   </div>
               </div>
-              <div class="text-center flex items-center mx-3 py-2 px-3 border border-dashed border-[#E3DEDE]">
-                <span class="material-symbols-outlined text-black-700 text-[30px]">
+              <div class="text-center flex items-center mx-2 w-[135px] max-sm:w-full max-sm:mb-2 h-16 justify-center  border border-dashed border-[#E3DEDE]">
+                <span class="material-symbols-outlined text-black-700 text-[28px]">
                   visibility
                   </span>
-                  <div class="flex flex-col text-right mx-4">
-                    <span class="text-black-700 text-base">تعداد بازدید</span>
+                  <div class="flex flex-col text-right mx-2">
+                    <span class="text-black-700 text-base"> بازدید</span>
                     <span class="text-gold-500 text-mxl"> 391</span>
 
                   </div>
               </div>
-              <a href="#" class="text-white text-mxl mx-4 bg-gold-500 text-center font-medium p-3 px-3 border border-gold-500 transition ease-in hover:bg-white hover:text-gold-500  flex items-center rounded-sm" >
+              <a href="#" class="text-white text-mxl max-sm:w-full mx-2 bg-gold-500 text-center  font-medium w-[143px] px-1 h-14 justify-center border border-gold-500 transition ease-in hover:bg-white hover:text-gold-500  flex items-center rounded-sm" >
               
                 افزودن به سبد خرید
               </a>
             </div>
           </div>
         </div>
-        <div class="footer m-8 mt-10 mx-auto flex items-center justify-around">
+        <div class="footer m-6  mx-auto flex items-center justify-around max-sm:hidden">
             <div class="boxs flex items-center">
-              <span class="material-symbols-outlined text-gold-500 text-[50px]">
+              <span class="material-symbols-outlined text-gold-500 text-[50px] max-md:text-[38px]">
                 downloading
                 </span>
 
@@ -292,13 +294,13 @@
             <span class="text-black-500 text-sm">
               حجم
             </span>
-            <div class="text-black-700 text-mxl mt-2">
+            <div class="text-black-700 text-mxl mt-2 max-md:text-base">
               50 مگابایت
             </div>
           </div>
             </div>
             <div class="boxs flex items-center">
-              <span class="material-symbols-outlined text-green text-[50px]">
+              <span class="material-symbols-outlined text-green text-[50px] max-md:text-[38px]">
                 attach_file
                 </span>
 
@@ -306,13 +308,13 @@
             <span class="text-black-500 text-sm">
               روش دریافت
             </span>
-            <div class="text-black-700 text-mxl mt-2">
+            <div class="text-black-700 text-mxl mt-2 max-md:text-base">
                دانلودی
             </div>
           </div>
             </div>
             <div class="boxs flex items-center">
-              <span class="material-symbols-outlined text-purple text-[50px]">
+              <span class="material-symbols-outlined text-purple text-[50px] max-md:text-[38px]">
                 update
                 </span>
 
@@ -320,13 +322,13 @@
             <span class="text-black-500 text-sm">
               تاریخ بروزرسانی
             </span>
-            <div class="text-black-700 text-mxl mt-2">
+            <div class="text-black-700 text-mxl max-md:text-base mt-2">
               شهریور 1401 
             </div>
           </div>
             </div>
             <div class="boxs flex items-center">
-              <span class="material-symbols-outlined text-blue-300 text-[50px]">
+              <span class="material-symbols-outlined text-blue-300 text-[50px] max-md:text-[38px]">
                 code
                 </span>
 
@@ -334,7 +336,7 @@
             <span class="text-black-500 text-sm">
               نسخه
             </span>
-            <div class="text-black-700 text-mxl mt-2">
+            <div class="text-black-700 text-mxl mt-2 max-md:text-base">
               v 1.1.0.5 
             </div>
           </div>
@@ -344,7 +346,7 @@
       <!-- End Slide Product Detail -->
 
       <!-- Start Text content Prododuct -->
-      <div class="contect p-8 mt-8 bg-white text-black-700 rounded">
+      <div class="contect p-8 mt-8 bg-white text-black-700 rounded max-lg:p-4 max-md:mt-6">
           <div class="flex justify-between mb-6">
             <div class="flex items-center about_single_product"> 
               <span class="material-symbols-outlined text-[32px] text-black-500">
@@ -355,7 +357,7 @@
             </div>
           </div>
           <div class="content">
-            <p class="text-black-500 text-mxl px-8 mt-6 leading-8">
+            <p class="text-black-500 text-mxl px-8 mt-6 leading-8 max-sm:text-[14px] max-lg:px-1">
               یکی از ژانرهای پرطرفداری که به مرور زمان در صنعت بازی‌های ویدیویی به فراموشی سپرده شد، سبک RTS بود که در واقع می‌توان آن را استراتژی
 لحظه‌ای دانست. عبارتRTSمخفف Real Time Strategy  بوده و به این معنا است که تمامی مبارزات و نبردها به‌صورت لحظه‌ای و زنده در آن شکل  
 می‌گیرد. قبلاً تعداد بازی‌های زیادی با سوژه‌های مختلف در این سبک منتشر می‌شد اما به‌تدریج،RTS جای خود را به استراتژی‌های نوبتی داد که  
@@ -397,7 +399,7 @@ Joan of Arc انگلیس را شکست دهید و یا در نقش چنگیزخ
                     <svg xmlns="http://www.w3.org/2000/svg" fill="#4E49D4" class="w-[26px] h-[26px] mx-3 hover:opacity-60" viewBox="0 0 320 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>                    </div>
             </div>
 
-            <div class="input-group relative flex flex-wrap items-stretch w-96 mb-4 rounded my-6 mt-0 mx-auto">
+            <div class="input-group relative flex flex-wrap items-stretch max-sm:w-full w-96  mb-4 rounded my-6 mt-0 mx-auto">
               <input id="myInput" type="search" class="form-control relative flex-auto min-w-0 block  px-3 py-1 text-base font-normal text-black-500 bg-gray-300 h-[55px]  bg-clip-padding border-none rounded-full transition ease-in-out m-0  text-left px-6 focus:outline-none w-[300px]" placeholder="https://mr-keshi.ir" aria-label="Search" aria-describedby="button-addon2">
               <span  onclick="CopyTextClipBoard()" class="input-group-text flex items-center z-50 px-3 py-1.5  text-base font-normal right-1 top-3  text-gray-700 text-center whitespace-nowrap rounded absolute " id="basic-addon2">
                 <span class="material-symbols-outlined text-black-500 relative bottom-1 text-3xl cursor-pointer">
@@ -411,38 +413,37 @@ Joan of Arc انگلیس را شکست دهید و یا در نقش چنگیزخ
       <!-- End Text Content Product -->
        <!-- Start Tag Box -->
        <section>
-        <div class="bg-white w-full rounded p-8 mt-10">
-          <div class="post-tags flex items-center">
-            <span class="material-symbols-outlined text-gold-500 text-2xl -mx-1">
-              sell
-              </span>
-            <h4 class="font-bold text-black-500 text-mxl mr-2 ml-4">برچسب ها:</h4>
-            <a href="#" class="text-black-500 text-base hover:opacity-75">چسب آموزشی</a>
-            <span class="text-black-500 mx-1.5">|</span>
-            <a href="#" class="text-black-500 text-base hover:opacity-75">چسب آموزشی</a>
-            <span class="text-black-500 mx-1.5">|</span>
-            <a href="#" class="text-black-500 text-base hover:opacity-75">چسب آموزشی</a>
-            <span class="text-black-500 mx-1.5">|</span>
-            <a href="#" class="text-black-500 text-base hover:opacity-75">چسب آموزشی</a>
-            <span class="text-black-500 mx-1.5">|</span>
-            <a href="#" class="text-black-500 text-base hover:opacity-75">چسب آموزشی</a>
-            <span class="text-black-500 mx-1">|</span>
-            <a href="#" class="text-black-500 text-base hover:opacity-75">چسب آموزشی</a>
+        <div class="bg-white w-full rounded p-8 max-lg:mt-6 lg:my-6 flex max-md:p-4  max-md:py-6 max-sm:py-4">
+         
+
+          <div class="post-tags flex items-center flex-wrap">
+            <div class="flex items-center">
+              <span class="material-symbols-outlined text-gold-500 text-2xl -mx-1">
+                sell
+                </span>
+              <h4 class="font-bold text-black-500 text-mxl mr-2  max-lg:ml-0 w-auto">برچسب ها:</h4>
+            </div>
+            <a href="#" class="text-black-500 text-base hover:opacity-75 mx-2">وچسب آموزشی</a>
+            <a href="#" class="text-black-500 text-base hover:opacity-75  mx-2">چسب آموزشی</a>
+            <a href="#" class="text-black-500 text-base hover:opacity-75  mx-2">چسب آموزشی</a>
+            <a href="#" class="text-black-500 text-base hover:opacity-75  mx-2">چسب آموزشی</a>
+  
           </div>
          </div>
        </section>
      
+     
 <!-- End Tag Box -->
 
        <!-- Start Box About Me -->
-       <section>
-        <div class="bg-white relative rounded w-full p-6 mt-10 pb-6">
-          <div class="flex m-4 items-start  justify-center">
-              <img src="../images/me.png" class="w-[70px] h-[70px] ml-6 rounded-full border-[2px] border-gold-500 brightness-110" alt="">
-          <div class="content w-10/12   ">
-            <div class="flex justify-between items-end">
-               <h5 class="text-black-700 text-[17px] font-bold">آقای کاف</h5>
-               <div class="social">
+       <section class="lg:mb-6">
+        <div class="bg-white relative rounded w-full p-6 max-lg:mt-6 max-md:px-2 max-md:py-4">
+          <div class="flex m-4 items-start  justify-center max-sm:m-0 max-sm:flex-wrap">
+              <img src="../images/me.png" class="w-[70px] h-[70px] ml-6 max-sm:w-16 max-sm:h-16 max-sm:ml-0   rounded-full border-[2px] border-gold-500 brightness-110" alt="">
+           <div class="content w-10/12 max-md:w-full max-sm:px-2   ">
+            <div class="flex justify-between items-end max-sm:flex-col max-sm:justify-center">
+               <h5 class="text-black-700 text-[17px] font-bold max-sm:mx-auto max-sm:mt-2">آقای کاف</h5>
+               <div class="social max-sm:mx-auto max-sm:my-2">
                 <div class="socail_box flex  w-full justify-end ">
                   <div class="telegram">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-[23px] h-[23px] mx-2 fill-gray-500 hover:fill-gold-100 transition ease-in" viewBox="0 0 496 512" >
@@ -460,7 +461,7 @@ Joan of Arc انگلیس را شکست دهید و یا در نقش چنگیزخ
               </div>
             </div>
            
-            <p class="text-black-500 leading-8 text-mxl mt-2 ">بازی با کلمات رو زیاد دوست ندارم ولی اگه قرار باشه کلمات منو قضاوت کنند از کلمات جاشوی خسته(ملوان کشتی) و برنامه نویس سابق برای توصیف خودم استفاده میکنم. در نوشتن هیچ هنر خاصی ندارم و فقط بخاطر درگیری ها و تلاطم های بیش از اندازه ذهنم به اینجا پناه آورده ام.در خودم هرچه فرو رفتم و ماندم کافیست، رو به بیرون زدن از خویش دری میخواهم</p>
+            <p class="text-black-500 leading-8 text-mxl mt-2 max-sm:text-base">بازی با کلمات رو زیاد دوست ندارم ولی اگه قرار باشه کلمات منو قضاوت کنند از کلمات جاشوی خسته(ملوان کشتی) و برنامه نویس سابق برای توصیف خودم استفاده میکنم. در نوشتن هیچ هنر خاصی ندارم و فقط بخاطر درگیری ها و تلاطم های بیش از اندازه ذهنم به اینجا پناه آورده ام.در خودم هرچه فرو رفتم و ماندم کافیست، رو به بیرون زدن از خویش دری میخواهم</p>
           </div>
 
         
@@ -471,149 +472,152 @@ Joan of Arc انگلیس را شکست دهید و یا در نقش چنگیزخ
   
        <!-- End Aboue Me Box -->
 
-      <!-- Start Comment -->
-      <section>
-        <div class="bg-white p-8 mt-10 rounded ">
+   
+          <!-- Start Comment -->
+          <section>
+            <div class="bg-white p-8 max-lg:mt-6 rounded  max-md:p-4">
 
-          <div class="transition hover:bg-indigo-50 mt-6 ">
-            <!-- header -->
-            <div class="accordion-header  transition flex space-x-5 px-5 items-center h-[60PX]  justify-between mb-4 ">
-                     
-              <div class="header flex mt-4 justify-between items-center w-full ">
-                <h4 class="text-gold-500 text-2xl mx-3">3 دیدگاه</h4>
-                <a  class="text-gold-500 text-mxl cursor-pointer read_more_btn   bg-none w-[160px] flex justify-center   py-[11px]  border border-gold-500 text-center font-medium rounded  items-center">
-                  <span class="material-symbols-outlined  text-[18px] mb-[2px]">
-                    add_circle
-            
-                    </span>
-                  <span class="mx-2 flex items-center ">
-                     افزودن دیدگاه
-                 
-                  </span>
-                      
-              
-                   </a>
-              </div> 
-            </div>
-            <!-- Content -->
-            <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
-              <div class="border border-gray-100 rounded p-6 w-full mt-8 relative pb-[90px] ">
-                <div class="flex">
-                  <div class="input-group w-full p-4 relative mx-2 w-1/2">
-                    <span class="material-symbols-outlined text-gray-500 text-[24px] absolute right-7 top-[28px]">
-                      person
-                      </span>
-                        <input class="border w-full  p-4 pr-11 outline-1 text-mxl outline-gray-500 transition-all ease-in border-gray-500 text-black-500 rounded ml-3 bg-white border-none outline-none focus:outline-black-500 font-IRsansLight" placeholder="لطفا نام خود را وارد نمایید.">
-                  </div>
-                  <div class="input-group w-full p-4 relative mx-2 w-1/2">
-                    <span class="material-symbols-outlined text-gray-500 text-[22px] absolute right-7 top-[31px]">
-                      alternate_email
-                      </span>
-                      <input class="border w-full  p-4 pr-11 outline-1 text-mxl outline-gray-500 transition-all ease-in border-gray-500 text-black-500 rounded ml-3 bg-white border-none outline-none focus:outline-black-500 font-IRsansLight" placeholder="لطفا نام خود را وارد نمایید.">
-                    </div>
-                </div>
-                <div class="input-group w-full p-4 pl-7 mt-3 relative mx-2 w-full">
-                  
-                      <textarea rows="7" class="border outline-1 text-mxl  w-full border-solid p-4  outline-gray-500 transition-all ease-in border-gray-500 text-black-500 rounded ml-3 bg-white border-none outline-none focus:outline-black-500 font-IRsansLight " placeholder="لطفا چیزی را جهت نوشتن وارد کنید."></textarea>
-                </div>
-                <a href="#" class="text-gold-500 text-mxl read_more_btn float-left ml-4 mb-2   bg-none w-[130px] flex justify-center py-[11px] mt-5 border border-gold-500 text-center font-medium rounded  items-center">
+              <div class="transition hover:bg-indigo-500 md:mt-6 ">
+                <!-- header -->
+                <div class="accordion-header  transition flex space-x-5 px-5 max-sm:px-0  items-center h-[60PX]  justify-between mb-4 ">
+                         
+                  <div class="header flex mt-4 justify-between items-center w-full ">
+                    <h4 class="text-gold-500 text-2xl mx-3 max-sm:mx-0 max-2xl:text-[19px] max-md:text-lxl">3 دیدگاه</h4>
+                    <a  class="text-gold-500 text-mxl cursor-pointer read_more_btn   bg-none w-[160px] max-sm:w-36 flex justify-center   py-[11px]  border border-gold-500 text-center font-medium rounded  items-center">
+                      <span class="material-symbols-outlined  text-[18px] mb-[2px]">
+                        add_circle
                 
-                  <span class="mx-2 flex items-center  ">
-                      ثبت نظر
-                 
-                  </span>
+                        </span>
+                      <span class="mx-2 flex items-center ">
+                         افزودن دیدگاه
+                     
+                      </span>
+                          
+                  
+                       </a>
+                  </div> 
+                </div>
+                <!-- Content -->
+                <div class="accordion-content  pt-0 overflow-hidden h-auto">
+                  <div class="border border-gray-100 rounded p-2 w-full mt-8 relative pb-[90px]  max-lg:mt-6 max-lg:px-2 max-md:px-0 max-md:mt-2 max-md:border-none ">
+                    <div class="flex max-md:flex-col">
+                      <div class="input-group max-md:w-full p-4 relative  w-1/2 max-sm:p-1">
+                        <span class="material-symbols-outlined max-md:hidden text-gray-500 text-[24px] absolute right-7 top-[28px]">
+                          person
+                          </span>
+                            <input class="border w-full max-md:p-3 p-4 pr-11 outline-1 text-mxl outline-gray-500 transition-all ease-in border-gray-500 text-black-500 rounded ml-3 bg-white border-none outline-none focus:outline-black-500 font-IRsansLight" placeholder="لطفا نام خود را وارد نمایید.">
+                      </div>
+                      <div class="input-group max-md:w-full p-4 relative max-sm:mt-3  w-1/2 max-sm:p-1">
+                        <span class="material-symbols-outlined max-md:hidden text-gray-500 text-[22px] absolute right-7 top-[31px]">
+                          alternate_email
+                          </span>
+                          <input class="border w-full  p-4 max-md:p-3 pr-11 outline-1 text-mxl outline-gray-500 transition-all ease-in border-gray-500 text-black-500 rounded bg-white border-none outline-none focus:outline-black-500 font-IRsansLight" placeholder="لطفا نام خود را وارد نمایید.">
+                        </div>
+                    </div>
+                    <div class="input-group w-full px-4 max-sm:px-1  mt-4 relative ">
                       
-              
-                   </a>
-              </div>
-
-
-            </div>
-            </div>
-
-          <!-- peoples comment -->
-          <div class="comment-person">
-            <div class="border-gray-500 border p-6 w-full mt-8 rounded-xl relative ">
-              <div class="flex justify-between w-full">
-                  <div class="img-profile flex items-center">
-                        <img src="../images//first_1.webp" class="border border-[2px] rounded-full border-gray-300 w-14 h-14" alt="">
-                        <div class="box flex flex-col mx-3">
-                          <a href="#" class="text-black-700 text-xl font-IRsansBold">رضا رستمی</a>
-                          <span class="text-black-500 text-sm">1 روز قبل</span>
-                        </div>
-                  </div>
-                  <div class="bottons flex h-[33px]">
-                    <div class="like-comment p-1  rounded-sm bg-red-50 mx-1 bg-gray-500 flex items-center ">
-                      <span class="material-symbols-outlined text-red-500 text-[20px] mx-1">
-                        favorite
-                        </span>                      <span class="text-red-500 text-base ">5</span>
-
+                          <textarea rows="7" class="border outline-1 text-mxl  w-full border-solid p-4  outline-gray-500 transition-all ease-in border-gray-500 text-black-500 rounded ml-3 bg-white border-none outline-none focus:outline-black-500 font-IRsansLight " placeholder="لطفا چیزی را جهت نوشتن وارد کنید."></textarea>
                     </div>
-                    <div class="replay-comment mx-1  rounded-sm  p-1  bg-gray-300 flex items-center ">
-                       <span class="material-symbols-outlined text-black-500 text-[20px] mx-1">
-                      compare_arrows
-                      </span>
-                      <span class="text-black-700 text-base ml-2">پاسخ</span>
+                    <a href="#" class="max-sm:w-full text-gold-500 text-mxl read_more_btn float-left ml-4 mb-2   bg-none w-[130px] flex justify-center 
+                    py-[11px] mt-3 border border-gold-500 text-center font-medium rounded  items-center max-sm:mx-auto">
+                    
+                      <span class="mx-2 flex items-center  ">
+                          ثبت نظر
                      
-                    </div>
-                  </div>
-              </div>
-              <p class="text-mxl text-black-500 m-2 px-1">
-                برنامه نویسی هوش مصنوعی و ماشین به نظرم لزومی نداره که در این لیست قرار بگیره و باعث میشه که افراد در حین یادگیری گیج و گمراه شوند و ربطی به برنامه نویسی های نرمال نداره
-              </p>
-            </div>
-          </div>
-            
-          <div class="comment-person answer-comment">
-            <div class="border-gold-500 border p-6 w-full mt-8 rounded-xl relative">
-              <div class="flex justify-between w-full">
-                  <div class="img-profile flex items-center">
-                        <img src="../images/me.png" class="border border-[2px] rounded-full border-gold-500 w-14 h-14" alt="">
-                        <div class="box flex flex-col mx-3">
-                          <a href="#" class="text-black-700 text-xl font-IRsansBold">آقای کاف</a>
-                          <span class="text-black-500 text-sm">6 ساعت قبل</span>
-                        </div>
-                  </div>
-                  <div class="bottons flex h-[33px]">
-                    <div class="like-comment p-1  rounded-sm bg-red-50 mx-1 bg-gray-500 flex items-center ">
-                      <span class="material-symbols-outlined text-red-500 text-[20px] mx-1">
-                        favorite
-                        </span>                      <span class="text-red-500 text-base ">5</span>
-
-                    </div>
-                    <div class="replay-comment mx-1  rounded-sm  p-1  bg-gray-300 flex items-center ">
-                       <span class="material-symbols-outlined text-black-500 text-[20px] mx-1">
-                      compare_arrows
                       </span>
-                      <span class="text-black-700 text-base ml-2">پاسخ</span>
-                     
-                    </div>
+                          
+                  
+                       </a>
                   </div>
+    
+
+                </div>
+                </div>
+  
+              <!-- peoples comment -->
+              <div class="comment-person relative">
+                <div class="border-gray-500 border p-6 w-full mt-8 rounded-xl relative max-md:p-4 max-md:mt-2 max-sm:pl-1">
+                  <div class="flex justify-between w-full">
+                      <div class="img-profile flex items-center">
+                            <img src="../images//first_1.webp" class="border border-[2px] rounded-full border-gray-300 w-14 h-14 max-md:w-12 max-md:h-12" alt="">
+                            <div class="box flex flex-col mx-3">
+                              <a href="#" class="text-black-700 text-xl font-IRsansBold max-sm:text-mxl">رضا رستمی</a>
+                              <span class="text-black-500 text-sm">1 روز قبل</span>
+                            </div>
+                      </div>
+                      <div class="bottons flex h-[30px] max-sm:absolute left-2 top-3">
+                        <div class="like-comment p-1  rounded-md bg-red-50 mx-1 bg-gray-500 flex items-center ">
+                          <span class="material-symbols-outlined text-red-500 text-[20px] mx-1 max-sm:text-lxl" >
+                            favorite
+                            </span>                      <span class="text-red-500 text-base max-sm:text-[13px] ">5</span>
+    
+                        </div>
+                        <div class="replay-comment mx-1  rounded-md  p-1  bg-gray-300 flex items-center ">
+                           <span class=" material-symbols-outlined text-black-500 text-[20px] mx-1 max-sm:text-lxl">
+                          compare_arrows
+                          </span>
+                          <span class="text-black-700 text-base ml-2 max-sm:ml-1 max-sm:text-[13px]">پاسخ</span>
+                         
+                        </div>
+                      </div>
+                  </div>
+                  <p class="text-mxl text-black-500 m-2 px-1 max-sm:text-base max-sm:mx-0 leading-7" >
+                    برنامه نویسی هوش مصنوعی و ماشین به نظرم لزومی نداره که در این لیست قرار بگیره و باعث میشه که افراد در حین یادگیری گیج و گمراه شوند و ربطی به برنامه نویسی های نرمال نداره
+                  </p>
+                </div>
               </div>
-              <p class="text-mxl text-black-500 m-2 px-1">
-                برنامه نویسی هوش مصنوعی و ماشین به نظرم لزومی نداره که در این لیست قرار بگیره و باعث میشه که افراد در حین یادگیری گیج و گمراه شوند و ربطی به برنامه نویسی های نرمال نداره
-              </p>
-            </div>
-          </div>
-          <!-- end peoples comment -->
-       </div>
-      </section>
-    <!-- End Comment -->
-    <!-- End Comment -->
+                
+              <div class="comment-person relative answer-comment">
+                <div class="border-gold-500 border p-6 w-full mt-8 rounded-xl relative max-sm:p-4 max-sm:pl-0">
+                  <div class="flex justify-between w-full">
+                      <div class="img-profile flex items-center">
+                            <img src="../images/me.png" class="border border-[2px] rounded-full border-gold-500 w-14 h-14 max-md:w-12 max-md:h-12" alt="">
+                            <div class="box flex flex-col mx-3 ">
+                              <a href="#" class="text-black-700 text-xl font-IRsansBold max-sm:text-mxl">آقای کاف</a>
+                              <span class="text-black-500 text-sm">6 ساعت قبل</span>
+                            </div>
+                      </div>
+                      <div class="bottons flex h-[30px] max-sm:absolute left-2 top-3">
+                        <div class="like-comment p-1  rounded-md bg-red-50 mx-1 bg-gray-500 flex items-center ">
+                          <span class="material-symbols-outlined text-red-500 text-[20px] mx-1 max-sm:text-lxl" >
+                            favorite
+                            </span>                      <span class="text-red-500 text-base max-sm:text-[13px] ">5</span>
+    
+                        </div>
+                        <div class="replay-comment mx-1  rounded-md  p-1  bg-gray-300 flex items-center ">
+                           <span class=" material-symbols-outlined text-black-500 text-[20px] mx-1 max-sm:text-lxl">
+                          compare_arrows
+                          </span>
+                          <span class="text-black-700 text-base ml-2 max-sm:ml-1 max-sm:text-[13px]">پاسخ</span>
+                         
+                        </div>
+                      </div>
+                  </div>
+                  <p class="text-mxl text-black-500 m-2 px-1 max-sm:text-base max-md:text-base  max-sm:mx-0 leading-7">
+                    برنامه نویسی هوش مصنوعی و ماشین به نظرم لزومی نداره که در این لیست قرار بگیره و باعث میشه که افراد در حین یادگیری گیج و گمراه شوند و ربطی به برنامه نویسی های نرمال نداره
+                  </p>
+                </div>
+                <br>
+              </div>
+              <!-- end peoples comment -->
+           </div>
+          </section>
+        <!-- End Comment -->
       </div>    
     <!-- End Single Product -->
 
   </div>
   </div>
 </main>
+</div>
 <br><br>
 <footer>
-  <div class="footer mt-20 pt-16 bg-white h-auto w-full  p-6">
-    <div class="flex  justify-around">
-      <div class="about_us w-[440px]">
-        <h1 class="text-4xl font-bold font-IRsansBold text-black-300 ">
+  <div class="footer mt-20 pt-14 bg-white h-auto w-full max-xl:pt-10  p-6 max-md:p-6 max-lg:pt-8 max-lg:mt-6">
+    <div class="flex  justify-around max-lg:flex-wrap max-md:justify-start">
+      <div class="about_us w-[440px] max-xl:w-[340px] max-sm:w-full max-md:mb-6 max-sm:mb-4 max-md:w-full">
+        <h1 class="text-3xl font-bold font-IRsansBold text-black-300 ">
           Is<strong class="text-gold-500">Game</strong>.ir</h1>
-          <p class="text-right text-black-500 text-mxl font-light leading-8 mt-3">
+          <p class="text-right text-black-500 text-mxl font-light leading-8 max-sm:text-[14.5px]">
             تیم برنامه نویسی آقای کاف با هدف افزایش سطح کیفی آموزش
             برنامه نویسی برای ورود به بازار کار شما عزیزان و ایجاد یک
             مرجع کامل در زمینه آموزش دوره محور زبان های برنامه نویسی
@@ -624,8 +628,8 @@ Joan of Arc انگلیس را شکست دهید و یا در نقش چنگیزخ
           </p>
         
       </div>
-      <div class="cat_main_menu w-60 text-black-500">
-        <h3 class="text-[17px]  font-bold">
+      <div class="cat_main_menu w-[180PX] text-black-500 max-lg:mr-6 max-md:mb-6 max-sm:mb-4 ">
+        <h3 class="text-[17px]  font-bold max-lg:text-xl -mr-4">
           بخش های  <span class="text-gold-500"> اصلی</span>
         </h3>
         <ul class="mt-2">
@@ -637,8 +641,8 @@ Joan of Arc انگلیس را شکست دهید و یا در نقش چنگیزخ
 
         </ul>
       </div>
-      <div class="cat_main_menu w-60 text-black-500">
-        <h3 class="text-[17px]  font-bold">
+      <div class="cat_main_menu w-[180PX] text-black-500 max-lg:mr-6 max-md:mb-6 max-sm:mb-4">
+        <h3 class="text-[17px]  font-bold max-lg:text-xl -mr-4">
            دسته بندی  های   <span class="text-gold-500"> ایزگیم</span>
         </h3>
         <ul class="mt-2">
@@ -650,8 +654,8 @@ Joan of Arc انگلیس را شکست دهید و یا در نقش چنگیزخ
 
         </ul>
       </div>
-      <div class="cat_main_menu w-60 text-black-500">
-        <h3 class="text-[17px]  font-bold">
+      <div class="cat_main_menu w-[180PX] text-black-500 max-lg:mr-6 max-md:mb-6 max-sm:mb-4">
+        <h3 class="text-[17px]  font-bold max-lg:text-xl -mr-4">
           آخرین  <span class="text-gold-500"> پست ها</span>
         </h3>
         <ul class="mt-2">
@@ -665,8 +669,8 @@ Joan of Arc انگلیس را شکست دهید و یا در نقش چنگیزخ
       </div>
     </div>
   
-      <div class="flex justify-center w-3/4 relative bg-gold-100 h-[100px] rounded-[50px] mt-20 mx-auto">
-        <svg xmlns="http://www.w3.org/2000/svg"  xmlns:xlink="http://www.w3.org/1999/xlink" width="217" height="94" viewBox="0 0 217 94" class="absolute -top-16 ">
+      <div class="flex justify-center w-3/4 relative bg-gold-100 h-[100px] max-lg:h-[80px] max-md:h-[75px] rounded-[50px] mt-20 mx-auto max-md:w-full max-lg:mt-12 max-md:mt-6">
+        <svg xmlns="http://www.w3.org/2000/svg"  xmlns:xlink="http://www.w3.org/1999/xlink" width="217" height="94" viewBox="0 0 217 94" class="absolute -top-16 max-sm:hidden ">
           <defs>
             <clipPath id="clip-path">
               <rect id="Rectangle_31" data-name="Rectangle 31" width="217" height="94" transform="translate(0 2402.805)" fill="#fcd445"/>
@@ -680,22 +684,22 @@ Joan of Arc انگلیس را شکست دهید و یا در نقش چنگیزخ
             </g>
           </g>
         </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" class="absolute -top-[20px] w-[25px]" width="30.302" height="30.302" viewBox="0 0 30.302 30.302">
+        <svg xmlns="http://www.w3.org/2000/svg" class="absolute -top-[20px] w-[25px] max-sm:hidden" width="30.302" height="30.302" viewBox="0 0 30.302 30.302">
           <g id="Icon_ionic-ios-arrow-dropup" data-name="Icon ionic-ios-arrow-dropup" transform="translate(-2.813 -2.813)">
             <path id="Path_29" data-name="Path 29" d="M8.729,19.483a1.411,1.411,0,0,1,0-1.989L15.7,10.545a1.4,1.4,0,0,1,1.938-.044l6.869,6.847a1.4,1.4,0,1,1-1.981,1.989l-5.9-5.813L10.717,19.49A1.4,1.4,0,0,1,8.729,19.483Z" transform="translate(1.339 1.78)" fill="#fff"/>
             <path id="Path_30" data-name="Path 30" d="M17.963,33.114A15.151,15.151,0,1,0,2.813,17.963,15.149,15.149,0,0,0,17.963,33.114Zm0-2.331A12.815,12.815,0,0,1,8.9,8.9,12.815,12.815,0,1,1,27.025,27.025,12.71,12.71,0,0,1,17.963,30.783Z" fill="#fff"/>
           </g>
         </svg>
-        <div class="justify-between flex items-center w-full mx-20 h-full" >
-          <div class="div">
+        <div class="justify-between flex items-center w-full mx-20 max-lg:mx-4 max-lg:justify-between max-md:justify-center h-full" >
+          <div class="div max-md:hidden ">
                 <h2 class="text-white font-bold text-xl mb-1">
                ما را در <strong class="text-purple"> شبکه های اجتماعی </strong> دنبال کنید
             </h2>
-            <span class="text-white text-base mt-4">با دنبال کردن شبکه های اجتماعی ایزگیم از آخرین فعالیت ما آگاه شوید</span>
+            <span class="text-white text-base mt-4 max-lg:hidden">با دنبال کردن شبکه های اجتماعی ایزگیم از آخرین فعالیت ما آگاه شوید</span>
           </div>
         
-          <div class="social">
-            <div class="socail_box flex my-4 w-full h-9 justify-center">
+          <div class="social max-md:w-full">
+            <div class="socail_box flex my-4 w-full h-9 justify-center max-md:justify-around max-md:w-full items-center">
               <div class="telegram">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-[25px] h-[25px] mx-3 fill-white transition ease-in hover:fill-purple" viewBox="0 0 496 512" >
                   <!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M248,8C111.033,8,0,119.033,0,256S111.033,504,248,504,496,392.967,496,256,384.967,8,248,8ZM362.952,176.66c-3.732,39.215-19.881,134.378-28.1,178.3-3.476,18.584-10.322,24.816-16.948,25.425-14.4,1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25,5.342-39.5,3.652-3.793,67.107-61.51,68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608,69.142-14.845,10.194-26.894,9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7,18.45-13.7,108.446-47.248,144.628-62.3c68.872-28.647,83.183-33.623,92.511-33.789,2.052-.034,6.639.474,9.61,2.885a10.452,10.452,0,0,1,3.53,6.716A43.765,43.765,0,0,1,362.952,176.66Z"></path></svg>
@@ -711,13 +715,12 @@ Joan of Arc انگلیس را شکست دهید و یا در نقش چنگیزخ
           </div>
          
         </div>
-      </div> <p class="text-black-700 w-3/4 mt-6 mx-auto text-mxl">
+      </div> <p class="text-black-700 w-3/4 mt-6 mx-auto text-mxl max-lg:w-full max-lg:text-center max-sm:text-base">
         تمامی این حقوق وبسایت متعلق به علیرضا کشاورز می باشد.
       </p>
   </div>
 </footer>
-
-  <script>var exports = {};</script>
+  <script src="../dist/main.js"></script>
   <script>
 
 
@@ -757,18 +760,39 @@ const accordionHeader = document.querySelectorAll(".accordion-header");
     });
 
 
-    let showcard = document.getElementById('showcardmanage');
-    let card_manage_icon = document.querySelector('.card_manage_icon');
-    card_manage_icon.addEventListener('click', () => {
-      showcard.classList.toggle('showcarmanage')
-      if(showmange.classList.contains('showusermanage')) showusermanage.classList.remove('showusermanage')
+    let seatcrmodal = document.querySelector('.search-modal');
+    let formsearch = seatcrmodal.querySelector('#formsea');
+    let btnsearch = document.getElementById('btnsearch');
+    let checkopenedsearc=false
+    function closeSearch() {
+      seatcrmodal.classList.remove('search-modal_show')
+      filterBody.classList.add('hidden')
+       checkopenedsearc=false
+
+    }
+    btnsearch.addEventListener('click', () => {
+      seatcrmodal.classList.add('search-modal_show')
+      filterBody.classList.remove('hidden')
+      checkopenedsearc=true
+
     })
+
+    const Boxes=new MangeBoxDropDown()
+    const mobilemenu=new MobileMenu()
+
     window.addEventListener('click', (event) => {
-          if (event.target.contains(showcard) && showcard.classList.contains('showcarmanage') && event.target !== showcard) {
-            showcard.classList.remove('showcarmanage')
-          }
-        
-        })
+      if(!Boxes.personBox.contains(event.target) && event.target.contains(filterBody)){
+        Boxes.closePersonBox()
+      }
+      if(!formsearch.contains(event.target) && !event.target.classList.contains('material-symbols-outlined') && checkopenedsearc==true){
+        closeSearch()
+      }
+      if(!mobilemenu.SiteMenu.contains(event.target) && mobilemenu.StatusMobile && event.target.contains(filterBody)){
+        mobilemenu.close()
+      }
+     
+    })
+      
   </script>
 </body>
 </html>
