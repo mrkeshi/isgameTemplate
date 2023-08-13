@@ -1,4 +1,8 @@
 @charset "UTF-8";
+.active_page_wallet > div {
+  background-color: #FCD445;
+}
+
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
 }
@@ -750,6 +754,9 @@ li.mx-4 a.text-white:hover span, btn-mo:hover span {
   }
 }
 @media (max-width: 720px) {
+  .active_page_wallet {
+    display: none;
+  }
   .userDashboard {
     position: fixed;
     width: 260px;
