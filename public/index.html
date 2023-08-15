@@ -531,10 +531,10 @@
                 <h4 class="text-[17px] font-bold text-black-300 mx-[6px] max-sm:text-[16px]">بر اساس </h4>
               </div>
               <div class="flex">
-                <span class="bg-gray-300 text-gray-800 hover:text-black-500 transition ease-in hover:opacity-75 rounded text-center px-4 py-2 text-sm mx-2 cursor-pointer max-sm:px-2 max-sm:text-[13px]">
+                <span id="recent" class="bg-gray-300 active_tab_btn pointer-events-auto hover:text-gray-800 text-black-500 transition ease-in hover:opacity-75 rounded text-center px-4 py-2 text-sm cursor-pointer max-sm:px-2 max-sm:text-[13px] ml-2">
                   اخیر
                 </span>
-                <span class="bg-gray-300 hover:text-gray-800 text-black-500 transition ease-in hover:opacity-75 rounded text-center px-4 py-2 text-sm cursor-pointer max-sm:px-2 max-sm:text-[13px] ml-2">
+                <span id="population" class="bg-gray-300 hover:text-gray-800 pointer-events-auto text-black-500 transition ease-in hover:opacity-75 rounded text-center px-4 py-2 text-sm cursor-pointer max-sm:px-2 max-sm:text-[13px] ml-2">
                   پرطرفدار
                 </span>
                 <span>
@@ -549,7 +549,7 @@
                 class="posts flex flex-col mt-3 overflow-y-auto h-[440px] scrollbar scrollbar-thumb-gold-100 scrollbar-track-[#F5F4F4] scrollbar-w-[3px] scrollbar-track-rounded-md scrollbar-thumb-rounded">
                 <li>
 
-                  <div class="post flex items-center w-full  mb-3">
+                  <div class="post flex items-center w-full recent  mb-3">
                     <div class="img h-[48px] w-[48PX]">
                       <img src="../images/lates_post.jpg" alt="" class="h-[48px] w-[48PX] rounded">
                     </div>
@@ -569,6 +569,25 @@
 
                   </div>
 
+                  <div class="post flex items-center w-full population mb-3 none">
+                    <div class="img h-[48px] w-[48PX]">
+                      <img src="../images/lates_post.jpg" alt="" class="h-[48px] w-[48PX] rounded">
+                    </div>
+
+                    <div class="head mx-3 flex flex-col w-[288px] max-lg:w-full ">
+                      <h2><a href=""
+                          class="text-black-500 text-mxl font-IRsansBold max-sm:text-base transition-all ease-linear hover:opacity-70 ">دانلود
+                          آخرین نسخه ترینر بازینسخهنسخه
+                          اساسین کرید3 + ا</a></h2>
+                      <div class="details flex mt-2">
+                        <span class="text-sm font-IRsansLight text-black-500 font-light ">14 آذر 1400</span>
+                        <span class="text-sm font-IRsansLight text-black-500 font-light mx-6">64 بازدید</span>
+                        <span class="text-sm font-IRsansLight text-black-500 font-light">3 نظر</span>
+
+                      </div>
+                    </div>
+
+                  </div>
                 </li>
                 <li>
 
@@ -1658,7 +1677,7 @@ let seatcrmodal = document.querySelector('.search-modal');
 
     });
  
- 
+    new TabHome()
  
  </script>
 </body>

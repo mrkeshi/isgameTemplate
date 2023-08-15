@@ -165,3 +165,31 @@ class MangeBoxDropDown{
 
     }
 }
+
+class TabHome{
+    // btns
+    recentButton=document.getElementById('recent')
+    populationButton=document.getElementById('population')
+    // boxs
+    recentBox=document.querySelector('.recent')
+    populationBox=document.querySelector('.population')
+    
+    constructor(){
+        this.recentButton.addEventListener('click',()=>{
+           this.toggle()          
+        })
+        this.populationButton.addEventListener('click',()=>{
+        
+            this.toggle()   
+        })
+
+    }
+    toggle(){
+        this.recentButton.classList.toggle('active_tab_btn')
+        this.populationButton.classList.toggle('active_tab_btn')
+
+        this.recentBox.classList.toggle('hidden')
+        this.populationBox.classList.toggle('hidden')  
+    }
+
+}
