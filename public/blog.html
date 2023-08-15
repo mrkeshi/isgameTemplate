@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>وبسایت ایزگیم - مرجع دانلود چیت و ترینر</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="../dist/style.css">
-    <link rel="stylesheet" href="../dist/custom_style.css">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="../dist/style.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="../dist/custom_style.css">
 
 </head>
 <body class="relative">
@@ -360,299 +365,451 @@
 
   </div><br><br>
 
-<!-- search box -->
+<!--  box -->
 <div class="container mx-auto">
-   <section class="relative">
-  <div class="flex flex-col mt-8 max-xl:mt-6 max-lg:mx-4 max-lg:mt-0">
-    <h1 class="text-black-700 text-[20px] font-bold">نتایج جستجو:</h1>
-    <h4 class="my-3 text-[16px] text-black-500 ">جستجو برای "کردن معصومی" </h4>
-    <div class="flex my-6 bg-white p-2 rounded-sm">
-      <div id="articlebtn" class="button p-[14px] text-xl flex items-center  text-black-500  rounded transition ease-in hover:opacity-70    cursor-pointer  border border-white btn_active "  onclick="articleTab(event)">
-        <span class="material-symbols-outlined text-white text-2xl ">
-          article
-          </span>
-        <span class="mx-1 mr-2 ">مقالات</span>
-        <span class="text-base">(21)</span>
-      </div>
-      <div id="productbtn" class="button p-[14px] text-xl flex items-center  text-black-500  rounded transition ease-in  cursor-pointer mx-2 border border-white  hover:opacity-70  " onclick="productTab(event)">
-        <span class="material-symbols-outlined text-2xl   text-black-500 -mx-1 ">
-          article
-          </span>
-        <span class="mx-1 mr-2 ">محصولات</span>
-        <span class="text-base">(7)</span>
-      </div>
-    </div>
-    </div>
-    <div class="relative h-full w-full">
-      <div class="p-2 my-tab absolute pointer-events-none rotate-[1deg] opacity-0 active_tab  h-full w-full " id="article_tab">
-        <div class="posts flex flex-wrap justify-start -mt-2 max-xl:-mt-3 max-md:justify-center">
-          <div class="post w-[320px]  bg-white p-3 m-3 pb-6   max-xl:m-2 max-md:w-4/5 max-sm:w-full   max-xl:m-2 max-md:w-4/5">
-            <img src="../images/16.jpg" class="w-full h-[196px] rounded brightness-75 transition ease-in-out hover:brightness-150" alt="" >
-            <div class="details flex px-2 items-center  justify-between mt-[14px] -mb-1 ">
-              <div class="date flex items-center">
-                <span class="material-symbols-outlined text-red-500 text-2xl relative bottom-1">
-                  calendar_month
-                  </span>
-                  <span class="text-black-500 text-sm mx-1">
-                    5 آذر 1399
-                  </span>
-              </div>
-              <div class="tag flex items-center">
-                <span class="material-symbols-outlined text-green text-2xl">
-                  bookmark
-                  </span>
-                  <span class="text-black-500 text-sm mx-1">
-                    چیت و ترینر  
-                  </span>
-              </div>
-              <div class="tag flex items-center">
-                <span class="material-symbols-outlined text-purple text-2xl">
-                  comment
-        
-                  </span>
-                  <span class="text-black-500 text-sm mx-1">
-                  5
-                  </span> 
-              </div>
+   <section class="relative ">
+
+
+<!-- blog section -->
+
+
+
+
+
+<div class="flex p-2 mt-10 max-lg:mt-5 justify-between single_post max-lg:flex-wrap ">
+  <!-- Start Section posts -->
+  <div class="relative rounded-sm  ml-6 xl:w-2/3 max-xl:w-[69%] max-xl:ml-2  max-lg:ml-0 max-lg:w-full">
+    <div class="p-2 h-full w-full " id="article_tab">
+      <div class="posts flex flex-wrap justify-start -mt-2 max-xl:-mt-3 max-md:justify-center">
+        <div class="post w-[290px]  bg-white p-2  mx-2 mb-4     max-md:w-full    ">
+          <img src="../images/16.jpg" class="w-full h-[156px] rounded brightness-75 transition ease-in-out hover:brightness-150" alt="" >
+          <div class="details flex px-2 items-center  justify-between mt-[14px] -mb-1 ">
+            <div class="date flex items-center">
+              <span class="material-symbols-outlined text-red-500 text-2xl relative bottom-1">
+                calendar_month
+                </span>
+                <span class="text-black-500 text-sm mx-1">
+                  5 آذر 1399
+                </span>
             </div>
-            <div class="flex flex-col px-1">
-              <h3 class="text-black-500 my-3 text-xl font-bold hover:text-black-700"><a href="#">چگونه می‌توان از خانه در طی دوران کووید ۱۹ ( کرونا ) کار کرد؟ </a></h3>
-              <p class="text-black-500 text-base"> بازی با کلمات رو زیاد دوست ندارم ولی اگه قرار باشه کلمات منو
-                 قضاوت کنند از کلمات  خسته(وان کش) و</p>
-             
+            <div class="tag flex items-center">
+              <span class="material-symbols-outlined text-green text-2xl">
+                bookmark
+                </span>
+                <span class="text-black-500 text-sm mx-1">
+                  چیت و ترینر  
+                </span>
             </div>
-        
+            <div class="tag flex items-center">
+              <span class="material-symbols-outlined text-purple text-2xl">
+                comment
+      
+                </span>
+                <span class="text-black-500 text-sm mx-1">
+                5
+                </span> 
+            </div>
           </div>
-          <div class="post w-[320px]  bg-white p-3 m-3 pb-6   max-xl:m-2 max-md:w-4/5 max-sm:w-full   max-xl:m-2">
-            <img src="../images/16.jpg" class="w-full h-[196px] rounded brightness-75 transition ease-in-out hover:brightness-150" alt="" >
-            <div class="details flex px-2 items-center  justify-between mt-[14px] -mb-1 ">
-              <div class="date flex items-center">
-                <span class="material-symbols-outlined text-red-500 text-2xl relative bottom-1">
-                  calendar_month
-                  </span>
-                  <span class="text-black-500 text-sm mx-1">
-                    5 آذر 1399
-                  </span>
-              </div>
-              <div class="tag flex items-center">
-                <span class="material-symbols-outlined text-green text-2xl">
-                  bookmark
-                  </span>
-                  <span class="text-black-500 text-sm mx-1">
-                    چیت و ترینر  
-                  </span>
-              </div>
-              <div class="tag flex items-center">
-                <span class="material-symbols-outlined text-purple text-2xl">
-                  comment
-        
-                  </span>
-                  <span class="text-black-500 text-sm mx-1">
-                  5
-                  </span> 
-              </div>
-            </div>
-            <div class="flex flex-col px-1">
-              <h3 class="text-black-500 my-3 text-xl font-bold hover:text-black-700"><a href="#">چگونه می‌توان از خانه در طی دوران کووید ۱۹ ( کرونا ) کار کرد؟ </a></h3>
-              <p class="text-black-500 text-base"> بازی با کلمات رو زیاد دوست ندارم ولی اگه قرار باشه کلمات منو
-                 قضاوت کنند از کلمات  خسته(وان کش) و</p>
-             
-            </div>
-        
+          <div class="flex flex-col px-1">
+            <h3 class="text-black-700 my-3 text-xl font-bold hover:text-black-700"><a href="#">چگونه می‌توان از خانه در طی دوران کووید ۱۹ ( کرونا ) کار کرد؟ </a></h3>
+            <p class="text-black-500 text-base"> بازی با کلمات رو زیاد دوست ندارم ولی اگه قرار باشه کلمات منو
+            </p>
+           
           </div>
-          <div class="post w-[320px]  bg-white p-3 m-3 pb-6   max-xl:m-2 max-md:w-4/5 max-sm:w-full   max-xl:m-2">
-            <img src="../images/16.jpg" class="w-full h-[196px] rounded brightness-75 transition ease-in-out hover:brightness-150" alt="" >
-            <div class="details flex px-2 items-center  justify-between mt-[14px] -mb-1 ">
-              <div class="date flex items-center">
-                <span class="material-symbols-outlined text-red-500 text-2xl relative bottom-1">
-                  calendar_month
-                  </span>
-                  <span class="text-black-500 text-sm mx-1">
-                    5 آذر 1399
-                  </span>
-              </div>
-              <div class="tag flex items-center">
-                <span class="material-symbols-outlined text-green text-2xl">
-                  bookmark
-                  </span>
-                  <span class="text-black-500 text-sm mx-1">
-                    چیت و ترینر  
-                  </span>
-              </div>
-              <div class="tag flex items-center">
-                <span class="material-symbols-outlined text-purple text-2xl">
-                  comment
-        
-                  </span>
-                  <span class="text-black-500 text-sm mx-1">
-                  5
-                  </span> 
-              </div>
-            </div>
-            <div class="flex flex-col px-1">
-              <h3 class="text-black-500 my-3 text-xl font-bold hover:text-black-700"><a href="#">چگونه می‌توان از خانه در طی دوران کووید ۱۹ ( کرونا ) کار کرد؟ </a></h3>
-              <p class="text-black-500 text-base"> بازی با کلمات رو زیاد دوست ندارم ولی اگه قرار باشه کلمات منو
-                 قضاوت کنند از کلمات  خسته(وان کش) و</p>
-             
-            </div>
-        
-          </div>
-        
+      
         </div>
-              <!-- pagination -->
-              <div class="pagination my-8 flex justify-center items-center">
-                <span class="material-symbols-outlined rotate-[180deg] text-2xl">
-                  arrow_back
-                  </span>
-                <span>1</span>
-                <span class="active">2</span>
-                <span>3</span>
-                <span>4</span>
-                <span class="material-symbols-outlined text-2xl">
-                  arrow_back
-                  </span>
-          </div>
-        <!-- end pagination -->
-           </div>
-           <div class="p-2 my-tab absolute pointer-events-none rotate-[1deg] opacity-0  h-full" id="product_tab">
-            <div class="posts flex flex-wrap justify-start -mt-2">
-              <div class="post w-[320px]  bg-white p-3 m-3 pb-6   max-xl:m-2 max-md:w-4/5 max-sm:w-full   max-xl:m-2">
-                <img src="../images/17.jpg" class="w-full h-[196px] rounded brightness-75 transition ease-in-out hover:brightness-150" alt="" >
-                <div class="details flex px-2 items-center  justify-between mt-[14px] -mb-1 ">
-                  <div class="date flex items-center">
-                    <span class="material-symbols-outlined text-red-500 text-2xl relative bottom-1">
-                      calendar_month
-                      </span>
-                      <span class="text-black-500 text-sm mx-1">
-                        5 آذر 1399
-                      </span>
-                  </div>
-                  <div class="tag flex items-center">
-                    <span class="material-symbols-outlined text-green text-2xl">
-                      bookmark
-                      </span>
-                      <span class="text-black-500 text-sm mx-1">
-                        چیت و ترینر  
-                      </span>
-                  </div>
-                  <div class="tag flex items-center">
-                    <span class="material-symbols-outlined text-purple text-2xl">
-                      comment
-            
-                      </span>
-                      <span class="text-black-500 text-sm mx-1">
-                      5
-                      </span> 
-                  </div>
-                </div>
-                <div class="flex flex-col px-1">
-                  <h3 class="text-black-500 my-3 text-xl font-bold hover:text-black-700"><a href="#">چگونه می‌توان از خانه در طی دوران کووید ۱۹ ( کرونا ) کار کرد؟ </a></h3>
-                  <p class="text-black-500 text-base"> بازی با کلمات رو زیاد دوست ندارم ولی اگه قرار باشه کلمات منو
-                     قضاوت کنند از کلمات  خسته(وان کش) و</p>
-                 
-                </div>
-            
-              </div>
-              <div class="post w-[320px]  bg-white p-3 m-3 pb-6   max-xl:m-2 max-md:w-4/5 max-sm:w-full   max-xl:m-2">
-                <img src="../images/11.jpg" class="w-full h-[196px] rounded brightness-75 transition ease-in-out hover:brightness-150" alt="" >
-                <div class="details flex px-2 items-center  justify-between mt-[14px] -mb-1 ">
-                  <div class="date flex items-center">
-                    <span class="material-symbols-outlined text-red-500 text-2xl relative bottom-1">
-                      calendar_month
-                      </span>
-                      <span class="text-black-500 text-sm mx-1">
-                        5 آذر 1399
-                      </span>
-                  </div>
-                  <div class="tag flex items-center">
-                    <span class="material-symbols-outlined text-green text-2xl">
-                      bookmark
-                      </span>
-                      <span class="text-black-500 text-sm mx-1">
-                        چیت و ترینر  
-                      </span>
-                  </div>
-                  <div class="tag flex items-center">
-                    <span class="material-symbols-outlined text-purple text-2xl">
-                      comment
-            
-                      </span>
-                      <span class="text-black-500 text-sm mx-1">
-                      5
-                      </span> 
-                  </div>
-                </div>
-                <div class="flex flex-col px-1">
-                  <h3 class="text-black-500 my-3 text-xl font-bold hover:text-black-700"><a href="#">چگونه می‌توان از خانه در طی دوران کووید ۱۹ ( کرونا ) کار کرد؟ </a></h3>
-                  <p class="text-black-500 text-base"> بازی با کلمات رو زیاد دوست ندارم ولی اگه قرار باشه کلمات منو
-                     قضاوت کنند از کلمات  خسته(وان کش) و</p>
-                 
-                </div>
-            
-              </div>
-              <div class="post w-[320px]  bg-white p-3 m-3 pb-6   max-xl:m-2 max-md:w-4/5 max-sm:w-full   max-xl:m-2">
-                <img src="../images/12.jpg" class="w-full h-[196px] rounded brightness-75 transition ease-in-out hover:brightness-150" alt="" >
-                <div class="details flex px-2 items-center  justify-between mt-[14px] -mb-1 ">
-                  <div class="date flex items-center">
-                    <span class="material-symbols-outlined text-red-500 text-2xl relative bottom-1">
-                      calendar_month
-                      </span>
-                      <span class="text-black-500 text-sm mx-1">
-                        5 آذر 1399
-                      </span>
-                  </div>
-                  <div class="tag flex items-center">
-                    <span class="material-symbols-outlined text-green text-2xl">
-                      bookmark
-                      </span>
-                      <span class="text-black-500 text-sm mx-1">
-                        چیت و ترینر  
-                      </span>
-                  </div>
-                  <div class="tag flex items-center">
-                    <span class="material-symbols-outlined text-purple text-2xl">
-                      comment
-            
-                      </span>
-                      <span class="text-black-500 text-sm mx-1">
-                      5
-                      </span> 
-                  </div>
-                </div>
-                <div class="flex flex-col px-1">
-                  <h3 class="text-black-500 my-3 text-xl font-bold hover:text-black-700"><a href="#">چگونه می‌توان از خانه در طی دوران کووید ۱۹ ( کرونا ) کار کرد؟ </a></h3>
-                  <p class="text-black-500 text-base"> بازی با کلمات رو زیاد دوست ندارم ولی اگه قرار باشه کلمات منو
-                     قضاوت کنند از کلمات  خسته(وان کش) و</p>
-                 
-                </div>
-            
-              </div>
-            
+       <div class="post w-[290px]  bg-white p-2  mx-2 mb-5     max-md:w-full    ">
+          <img src="../images/16.jpg" class="w-full h-[156px] rounded brightness-75 transition ease-in-out hover:brightness-150" alt="" >
+          <div class="details flex px-2 items-center  justify-between mt-[14px] -mb-1 ">
+            <div class="date flex items-center">
+              <span class="material-symbols-outlined text-red-500 text-2xl relative bottom-1">
+                calendar_month
+                </span>
+                <span class="text-black-500 text-sm mx-1">
+                  5 آذر 1399
+                </span>
             </div>
-                  <!-- pagination -->
-                  <div class="pagination my-8 flex justify-center items-center">
-                    <span class="material-symbols-outlined rotate-[180deg] text-2xl">
-                      arrow_back
-                      </span>
-                    <span>1</span>
-                    <span class="active">2</span>
-                    <span>3</span>
-                    <span>4</span>
-                    <span class="material-symbols-outlined text-2xl">
-                      arrow_back
-                      </span>
-              </div>
-            <!-- end pagination -->
-               </div>
+            <div class="tag flex items-center">
+              <span class="material-symbols-outlined text-green text-2xl">
+                bookmark
+                </span>
+                <span class="text-black-500 text-sm mx-1">
+                  چیت و ترینر  
+                </span>
+            </div>
+            <div class="tag flex items-center">
+              <span class="material-symbols-outlined text-purple text-2xl">
+                comment
+      
+                </span>
+                <span class="text-black-500 text-sm mx-1">
+                5
+                </span> 
+            </div>
+          </div>
+          <div class="flex flex-col px-1">
+            <h3 class="text-black-700 my-3 text-xl font-bold hover:text-black-700"><a href="#">چگونه می‌توان از خانه در طی دوران کووید ۱۹ ( کرونا ) کار کرد؟ </a></h3>
+            <p class="text-black-500 text-base"> بازی با کلمات رو زیاد دوست ندارم ولی اگه قرار باشه کلمات منو
+            </p>
+           
+          </div>
+      
+        </div>
+      
+        <div class="post w-[290px]  bg-white p-2  mx-2 mb-5     max-md:w-full    ">
+          <img src="../images/16.jpg" class="w-full h-[156px] rounded brightness-75 transition ease-in-out hover:brightness-150" alt="" >
+          <div class="details flex px-2 items-center  justify-between mt-[14px] -mb-1 ">
+            <div class="date flex items-center">
+              <span class="material-symbols-outlined text-red-500 text-2xl relative bottom-1">
+                calendar_month
+                </span>
+                <span class="text-black-500 text-sm mx-1">
+                  5 آذر 1399
+                </span>
+            </div>
+            <div class="tag flex items-center">
+              <span class="material-symbols-outlined text-green text-2xl">
+                bookmark
+                </span>
+                <span class="text-black-500 text-sm mx-1">
+                  چیت و ترینر  
+                </span>
+            </div>
+            <div class="tag flex items-center">
+              <span class="material-symbols-outlined text-purple text-2xl">
+                comment
+      
+                </span>
+                <span class="text-black-500 text-sm mx-1">
+                5
+                </span> 
+            </div>
+          </div>
+          <div class="flex flex-col px-1">
+            <h3 class="text-black-700 my-3 text-xl font-bold hover:text-black-700"><a href="#">چگونه می‌توان از خانه در طی دوران کووید ۱۹ ( کرونا ) کار کرد؟ </a></h3>
+            <p class="text-black-500 text-base"> بازی با کلمات رو زیاد دوست ندارم ولی اگه قرار باشه کلمات منو
+            </p>
+           
+          </div>
+      
+        </div>
+
+      </div>
+            <!-- pagination -->
+            <div class="pagination my-8 flex justify-center items-center">
+              <span class="material-symbols-outlined rotate-[180deg] text-2xl">
+                arrow_back
+                </span>
+              <span>1</span>
+              <span class="active">2</span>
+              <span>3</span>
+              <span>4</span>
+              <span class="material-symbols-outlined text-2xl">
+                arrow_back
+                </span>
+        </div>
+      <!-- end pagination -->
+         </div>
+  
+  </div>
+  <!-- End Section Posts -->
+  <aside class="aside mr-6 xl:w-1/3 max-xl:w-[31%] max-lg:mr-0 max-lg:w-full ">
+    <!-- lates post box -->
+    <div class="sidebar_single_post mb-10 relative border  border-gray-500 w-full h-auto p-6 max-xl:px-3 max-lg:mt-8 max-sm:mt-10">
+      <div class="title">
+<h2 class="text-black-700 text-lxl w-48 absolute -top-7 right-10 font-bold flex items-center bg-gray-300 p-3 text-center justify-center   max-sm:text-xl">
+  <span class="material-symbols-outlined text-3xl ml-2 relative bottom-[2px]">
+    rss_feed
+    </span>
+<span>پست های اخیر</span>
+
+</h2>
+<p class=" text-base font-light  mx-6 text-black-500">پست های اخیر ایزگمی در دسترس است.</p>
+<div class="posts">
+  <div class="post relative bg-white rounded-md p-4 py-2 pt-5 mt-4 mb-5">
+    <h3 class="text-mxl text-black-500 font-bold transition ease-in hover:text-gold-00">دانلود چیت بازی زولا+نسخه جدید</h3>
+    <div class="details flex items-center  justify-end  mt-4 mb-2 ">
+      <div class="date flex ">
+        <span class="material-symbols-outlined text-gold-500 text-2xl">
+          calendar_month
+          </span>
+          <span class="text-black-500 text-sm mx-2 relative top-[2px]">
+            5 آذر 1399
+          </span>
+      </div>
+      <div class="tag flex items-center mx-2 mr-4 ">
+        <span class="material-symbols-outlined text-gold-500 text-2xl relative bottom-[2px] ">
+          local_fire_department
+          </span>
+          <span class="text-black-500 text-sm ">
+          k 2.7
+          </span>
+      </div>
+      
+    </div>
+  </div>
+  <div class="post relative bg-white rounded-md p-4 pt-5 py-2 mt-4 mb-5">
+    <h3 class="text-mxl text-black-500 font-bold">دانلود چیت بازی زولا+نسخه جدید</h3>
+    <div class="details flex items-center  justify-end  mt-4 mb-2 ">
+      <div class="date flex ">
+        <span class="material-symbols-outlined text-gold-500 text-2xl">
+          calendar_month
+          </span>
+          <span class="text-black-500 text-sm mx-2 relative top-[2px]">
+            5 آذر 1399
+          </span>
+      </div>
+      <div class="tag flex items-center mx-2 mr-4 ">
+        <span class="material-symbols-outlined text-gold-500 text-2xl relative bottom-[2px] ">
+          local_fire_department
+          </span>
+          <span class="text-black-500 text-sm ">
+          k 2.7
+          </span>
+      </div>
+      
+    </div>
+  </div>
+  <div class="post relative bg-white rounded-md p-4 pt-5 py-2 mt-4 mb-5">
+    <h3 class="text-mxl text-black-500 font-bold">دانلود چیت بازی زولا+نسخه جدید</h3>
+    <div class="details flex items-center  justify-end  mt-4 mb-2 ">
+      <div class="date flex ">
+        <span class="material-symbols-outlined text-gold-500 text-2xl">
+          calendar_month
+          </span>
+          <span class="text-black-500 text-sm mx-2 relative top-[2px]">
+            5 آذر 1399
+          </span>
+      </div>
+      <div class="tag flex items-center mx-2 mr-4 ">
+        <span class="material-symbols-outlined text-gold-500 text-2xl relative bottom-[2px] ">
+          local_fire_department
+          </span>
+          <span class="text-black-500 text-sm ">
+          k 2.7
+          </span>
+      </div>
+      
+    </div>
+  </div>
+  <div class="post relative bg-white rounded-md p-4 pt-5 py-2 mt-4 mb-5">
+    <h3 class="text-mxl text-black-500 font-bold">دانلود چیت بازی زولا+نسخه جدید</h3>
+    <div class="details flex items-center  justify-end  mt-4 mb-2 ">
+      <div class="date flex ">
+        <span class="material-symbols-outlined text-gold-500 text-2xl">
+          calendar_month
+          </span>
+          <span class="text-black-500 text-sm mx-2 relative top-[2px]">
+            5 آذر 1399
+          </span>
+      </div>
+      <div class="tag flex items-center mx-2 mr-4 ">
+        <span class="material-symbols-outlined text-gold-500 text-2xl relative bottom-[2px] ">
+          local_fire_department
+          </span>
+          <span class="text-black-500 text-sm ">
+          k 2.7
+          </span>
+      </div>
+      
+    </div>
+  </div>
+  <a href="#" class="text-gold-500 text-mxl read_more_btn   bg-none w-[160px] flex justify-center mx-auto  py-[11px] mt-5 border border-gold-500 text-center font-medium rounded  items-center">
+    <span class="mx-2 flex items-center ">
+      مطالعه بیشتر
+      <span class="material-symbols-outlined mx-1 text-[18px] mb-[2px]">
+        data_saver_on
+
+        </span>
+    </span>
+        
+
+     </a>
+</div>
+      </div>
+    </div>
+<!-- end lates post box -->
+
+<!-- best cheat -->
+    <div class="sidebar_best_cheat mb-10 relative  h-auto">
+      <div class="header flex items-center border border-gray-500  p-5 rounded justify-between">
+        <span class="text-black-500 text-[17px] font-IRsansBold max-sm:text-xl">
+          چیت پلاس
+        </span>
+        <span class="font-IRsansLight text-black-500 text-mxl">
+          5 چیت برتر
+        </span>
+      </div>
+      <div class="items mt-2 relative p-4">
+
+        <div class="item_best w-full h-[280px]  relative ">
+          <div class="bg-black-500 opacity-40 absolute top-0  w-full h-[280px] z-20"></div>
+          <img src="../images/4.jpg" alt="" class="w-full  h-[280px] contrast-50">
+          <div class="items_titleq flex items-center absolute -bottom-2 -right-4 z-30">
+            <div class="circle w-16 h-[60px] bg-black-700 border-[4px] rounded-full border-gold-500 max-lg:w-16 max-xl:w-[78px]">
+              <span class="text-gold-500 text-[20px] text-center flex items-center justify-center h-full ">1 </span>
+            </div>
+            <h3 class="text-white text-[17px] max-sm:text-xl font-medium mx-4 relative bottom-3">چیت بازی زولا  + آخرین اپذیت آذر
+            </h3>
+          </div>
+      </div>
+        <div class="item_best w-full h-[60px] mt-4 relative ">
+          <div class="bg-purple opacity-70 absolute top-0  w-full h-[60px] z-20"></div>
+          <img src="../images/single_product_images.jpg" alt="" class="w-full  h-[60px] ">
+          <div class="items_titleq flex items-center absolute  bottom-0 -right-4 z-30">
+            <div class="circle w-16 h-[60px] bg-black-700 border-[4px] rounded-full border-gold-500">
+              <span class="text-gold-500 text-[20px] text-center flex items-center justify-center h-full">2 </span>
+            </div>
+            <h3 class="text-white text-[16px] font-medium mx-4 "> چیت پابجی پلاس
+            </h3>
+          </div>
+      </div>
+      <div class="item_best w-full h-[60PX] mt-4 relative ">
+        <div class="bg-red-100 opacity-70 absolute top-0 w-full h-[60PX] z-20"></div>
+        <img src="../images/shop-slide-image.jpg" alt="" class="w-full  h-[60PX]  ">
+        <div class="items_titleq flex items-center absolute  bottom-0 -right-4 z-30">
+          <div class="circle w-16 h-[60PX] bg-black-700 border-[4px] rounded-full border-gold-500">
+            <span class="text-gold-500 text-[20px] text-center flex items-center justify-center h-full">3 </span>
+          </div>
+          <h3 class="text-white text-[16px] font-medium mx-4 ">  ترینر بازی کانتر گلوبال
+          </h3>
+        </div>
+    </div>
+    <div class="item_best w-full h-[60PX] mt-4 relative ">
+      <div class="bg-green opacity-70 absolute top-0  w-full h-[60PX] z-20"></div>
+      <img src="../images/shop-slide-image.jpg" alt="" class="w-full  h-[60PX] ">
+      <div class="items_titleq flex items-center absolute  bottom-0 -right-4 z-30">
+        <div class="circle w-16 h-[60PX] bg-black-700 border-[4px] rounded-full border-gold-500">
+          <span class="text-gold-500 text-[20px] text-center flex items-center justify-center h-full">4 </span>
+        </div>
+        <h3 class="text-white text-[17px] font-medium mx-4 ">  ترینر بازی  گلوبال
+        </h3>
+      </div>
+  </div>
+  <div class="item_best w-full h-[60PX] mt-4 relative ">
+    <div class="bg-gold-500 opacity-70 absolute top-0  w-full h-[60PX] z-20"></div>
+    <img src="../images/11.jpg" alt="" class="w-full h-[60PX] ">
+    <div class="items_titleq flex items-center absolute  bottom-0 -right-4 z-30">
+      <div class="circle w-16 h-[60PX] bg-black-700 border-[4px] rounded-full border-gold-500">
+        <span class="text-gold-500 text-[20px] text-center flex items-center justify-center h-full">5</span>
+      </div>
+      <h3 class="text-white text-[16px] font-medium mx-4 "> وال هک بازی ویچر  
+      </h3>
+    </div>
+</div>
+      </div>
+     
+    </div>
+    <!-- lates comments -->
+<div class="sidebar_lates_comment mb-10 relative border  border-gray-500 w-full h-auto p-6 max-xl:px-3 max-xl:pb-1">
+  <div class="title">
+<h2 class="text-black-700 text-lxl w-48 absolute -top-7 right-10 font-bold flex items-center bg-gray-300 p-3 text-center justify-center   max-sm:text-xl">
+<span class="material-symbols-outlined text-3xl ml-2 relative bottom-[2px]">
+group
+</span>
+<span>آخرین نظرات</span>
+
+</h2>
+<p class=" text-mxl font-light  mx-6 text-black-500">
+  آخرین دیدگاه های ثبت شده در ایزگیم
+</p>
+
+  </div>
+  <div class="posts mt-4">
+    <div class="post relative border border-gray-500 border-dashed text-mxl p-3 mt-4 mb-5" style="border-width: 2px;">
+    <a href="#" class="text-black-500 hover:opacity-60">
+      <strong class="text-gold-500">سارا</strong>
+      در مطلب دانلود چیت زولا نوشت
+    </a>
+    <div class="details flex items-center  justify-end  mt-3 mb-1 ">
+      <div class="date flex ">
+    
+          <span class="text-black-500 text-sm -mb-2 relative ">
+           26 آذر 1400
+          </span>
+      </div>
+
+      
+    </div>
     </div>
 
+    <div class="post relative border border-gray-500 border-dashed text-mxl p-3 mt-4 mb-5" style="border-width: 2px;">
+      <a href="#" class="text-black-500">
+        <strong class="text-gold-500">سارا</strong>
+        در مطلب دانلود چیت زولا نوشت
+      </a>
+      <div class="details flex items-center  justify-end  mt-3 mb-1 ">
+        <div class="date flex ">
+      
+            <span class="text-black-500 text-sm -mb-2 relative ">
+             26 آذر 1400
+            </span>
+        </div>
+  
+        
+      </div>
+      </div>
+      <div class="post relative border border-gray-500 border-dashed  text-mxl p-3 mt-4 mb-5" style="border-width: 2px;">
+        <a href="#" class="text-black-500">
+          <strong class="text-gold-500">سارا</strong>
+          در مطلب دانلود چیت زولا نوشت
+        </a>
+        <div class="details flex items-center  justify-end  mt-3 mb-1 ">
+          <div class="date flex ">
+        
+              <span class="text-black-500 text-sm -mb-2 relative ">
+               26 آذر 1400
+              </span>
+          </div>
+    
+          
+        </div>
+        </div>
+        <div class="post relative border border-gray-500 border-dashed text-mxl p-3  mt-4 mb-5" style="border-width: 2px;">
+          <a href="#" class="text-black-500">
+            <strong class="text-gold-500">سارا</strong>
+            در مطلب دانلود چیت زولا نوشت
+          </a>
+          <div class="details flex items-center  justify-end  mt-3 mb-1 ">
+            <div class="date flex ">
+          
+                <span class="text-black-500 text-sm -mb-2 relative ">
+                 26 آذر 1400
+                </span>
+            </div>
+      
+            
+          </div>
+          </div>
+          <div class="post relative border border-gray-500 border-dashed text-mxl p-3 mt-4 mb-5" style="border-width: 2px;">
+            <a href="#" class="text-black-500">
+              <strong class="text-gold-500">سارا</strong>
+              در مطلب دانلود چیت زولا نوشت
+            </a>
+            <div class="details flex items-center  justify-end  mt-3 mb-1 ">
+              <div class="date flex ">
+            
+                  <span class="text-black-500 text-sm -mb-2 relative ">
+                   26 آذر 1400
+                  </span>
+              </div>
+        
+              
+            </div>
+            </div>
+    </div>
+</div>
+<!-- end lates comment -->
+
+<!-- end best cheat box -->
+   </aside>
 
 
-
+</div>
     </section>
 </div>
 
-<!-- end search box -->
+<!-- end  box -->
  <br><br>
 
 
@@ -865,32 +1022,27 @@ let Boxes=new MangeBoxDropDown()
         
       }
     })
-let article=document.getElementById('article_tab');
-let product=document.getElementById('product_tab');
 
-function articleTab(event){
-  
+    const swiper2 = new Swiper('#swiper2', {
+      // Optional parameters
 
-  if(article.classList.contains('active_tab')){
+      loop: true,
 
-  }else{
-    product.classList.toggle('active_tab');
-    article.classList.toggle('active_tab');
-    document.getElementById('productbtn').classList.toggle('btn_active')
-    document.getElementById('articlebtn').classList.toggle('btn_active')
-  }
-}
-function productTab(event){
-  if(product.classList.contains('active_tab')){
+      // If we need pagination
+      pagination: {
+        el: '#swiper-pagination2',
+      },
 
-}else{
-  product.classList.toggle('active_tab');
-  article.classList.toggle('active_tab');
-  document.getElementById('productbtn').classList.toggle('btn_active')
-    document.getElementById('articlebtn').classList.toggle('btn_active')
+      // Navigation arrows
+      navigation: {
+        nextEl: '#prevslide2',
+        prevEl: '#nextslide2',
+      },
 
-}
-}
+      // And if we need scrollbar
+
+    });
+ 
 </script>
 </body>
 </html>
