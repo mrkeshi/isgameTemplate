@@ -330,6 +330,8 @@
         </div>
         <div class="flex justify-start mb-8  flex-col">
           <a href="#" class="lg:hidden text-xl text-black-500 font-bold text-right mr-4 ">ایزگیم > حساب کاربری > <span class="">دانلود ها</span></a>
+
+
           <div class="hamber-logso lg:hidden hover:opacity-70  ml-4  flex items-center justify-end rounded-full mt-4 ">
             <div class="cursor-pointer flex items-center" id="openDashboardMenu">
               <span class="text-gray-900 text-base text-black-500">منوی حساب کاربری</span>
@@ -347,7 +349,7 @@
               <div class="w-1/3 bg-gray-100 max-md:bg-white h-full py-10 max-md:-my-3 flex items-center flex-col max-md:w-full max-md:flex-row max-md:bg-none max-md:p-0 max-md:justify-center">
                   <h2 class="text-black-700 text-[22px] font-IRsansBold max-md:hidden">کیف پول من</h2>
 
-                  <div class="box max-md:w-1/2 flex flex-col shadow-md active_page_wallet ">
+                  <div class="box max-md:w-1/2 flex flex-col shadow-md ">
                       <div class="bg-white h-[90px] w-[200px] max-md:w-full  mt-8 hover:shadow-2xl transition ease-in cursor-pointer">
                         <div class="flex flex-col items-center h-full w-full justify-center ">
                           <span class="material-symbols-outlined text-[21px] block text-black-500 mb-1 ">
@@ -369,7 +371,7 @@
                       </div>
                     </div>
                 </div>
-                <div class="box max-md:w-1/2 flex flex-col shadow-md">
+                <div class="box max-md:w-1/2 flex flex-col shadow-md active_page_wallet ">
                   <div class="bg-white h-[90px] w-[200px] max-md:w-full max-md:h-f mt-8 hover:shadow-2xl transition ease-in cursor-pointer">
                     <div class="flex flex-col items-center h-full w-full justify-center">
                       <span class="material-symbols-outlined text-[21px] block text-black-500 mb-1 ">
@@ -384,25 +386,49 @@
               </div>
 
               <div class="w-2/3 p-8 px-12 max-md:p-4 max-md:w-full">
+
+             <div class="-my-2 scrollwidth py-2 w-auto  sm:-mx-6 sm:px-6 lg:-mx-8 pr-10 max-sm:pr-0 lg:px-8 max-md:mb-6 scrollbar scrollbar-thumb-gold-100 scrollbar-track-gray-500 scrollbar-w-[3px]  scrollbar-track-rounded-md scrollbar-thumb-rounded-lg sm:overflow-hidden">
+          
+            <div class="align-middle inline-block min-w-full shadow  bg-white shadow-dashboard px-8 pt-3 rounded-bl-lg rounded-br-lg">
+                <table class="min-w-full max-sm:w-[300px] ">
+                    <thead>
+                        <tr class="transition ease-in hover:opacity-80">  
+                            <th class="px-6 py-3 max-xl:px-3 max-xl:py-1 border-b-2 border-gray-300  leading-4 text-gold-500 tracking-wider">سفارش </th>
+                            <th class="px-6 py-3 max-xl:px-3 max-xl:py-1 border-b-2 border-gray-300  text-sm leading-4 text-gold-500 tracking-wider">قیمت</th>
+                            <th class="px-6 py-3 max-xl:px-3 max-xl:py-1 border-b-2 border-gray-300  text-sm leading-4 text-gold-500 tracking-wider">تاریخ </th>
+                            <th class="px-6 py-3 max-xl:px-3 max-xl:py-1 border-b-2 border-gray-300  text-sm leading-4 text-gold-500 tracking-wider">وضعیت</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white">
+                            <tr class="transition ease-in hover:opacity-80">
+                                <td class="px-6 py-4 max-xl:px-3 max-xl:py-2 whitespace-no-wrap border-b border-gray-500">
+                                    <div class="flex items-center">
+                                        <div>
+                                            <div class="text-sm leading-5 text-gray-800">#1</div>
+                                        </div>
+                                    </div>
+                                </td>
+                            
+                         
+                                <td class="px-6 py-4 max-xl:px-3 max-xl:py-2 whitespace-no-wrap border-b text-black-700 border-gray-500 text-sm leading-5">27.000 هزارتومان</td>
+                                <td class="px-6 py-4 max-xl:px-3 max-xl:py-2 whitespace-no-wrap border-b text-black-700 border-gray-500 text-sm leading-5">
+                                    <span class="relative inline-block px-3 py-1  text-black-700 leading-tight">
+                                    <span class="relative text-xs">1401/01/05</span>
+                                </span>
+                                </td>
+                                <td class="px-6 py-4 max-xl:px-3 max-xl:py-2 whitespace-no-wrap border-b text-green border-gray-500 text-blue-900 text-sm leading-5">پرداخت شده</td>
+                             
+                      </tr>
                 
-                  <header class=" flex justify-between">
-                      <h4 class="text-black-700 text-[19px] max-md:text-lxl ">
-                        موجودی
-                      </h4>
-                      <h4 class="text-gold-500 text-[18px] max-md:text-[17px] ">
-                          25.000  تومان
-                      </h4>
-                     
-                  </header> <hr class="w-full mx-auto mt-7">
-                  <div class="form mt-6 flex flex-col ">
-                    <label for="" class="text-black-500 text-mxl"> مقدار مورد نظر را وارد نمایید</label>
-                    <input class=" w-full border-solid p-4 text-mxl rund mt-6  outline-gray-500 transition-all max-sm:p-3 ease-in border-gray-500 text-black-500  ml-3 bg-white max-sm:ml-0  outline-none focus:outline-gold-500 outline-1 font-IRsansLight " placeholder="لطفا مقدار پول را به ریال وارد کنید.">
-                    <a href="#" class="bg-gold-500 border border-gold-500 w-36  mt-5 hover:text-gold-500 hover:bg-white transition ease text-white text-[15px] p-3 px-5 "> افزایش موجودی</a>
-
-                  </div>
-
+                    </tbody>
+                </table>
+    
+            </div>
+        </div>
 
               </div>
+
+
             </div>
            
          

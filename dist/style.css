@@ -4536,6 +4536,14 @@ body {
     width: 9rem;
   }
 
+  .max-sm\:w-\[600px\] {
+    width: 600px;
+  }
+
+  .max-sm\:w-\[300px\] {
+    width: 300px;
+  }
+
   .max-sm\:flex-col {
     flex-direction: column;
   }
@@ -4731,6 +4739,10 @@ body {
     width: 1.5rem;
   }
 
+  .sm\:overflow-hidden {
+    overflow: hidden;
+  }
+
   .sm\:px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -4752,6 +4764,10 @@ body {
 
   .md\:w-full {
     width: 100%;
+  }
+
+  .md\:overflow-hidden {
+    overflow: hidden;
   }
 }
 
@@ -4838,6 +4854,10 @@ body {
 
   .lg\:justify-around {
     justify-content: space-around;
+  }
+
+  .lg\:overflow-hidden {
+    overflow: hidden;
   }
 
   .lg\:py-5 {
