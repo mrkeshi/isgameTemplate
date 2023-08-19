@@ -1296,12 +1296,12 @@ body {
   margin-top: 0px;
 }
 
-.mb-\[10px\] {
-  margin-bottom: 10px;
-}
-
 .-mt-1 {
   margin-top: -0.25rem;
+}
+
+.mb-\[10px\] {
+  margin-bottom: 10px;
 }
 
 .block {
@@ -3132,8 +3132,8 @@ body {
 }
 
 .scrollbar::-webkit-scrollbar {
-  width: 16px;
-  height: 16px;
+  width: 5px;
+  height: 5px;
 }
 
 .scrollbar-thin.overflow-x-hidden {
@@ -3412,15 +3412,6 @@ body {
 }
 
 @media (prefers-color-scheme: dark) {
-  .dark\:border-gray-600 {
-    border-color: rgb(249,249,249,0.71);
-  }
-
-  .dark\:bg-gray-700 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(203 199 199 / var(--tw-bg-opacity));
-  }
-
   .dark\:text-white {
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -3692,11 +3683,6 @@ body {
   .max-lg\:mx-2 {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
-  }
-
-  .max-lg\:mx-3 {
-    margin-left: 0.75rem;
-    margin-right: 0.75rem;
   }
 
   .max-lg\:mt-8 {
@@ -4903,20 +4889,12 @@ body {
     width: 28%;
   }
 
-  .xl\:w-2\/3 {
-    width: 66.666667%;
-  }
-
-  .xl\:w-1\/3 {
-    width: 33.333333%;
+  .xl\:w-\[70\%\] {
+    width: 70%;
   }
 
   .xl\:w-\[30\%\] {
     width: 30%;
-  }
-
-  .xl\:w-\[70\%\] {
-    width: 70%;
   }
 
   .xl\:p-8 {
