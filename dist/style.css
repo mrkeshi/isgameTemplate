@@ -3412,6 +3412,15 @@ body {
 }
 
 @media (prefers-color-scheme: dark) {
+  .dark\:border-gray-600 {
+    border-color: rgb(249,249,249,0.71);
+  }
+
+  .dark\:bg-gray-700 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(203 199 199 / var(--tw-bg-opacity));
+  }
+
   .dark\:text-white {
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
