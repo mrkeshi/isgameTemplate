@@ -1,4 +1,8 @@
 @charset "UTF-8";
+table tbody td {
+  text-align: center;
+}
+
 .active_page_wallet > div {
   background-color: #FCD445;
 }
