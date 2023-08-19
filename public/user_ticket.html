@@ -222,7 +222,7 @@
  </div>
  <!-- end search box -->
     <main>
-      <div class="flex mt-20 h-[700px] max-lg:h-auto max-lg:flex-col">
+      <div class="flex mt-20 h-auto max-lg:h-auto max-lg:flex-col">
 
         <div class="sidebar w-1/4 max-xl:w-1/3 bg-white  ml-5 userDashboard transition-all ease-in " >
           <aside class="overflow-y-auto scrollbar scrollbar-thumb-gold-100 scrollbar-track-gray-500 scrollbar-w-[3px] overflow-x-hidden scrollbar-track-rounded-md scrollbar-thumb-rounded-lg max-lg:h-[100vh]">
@@ -302,10 +302,9 @@
         <li class="my-9">
           <a class="flex items-center text-black-500 text-mxl ease-in transition hover:text-gold-500 " href="#">
             <span class="material-symbols-outlined  mx-[7px] text-[24px] text-gold-500">
-              account_circle
+              mail
               </span>
-              
-               جزئیات حساب کاربری من
+              تیکت ها
 
         </a>
       </li>
@@ -353,7 +352,7 @@
 
         <div class="w-3/4 mr-5 max-xl:w-2/3 bg-white p-6 max-lg:p-4 max-lg:w-auto max-lg:h-auto max-lg:mx-4">
         
-          <h2 class="text-black-700 text-2xl m-6 ">سفارش ها </h2>
+          <h2 class="text-black-700 text-2xl m-6 max-lg:m-3 "> مدیریت تیکت </h2>
           
           <!-- Table orders -->
 
@@ -363,12 +362,11 @@
                 <table class="min-w-full max-sm:w-[700px] ">
                     <thead>
                         <tr class="transition ease-in hover:opacity-80">  
-                            <th class="px-6 py-3 max-xl:px-3 max-xl:py-1 border-b-2 border-gray-300  leading-4 text-gold-500 tracking-wider">سفارش </th>
-                            <th class="px-6 py-3 max-xl:px-3 max-xl:py-1 border-b-2 border-gray-300  text-sm leading-4 text-gold-500 tracking-wider">نام محصولات</th>
-                            <th class="px-6 py-3 max-xl:px-3 max-xl:py-1 border-b-2 border-gray-300  text-sm leading-4 text-gold-500 tracking-wider">قیمت</th>
+                            <th class="px-6 py-3 max-xl:px-3 max-xl:py-1 border-b-2 border-gray-300 text-sm  leading-4 text-gold-500 tracking-wider">شماره </th>
+                            <th class="px-6 py-3 max-xl:px-3 max-xl:py-1 border-b-2 border-gray-300  text-sm leading-4 text-gold-500 tracking-wider">موضوع</th>
                             <th class="px-6 py-3 max-xl:px-3 max-xl:py-1 border-b-2 border-gray-300  text-sm leading-4 text-gold-500 tracking-wider">تاریخ </th>
                             <th class="px-6 py-3 max-xl:px-3 max-xl:py-1 border-b-2 border-gray-300  text-sm leading-4 text-gold-500 tracking-wider">وضعیت</th>
-                            <th class="px-6 py-3 max-xl:px-3 max-xl:py-1 border-b-2 border-gray-300  text-sm leading-4 text-gold-500 tracking-wider">عملیات</th>
+                            <th class="px-6 py-3 max-xl:px-3 max-xl:py-1 border-b-2 border-gray-300  text-sm leading-4 text-gold-500 tracking-wider">...</th>
                         </tr>
                     </thead>
                     <tbody class="bg-white">
@@ -383,58 +381,84 @@
                             
                                 <td class="px-6 py-4 max-xl:px-3 max-xl:py-2 whitespace-no-wrap border-b text-black-700 border-gray-500 text-sm leading-5"> 
                                   <a href="#">
-                                    چیت جدید بازی پابجی+ قابلیت
-                                    +
+                               وقتی گریبان عدم با دست خلقت می درید
                                     <span class="text-gold-100">[...]</span>
-                                    آنتی بن و آپدیت
+                                
                                   </a>
                                 
                                 </td>
-                                <td class="px-6 py-4 max-xl:px-3 max-xl:py-2 whitespace-no-wrap border-b text-black-700 border-gray-500 text-sm leading-5">27.000 هزارتومان</td>
                                 <td class="px-6 py-4 max-xl:px-3 max-xl:py-2 whitespace-no-wrap border-b text-black-700 border-gray-500 text-sm leading-5">
-                                    <span class="relative inline-block px-3 py-1  text-black-700 leading-tight">
+                                    <span class="relative  px-3 py-1  text-black-700 leading-tight flex flex-col">
                                     <span class="relative text-xs">1401/01/05</span>
+                                    <span>18:59</span>
                                 </span>
                                 </td>
-                                <td class="px-6 py-4 max-xl:px-3 max-xl:py-2 whitespace-no-wrap border-b text-green border-gray-500 text-blue-900 text-sm leading-5">پرداخت شده</td>
-                                <td class="px-6 py-4 max-xl:px-3 max-xl:py-2 whitespace-no-wrap text-right border-b border-gray-500 text-sm leading-5">
-                                    <button class="px-5 py-2 text-gold-500 rounded transition duration-300 hover:bg-blue-700 hover:text-gold-100 focus:outline-none hover:opacity-70">دانلود فایل</button>
+                                <td class="px-6 py-4 max-xl:px-3 max-xl:py-2 whitespace-no-wrap border-b text-green border-gray-500 text-blue-900 text-sm leading-5">پاسخ داده شده</td>
+                                <td class="px-6 py-4 max-xl:px-3 max-xl:py-2 whitespace-no-wrap  border-b border-gray-500 text-sm leading-5">
+                                    <button class="px-5 py-2 text-gold-500 rounded transition duration-300 hover:bg-blue-700 hover:text-gold-100 focus:outline-none hover:opacity-70">نمایش</button>
                                 </td>
                       </tr>
-                      <tr class="transition ease-in hover:opacity-80">
-                        <td class="px-6 py-4 max-xl:px-3 max-xl:py-2 whitespace-no-wrap border-b border-gray-500 ">
-                            <div class="flex items-center">
-                                <div>
-                                    <div class="text-sm leading-5 text-gray-800">#121</div>
-                                </div>
-                            </div>
-                        </td>
-                    
-                        <td class="px-6 py-4 max-xl:px-3 max-xl:py-2 whitespace-no-wrap border-b text-black-700 border-gray-500 text-sm leading-5">
-                          <a href="#">
-                            چیت جدید بازی پابجی+ قابلیت
-                            +
-                            <span class="text-gold-100">[...]</span>
-                            آنتی بن و آپدیت
-                          </a>
-                        </td>
-                        <td class="px-6 py-4 max-xl:px-3 max-xl:py-2 whitespace-no-wrap border-b text-black-700 border-gray-500 text-sm leading-5">27.000 هزارتومان</td>
-                        <td class="px-6 py-4 max-xl:px-3 max-xl:py-2 whitespace-no-wrap border-b text-black-700 border-gray-500 text-sm leading-5">
-                            <span class="relative inline-block px-3 py-1  text-black-700 leading-tight">
-                            <span class="relative text-xs">1401/01/05</span>
-                        </span>
-                        </td>
-                        <td class="px-6 py-4 max-xl:px-3 max-xl:py-2 whitespace-no-wrap border-b text-red-100 border-gray-500 text-blue-900 text-sm leading-5">لغو شده</td>
-                        <td class="px-6 py-4 max-xl:px-3 max-xl:py-2 whitespace-no-wrap text-right border-b border-gray-500 text-sm leading-5">
-                            <button class="px-5 py-2  text-gold-500 rounded transition duration-300 hover:bg-blue-700 hover:text-gold-100 focus:outline-none hover:opacity-70">نمایش</button>
-                        </td>
-              </tr>
+                
                     </tbody>
                 </table>
     
             </div>
+
+       
+
+
+        </div>
+     <!-- add ticket -->
+     <div class="transition hover:bg-indigo-500 md:mt-6 ">
+      <!-- header -->
+      <div class="accordion-header  transition flex space-x-5 px-5 max-sm:px-0  items-center h-[60PX]  justify-between mb-4 ">
+               
+        <div class="header flex mt-4 justify-items-end items-center w-full ">
+          <a class="text-white text-mxl cursor-pointer read_more_btn hover:bg-white   bg-gold-500 w-[150px] max-sm:w-36 flex justify-center   py-[11px]  border border-gold-500 text-center font-medium rounded  items-center">
+            <span class="material-symbols-outlined  text-[18px] mb-[2px]">
+              add_circle
+      
+              </span>
+            <span class="mx-2 flex items-center ">
+               تیکت جدید 
+           
+            </span>
+                
+        
+             </a>
+        </div> 
+      </div>
+      <!-- Content -->
+      <div class="accordion-content  pt-0 overflow-hidden h-auto" style="max-height: 0;">
+        <div class="border border-gray-100 rounded p-2 w-full relative pb-[90px]  mt-6 max-lg:mt-6 max-lg:px-2 max-md:px-0 max-md:mt-2 max-md:border-none ">
+          <div class="flex max-md:flex-col">
+            <div class="input-group w-full p-4 relative  max-sm:p-1">
+              <span class="material-symbols-outlined max-md:hidden text-gray-500 text-[24px] absolute right-7 top-[28px]">
+                person
+                </span>
+                  <input class="border w-full max-md:p-3 p-4 pr-11 outline-1 text-mxl outline-gray-500 transition-all ease-in border-gray-500 text-black-500 rounded ml-3 bg-white border-none outline-none focus:outline-black-500 font-IRsansLight" placeholder="لطفا موضوع خود را وارد نمایید.">
+            </div>
+          
+          </div>
+          <div class="input-group w-full px-4 max-sm:px-1  mt-4 relative ">
+            
+                <textarea rows="7" class="border outline-1 text-mxl  w-full border-solid p-4  outline-gray-500 transition-all ease-in border-gray-500 text-black-500 rounded ml-3 bg-white border-none outline-none focus:outline-black-500 font-IRsansLight " placeholder="لطفا چیزی را جهت نوشتن وارد کنید."></textarea>
+          </div>
+          <a href="#" class="max-sm:w-full text-gold-500 text-mxl read_more_btn float-left ml-4 mb-2   bg-none w-[130px] flex justify-center 
+          py-[11px] mt-3 border border-gold-500 text-center font-medium rounded  items-center max-sm:mx-auto">
+          
+            <span class="mx-2 flex items-center  ">
+                ثبت تیکت
+           
+            </span>
+                
+        
+             </a>
         </div>
 
+
+      </div>
+      </div>    
           <!-- End Table orders  -->
         </div>
       </div>
@@ -640,13 +664,9 @@
 <script src="../dist/main.js"></script>
   <script>
 
-
-
-    let mobilemenu=new MobileMenu()
-    const ResponsiveDashboard=new DashbaordMobile()
-    const accordionHeader = document.querySelectorAll(".accordion-header");
-    accordionHeader.forEach((header) => {
-    header.addEventListener("click", function () {
+const header = document.querySelector(".accordion-header");
+   
+header.querySelector('.read_more_btn').addEventListener("click", function () {
         const accordionContent = header.parentElement.querySelector(".accordion-content");
         let accordionMaxHeight = accordionContent.style.maxHeight;
 
@@ -661,7 +681,10 @@
         header.parentElement.classList.remove("bg-indigo-50");
         }
     });
-    });
+
+
+    let mobilemenu=new MobileMenu()
+    const ResponsiveDashboard=new DashbaordMobile()
 
 
     let seatcrmodal = document.querySelector('.search-modal');

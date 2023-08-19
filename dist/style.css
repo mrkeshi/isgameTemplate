@@ -1780,10 +1780,6 @@ body {
   width: 200px;
 }
 
-.w-32 {
-  width: 8rem;
-}
-
 .w-\[440px\] {
   width: 440px;
 }
@@ -1908,6 +1904,10 @@ body {
   width: 9rem;
 }
 
+.w-\[150px\] {
+  width: 150px;
+}
+
 .min-w-0 {
   min-width: 0px;
 }
@@ -2019,6 +2019,10 @@ body {
 
 .justify-around {
   justify-content: space-around;
+}
+
+.justify-items-end {
+  justify-items: end;
 }
 
 .space-x-5 > :not([hidden]) ~ :not([hidden]) {
@@ -3652,6 +3656,10 @@ body {
     margin: 1rem;
   }
 
+  .max-lg\:m-3 {
+    margin: 0.75rem;
+  }
+
   .max-lg\:mx-auto {
     margin-left: auto;
     margin-right: auto;
@@ -3675,6 +3683,11 @@ body {
   .max-lg\:mx-2 {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
+  }
+
+  .max-lg\:mx-3 {
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
   }
 
   .max-lg\:mt-8 {
@@ -4536,10 +4549,6 @@ body {
     width: 9rem;
   }
 
-  .max-sm\:w-\[600px\] {
-    width: 600px;
-  }
-
   .max-sm\:w-\[300px\] {
     width: 300px;
   }
@@ -4765,10 +4774,6 @@ body {
   .md\:w-full {
     width: 100%;
   }
-
-  .md\:overflow-hidden {
-    overflow: hidden;
-  }
 }
 
 @media (min-width: 1024px) {
@@ -4856,10 +4861,6 @@ body {
     justify-content: space-around;
   }
 
-  .lg\:overflow-hidden {
-    overflow: hidden;
-  }
-
   .lg\:py-5 {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
@@ -4899,6 +4900,14 @@ body {
 
   .xl\:w-1\/3 {
     width: 33.333333%;
+  }
+
+  .xl\:w-\[30\%\] {
+    width: 30%;
+  }
+
+  .xl\:w-\[70\%\] {
+    width: 70%;
   }
 
   .xl\:p-8 {
