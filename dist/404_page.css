@@ -192,7 +192,9 @@
 }
 
 .pagination .material-symbols-outlined {
-  font-size: 23px;
+  font-size: 22px;
+  padding: 8px 14px;
+
 }
 .pagination span {
   font-size: 13px;
