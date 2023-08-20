@@ -1020,6 +1020,11 @@ body {
   margin-right: 2.5rem;
 }
 
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
 .mx-14 {
   margin-left: 3.5rem;
   margin-right: 3.5rem;
@@ -1060,14 +1065,14 @@ body {
   margin-right: 6px;
 }
 
-.-my-2 {
-  margin-top: -0.5rem;
-  margin-bottom: -0.5rem;
-}
-
 .-mx-2 {
   margin-left: -0.5rem;
   margin-right: -0.5rem;
+}
+
+.-my-2 {
+  margin-top: -0.5rem;
+  margin-bottom: -0.5rem;
 }
 
 .my-6 {
@@ -1078,11 +1083,6 @@ body {
 .-mx-1 {
   margin-left: -0.25rem;
   margin-right: -0.25rem;
-}
-
-.my-2 {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
 }
 
 .mx-\[2px\] {
@@ -1959,6 +1959,10 @@ body {
   cursor: pointer;
 }
 
+.cursor-default {
+  cursor: default;
+}
+
 .resize {
   resize: both;
 }
@@ -2156,16 +2160,16 @@ body {
   border-bottom-width: 4px;
 }
 
+.border-r-\[2px\] {
+  border-right-width: 2px;
+}
+
 .border-b-2 {
   border-bottom-width: 2px;
 }
 
 .border-b {
   border-bottom-width: 1px;
-}
-
-.border-r-\[2px\] {
-  border-right-width: 2px;
 }
 
 .border-r-2 {
@@ -2473,11 +2477,6 @@ body {
   padding-right: 0.5rem;
 }
 
-.px-1 {
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-}
-
 .py-\[11px\] {
   padding-top: 11px;
   padding-bottom: 11px;
@@ -2516,6 +2515,11 @@ body {
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+}
+
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
 }
 
 .px-\[2px\] {
@@ -2886,14 +2890,14 @@ body {
   color: rgb(78,78,78,30);
 }
 
-.text-gray-800 {
-  --tw-text-opacity: 1;
-  color: rgb(183 183 183 / var(--tw-text-opacity));
-}
-
 .text-gray-500 {
   --tw-text-opacity: 1;
   color: rgb(227 222 222 / var(--tw-text-opacity));
+}
+
+.text-gray-800 {
+  --tw-text-opacity: 1;
+  color: rgb(183 183 183 / var(--tw-text-opacity));
 }
 
 .text-light-green {
@@ -3132,8 +3136,8 @@ body {
 }
 
 .scrollbar::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
+  width: 16px;
+  height: 16px;
 }
 
 .scrollbar-thin.overflow-x-hidden {
@@ -3325,14 +3329,14 @@ body {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.hover\:text-black-700:hover {
-  --tw-text-opacity: 1;
-  color: rgb(78 75 75 / var(--tw-text-opacity));
-}
-
 .hover\:text-gold-500:hover {
   --tw-text-opacity: 1;
   color: rgb(255 205 23 / var(--tw-text-opacity));
+}
+
+.hover\:text-black-700:hover {
+  --tw-text-opacity: 1;
+  color: rgb(78 75 75 / var(--tw-text-opacity));
 }
 
 .hover\:text-red-100:hover {
@@ -3604,6 +3608,10 @@ body {
 
   .max-xl\:pt-10 {
     padding-top: 2.5rem;
+  }
+
+  .max-xl\:text-\[28px\] {
+    font-size: 28px;
   }
 
   .max-xl\:text-\[19px\] {
