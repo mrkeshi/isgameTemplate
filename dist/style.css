@@ -1460,10 +1460,6 @@ body {
   height: 100vh;
 }
 
-.h-\[700px\] {
-  height: 700px;
-}
-
 .h-52 {
   height: 13rem;
 }
@@ -1478,6 +1474,10 @@ body {
 
 .h-16 {
   height: 4rem;
+}
+
+.h-\[700px\] {
+  height: 700px;
 }
 
 .h-\[100px\] {
@@ -1832,8 +1832,8 @@ body {
   width: 40px;
 }
 
-.w-\[230px\] {
-  width: 230px;
+.w-\[270px\] {
+  width: 270px;
 }
 
 .w-\[100px\] {
@@ -1961,6 +1961,10 @@ body {
 
 .cursor-default {
   cursor: default;
+}
+
+.cursor-grabbing {
+  cursor: grabbing;
 }
 
 .resize {
@@ -3853,8 +3857,8 @@ body {
     width: auto;
   }
 
-  .max-lg\:w-\[200px\] {
-    width: 200px;
+  .max-lg\:w-\[270px\] {
+    width: 270px;
   }
 
   .max-lg\:flex-row {
@@ -3934,6 +3938,10 @@ body {
 
   .max-lg\:pl-0 {
     padding-left: 0px;
+  }
+
+  .max-lg\:pb-4 {
+    padding-bottom: 1rem;
   }
 
   .max-lg\:pt-8 {
@@ -4680,8 +4688,8 @@ body {
     font-size: 14px;
   }
 
-  .max-sm\:text-\[13px\] {
-    font-size: 13px;
+  .max-sm\:text-\[17px\] {
+    font-size: 17px;
   }
 
   .max-sm\:text-mxl {
@@ -4690,6 +4698,10 @@ body {
 
   .max-sm\:text-\[16px\] {
     font-size: 16px;
+  }
+
+  .max-sm\:text-\[13px\] {
+    font-size: 13px;
   }
 
   .max-sm\:text-\[21px\] {
@@ -4702,10 +4714,6 @@ body {
 
   .max-sm\:text-\[30px\] {
     font-size: 30px;
-  }
-
-  .max-sm\:text-\[17px\] {
-    font-size: 17px;
   }
 
   .max-sm\:text-lxl {
@@ -4818,6 +4826,11 @@ body {
     position: static;
   }
 
+  .lg\:my-8 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
   .lg\:-mx-8 {
     margin-left: -2rem;
     margin-right: -2rem;
@@ -4826,26 +4839,6 @@ body {
   .lg\:my-6 {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
-  }
-
-  .lg\:my-5 {
-    margin-top: 1.25rem;
-    margin-bottom: 1.25rem;
-  }
-
-  .lg\:my-16 {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-  }
-
-  .lg\:my-8 {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-  }
-
-  .lg\:my-4 {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
   }
 
   .lg\:mt-12 {
