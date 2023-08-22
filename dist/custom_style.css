@@ -840,7 +840,7 @@ li.mx-4 a.text-white:hover span, btn-mo:hover span {
     font-size: 16px;
   }
   .scrollwidth {
-    scrollbar-width: 5px;
+    scrollbar-width: 5px !important;
     overflow: auto;
   }
   .scrollwidth::-webkit-scrollbar {
@@ -929,4 +929,9 @@ li.mx-4 a.text-white:hover span, btn-mo:hover span {
 }
 .page_title {
   background-image: url("https://isgame.ir/wp-content/uploads/2019/11/search_bg-1.jpg");
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 4px;
+  height: 6px;
 }/*# sourceMappingURL=custom_style.css.map */
