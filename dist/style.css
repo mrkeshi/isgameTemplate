@@ -896,6 +896,14 @@ body {
   left: 0.5rem;
 }
 
+.top-\[29px\] {
+  top: 29px;
+}
+
+.top-7 {
+  top: 1.75rem;
+}
+
 .z-40 {
   z-index: 40;
 }
@@ -1596,6 +1604,14 @@ body {
   height: 0.5rem;
 }
 
+.h-\[450px\] {
+  height: 450px;
+}
+
+.h-\[480px\] {
+  height: 480px;
+}
+
 .max-h-\[440px\] {
   max-height: 440px;
 }
@@ -2221,6 +2237,11 @@ body {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
+.border-green {
+  --tw-border-opacity: 1;
+  border-color: rgb(59 168 74 / var(--tw-border-opacity));
+}
+
 .border-\[\#E3DEDE\] {
   --tw-border-opacity: 1;
   border-color: rgb(227 222 222 / var(--tw-border-opacity));
@@ -2529,6 +2550,31 @@ body {
 .px-\[2px\] {
   padding-left: 2px;
   padding-right: 2px;
+}
+
+.py-3\.5 {
+  padding-top: 0.875rem;
+  padding-bottom: 0.875rem;
+}
+
+.py-\[17px\] {
+  padding-top: 17px;
+  padding-bottom: 17px;
+}
+
+.py-\[16px\] {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.py-\[15px\] {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.py-\[14px\] {
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
 
 .pl-3 {
@@ -4086,6 +4132,14 @@ body {
     margin-top: 0.5rem;
   }
 
+  .max-md\:mb-3 {
+    margin-bottom: 0.75rem;
+  }
+
+  .max-md\:mb-4 {
+    margin-bottom: 1rem;
+  }
+
   .max-md\:hidden {
     display: none;
   }
@@ -4219,6 +4273,10 @@ body {
     padding: 0.5rem;
   }
 
+  .max-md\:p-8 {
+    padding: 2rem;
+  }
+
   .max-md\:px-3 {
     padding-left: 0.75rem;
     padding-right: 0.75rem;
@@ -4348,6 +4406,10 @@ body {
     right: -50px;
   }
 
+  .max-sm\:float-left {
+    float: left;
+  }
+
   .max-sm\:m-0 {
     margin: 0px;
   }
@@ -4452,6 +4514,10 @@ body {
     margin-left: 0.25rem;
   }
 
+  .max-sm\:ml-\[-3px\] {
+    margin-left: -3px;
+  }
+
   .max-sm\:hidden {
     display: none;
   }
@@ -4508,6 +4574,10 @@ body {
     height: auto;
   }
 
+  .max-sm\:h-11 {
+    height: 2.75rem;
+  }
+
   .max-sm\:w-full {
     width: 100%;
   }
@@ -4562,6 +4632,10 @@ body {
 
   .max-sm\:w-\[300px\] {
     width: 300px;
+  }
+
+  .max-sm\:w-24 {
+    width: 6rem;
   }
 
   .max-sm\:flex-col {

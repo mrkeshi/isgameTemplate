@@ -1039,8 +1039,8 @@ display: none !important;
     }
   }
   .scrollwidth{
-    scrollbar-width:5px;
-
+    scrollbar-width:5px !important;
+      
 
     overflow: auto;
     &::-webkit-scrollbar {
@@ -1155,4 +1155,8 @@ padding-bottom: 15px;
 .page_title{
   background-image: url('https://isgame.ir/wp-content/uploads/2019/11/search_bg-1.jpg');
 
+}
+.scrollbar::-webkit-scrollbar {
+  width: 4px;
+  height: 6px;
 }
