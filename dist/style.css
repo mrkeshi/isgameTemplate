@@ -896,14 +896,6 @@ body {
   left: 0.5rem;
 }
 
-.top-\[29px\] {
-  top: 29px;
-}
-
-.top-7 {
-  top: 1.75rem;
-}
-
 .z-40 {
   z-index: 40;
 }
@@ -1544,12 +1536,16 @@ body {
   height: 250px;
 }
 
-.h-\[600px\] {
-  height: 600px;
+.h-\[480px\] {
+  height: 480px;
 }
 
 .h-\[54px\] {
   height: 54px;
+}
+
+.h-\[600px\] {
+  height: 600px;
 }
 
 .h-\[196px\] {
@@ -1602,14 +1598,6 @@ body {
 
 .h-2 {
   height: 0.5rem;
-}
-
-.h-\[450px\] {
-  height: 450px;
-}
-
-.h-\[480px\] {
-  height: 480px;
 }
 
 .max-h-\[440px\] {
@@ -2059,6 +2047,10 @@ body {
   overflow: hidden;
 }
 
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
 .overflow-y-auto {
   overflow-y: auto;
 }
@@ -2434,10 +2426,6 @@ body {
   padding: 14px;
 }
 
-.p-\[10px\] {
-  padding: 10px;
-}
-
 .p-\[11px\] {
   padding: 11px;
 }
@@ -2550,31 +2538,6 @@ body {
 .px-\[2px\] {
   padding-left: 2px;
   padding-right: 2px;
-}
-
-.py-3\.5 {
-  padding-top: 0.875rem;
-  padding-bottom: 0.875rem;
-}
-
-.py-\[17px\] {
-  padding-top: 17px;
-  padding-bottom: 17px;
-}
-
-.py-\[16px\] {
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
-
-.py-\[15px\] {
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
-.py-\[14px\] {
-  padding-top: 14px;
-  padding-bottom: 14px;
 }
 
 .pl-3 {
@@ -3927,8 +3890,16 @@ body {
     justify-content: flex-start;
   }
 
+  .max-lg\:justify-center {
+    justify-content: center;
+  }
+
   .max-lg\:justify-between {
     justify-content: space-between;
+  }
+
+  .max-lg\:overflow-x-hidden {
+    overflow-x: hidden;
   }
 
   .max-lg\:bg-white {
@@ -4048,6 +4019,26 @@ body {
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
   }
+
+  .max-lg\:overflow-x-hidden {
+    overflow-x: hidden;
+  }
+
+  .max-lg\:overflow-x-hidden.scrollbar {
+    overflow-x: hidden;
+  }
+
+  .max-lg\:overflow-x-hidden {
+    overflow-x: hidden;
+  }
+
+  .max-lg\:overflow-x-hidden.scrollbar {
+    overflow-x: hidden;
+  }
+
+  .max-lg\:overflow-x-hidden.scrollbar-thin {
+    overflow-x: hidden;
+  }
 }
 
 @media not all and (min-width: 768px) {
@@ -4124,20 +4115,20 @@ body {
     margin-bottom: 1.5rem;
   }
 
-  .max-md\:mt-8 {
-    margin-top: 2rem;
-  }
-
-  .max-md\:mt-2 {
-    margin-top: 0.5rem;
-  }
-
   .max-md\:mb-3 {
     margin-bottom: 0.75rem;
   }
 
   .max-md\:mb-4 {
     margin-bottom: 1rem;
+  }
+
+  .max-md\:mt-8 {
+    margin-top: 2rem;
+  }
+
+  .max-md\:mt-2 {
+    margin-top: 0.5rem;
   }
 
   .max-md\:hidden {
@@ -4240,6 +4231,14 @@ body {
     justify-content: space-around;
   }
 
+  .max-md\:overflow-x-auto {
+    overflow-x: auto;
+  }
+
+  .max-md\:overflow-x-hidden {
+    overflow-x: hidden;
+  }
+
   .max-md\:border-none {
     border-style: none;
   }
@@ -4271,10 +4270,6 @@ body {
 
   .max-md\:p-2 {
     padding: 0.5rem;
-  }
-
-  .max-md\:p-8 {
-    padding: 2rem;
   }
 
   .max-md\:px-3 {
@@ -4370,6 +4365,26 @@ body {
 
   .max-md\:text-xl {
     font-size: 16px;
+  }
+
+  .max-md\:overflow-x-hidden {
+    overflow-x: hidden;
+  }
+
+  .max-md\:overflow-x-hidden.scrollbar {
+    overflow-x: hidden;
+  }
+
+  .max-md\:overflow-x-hidden {
+    overflow-x: hidden;
+  }
+
+  .max-md\:overflow-x-hidden.scrollbar {
+    overflow-x: hidden;
+  }
+
+  .max-md\:overflow-x-hidden.scrollbar-thin {
+    overflow-x: hidden;
   }
 }
 
@@ -4494,6 +4509,10 @@ body {
     margin-top: 0.75rem;
   }
 
+  .max-sm\:ml-\[-3px\] {
+    margin-left: -3px;
+  }
+
   .max-sm\:mt-1 {
     margin-top: 0.25rem;
   }
@@ -4512,10 +4531,6 @@ body {
 
   .max-sm\:ml-1 {
     margin-left: 0.25rem;
-  }
-
-  .max-sm\:ml-\[-3px\] {
-    margin-left: -3px;
   }
 
   .max-sm\:hidden {
@@ -4546,6 +4561,10 @@ body {
     height: 300px;
   }
 
+  .max-sm\:h-11 {
+    height: 2.75rem;
+  }
+
   .max-sm\:h-\[55px\] {
     height: 55px;
   }
@@ -4574,10 +4593,6 @@ body {
     height: auto;
   }
 
-  .max-sm\:h-11 {
-    height: 2.75rem;
-  }
-
   .max-sm\:w-full {
     width: 100%;
   }
@@ -4596,6 +4611,10 @@ body {
 
   .max-sm\:w-7 {
     width: 1.75rem;
+  }
+
+  .max-sm\:w-24 {
+    width: 6rem;
   }
 
   .max-sm\:w-\[700px\] {
@@ -4634,10 +4653,6 @@ body {
     width: 300px;
   }
 
-  .max-sm\:w-24 {
-    width: 6rem;
-  }
-
   .max-sm\:flex-col {
     flex-direction: column;
   }
@@ -4656,6 +4671,10 @@ body {
 
   .max-sm\:justify-between {
     justify-content: space-between;
+  }
+
+  .max-sm\:overflow-x-auto {
+    overflow-x: auto;
   }
 
   .max-sm\:rounded-sm {
@@ -4837,9 +4856,21 @@ body {
     overflow: hidden;
   }
 
+  .sm\:overflow-x-hidden {
+    overflow-x: hidden;
+  }
+
   .sm\:px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  }
+
+  .sm\:overflow-x-hidden.scrollbar {
+    overflow-x: hidden;
+  }
+
+  .sm\:overflow-x-hidden.scrollbar-thin {
+    overflow-x: hidden;
   }
 }
 
@@ -4856,8 +4887,32 @@ body {
     margin-top: 1.5rem;
   }
 
+  .md\:hidden {
+    display: none;
+  }
+
   .md\:w-full {
     width: 100%;
+  }
+
+  .md\:overflow-auto {
+    overflow: auto;
+  }
+
+  .md\:overflow-x-auto {
+    overflow-x: auto;
+  }
+
+  .md\:overflow-x-hidden {
+    overflow-x: hidden;
+  }
+
+  .md\:overflow-x-hidden.scrollbar {
+    overflow-x: hidden;
+  }
+
+  .md\:overflow-x-hidden.scrollbar-thin {
+    overflow-x: hidden;
   }
 }
 
@@ -4951,6 +5006,10 @@ body {
     justify-content: space-around;
   }
 
+  .lg\:overflow-x-hidden {
+    overflow-x: hidden;
+  }
+
   .lg\:py-5 {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
@@ -4963,6 +5022,14 @@ body {
 
   .lg\:text-4xl {
     font-size: 28px;
+  }
+
+  .lg\:overflow-x-hidden.scrollbar {
+    overflow-x: hidden;
+  }
+
+  .lg\:overflow-x-hidden.scrollbar-thin {
+    overflow-x: hidden;
   }
 }
 
