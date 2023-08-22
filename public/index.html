@@ -225,7 +225,7 @@
     <!-- end search box -->
     <!-- End Navbar Menu -->
     
-    <main class="overflow-x-hidden">
+    <main class="lg:overflow-x-hidden max-sm:overflow-x-auto">
       <section>
         <div class="main px-6 max-lg:px-4 mx-auto max-xl:px-0">
           <div class=" flex  mx-auto items-center max-lg:flex-wrap max-lg:mt-20 max-md:mt-14">
@@ -304,8 +304,8 @@
 
               <button type="button"
                 class="absolute top-0 -left-2 max-sm:-left-7 z-40 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-                id="prevslide" data-carousel-prev>
-                <span
+              >
+                <span  data-carousel-prev   id="prevslide"
                   class="inline-flex items-center justify-center w-8 h-8 max-sm:w-7 max-sm:h-7  rounded-full shadow-gold  bg-gold-500  group-hover:bg-gold-500/90   group-focus:outline-none">
                   <svg aria-hidden="true" class="w-4 h-4 text-white sm:w-6 sm:h-6 " fill="none" stroke="currentColor"
                     viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -314,10 +314,10 @@
                   <span class="sr-only">Previous</span>
                 </span>
               </button>
-              <button type="button" id="nextslide"
+              <button type="button" 
                 class="absolute top-0 -right-2 max-sm:-right-7 z-30 flex items-center justify-center h-full  px-4 cursor-pointer group focus:outline-none"
-                data-carousel-next>
-                <span
+               >
+                <span id="nextslide"  data-carousel-next
                   class="inline-flex items-center justify-center w-8 h-8 max-sm:w-7 max-sm:h-7 rounded-full shadow-2xl  bg-gold-500  group-hover:bg-gold-500/90   group-focus:outline-none">
                   <svg aria-hidden="true" class="w-4 h-4 text-white sm:w-6 sm:h-6 " fill="none" stroke="currentColor"
                     viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -507,8 +507,8 @@
               </div>
               <button type="button"
               class="absolute top-0 -left-8  z-40 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-              id="prevslide2" data-carousel-prev>
-              <span
+             >
+              <span  id="prevslide2" data-carousel-prev
                 class="inline-flex items-center justify-center w-[29px] h-[29px] rounded-full shadow-gold  bg-gold-500  group-hover:bg-gold-500/90   group-focus:outline-none">
                 <svg aria-hidden="true" class="w-[16px] h-[16px] text-white sm:w-6 sm:h-6 " fill="none"
                   stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -517,10 +517,10 @@
                 <span class="sr-only">Previous</span>
               </span>
             </button>
-            <button type="button" id="nextslide2"
+            <button type="button" 
               class="absolute top-0 -right-8 z-30 flex items-center justify-center h-full  px-4 cursor-pointer group focus:outline-none"
-              data-carousel-next>
-              <span
+              >
+              <span id="nextslide2" data-carousel-next
                 class="inline-flex items-center justify-center w-[29px] h-[29px] rounded-full shadow-2xl  bg-gold-500  group-hover:bg-gold-500/90   group-focus:outline-none">
                 <svg aria-hidden="true" class="w-[16px] h-[16px] text-white sm:w-6 sm:h-6 " fill="none"
                   stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -1067,7 +1067,7 @@
                           بازی</h2>
                       </a>
                      
-                      <div class="details flex items-center px-3 w-3/4 justify-between -mt-2  max-sm:flex-wrap max-sm:w-full max-sm:justify-center max-sm:w-full max-sm:my-1">
+                      <div class="details flex items-center px-3 w-3/4 justify-between -mt-2  max-sm:flex-wrap max-md:w-full max-sm:justify-center max-sm:w-full max-sm:my-1">
                         <div class="date flex items-center">
                           <span class="material-symbols-outlined text-red-500 text-2xl">
                             calendar_month
@@ -1102,19 +1102,19 @@
                       چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
                       نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در بیشتری را برای
                       طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد
-                    </p> <a href="single_post.html" class="text-gold-500 text-[14px] sm:hidden  max-sm:py-6">ادامه مطلب  </a>
+                    </p> <a href="single_post.html" class="text-gold-500 text-[14px] md:hidden  max-sm:md-6">ادامه مطلب  </a>
 
 
                     <div class="btn-continue absolute left-6 bottom-7">
                       <a href="single_post.html"
-                        class="bg-transparent max-sm:hidden font-light transition ease-in  hover:bg-gold-500 text-gold-500  hover:text-white py-1.5 px-4  border border-gold-500 hover:border-transparent rounded text-base">
+                        class="bg-transparent max-md:hidden font-light transition ease-in  hover:bg-gold-500 text-gold-500  hover:text-white py-1.5 px-4  border border-gold-500 hover:border-transparent rounded text-base">
                         ادامه مطلب</a>
                     </div>
                   </div>
                 </div>
               </article>
 
-              <article class="mb-8 max-sm:mb-6 shadow-md">
+              <article class="mb-8 max-sm:mb-6 shadow-md ">
                 <div class="box bg-white h-[250px] rounded-[10px] p-2 flex max-2xl:h-[290px]  relative ">
                  <a href="" class="w-[270px] max-lg:w-[270px] h-full mx-auto">
                   <img src="../images/image_post_2.png" class="w-[270px] max-lg:w-[270px] h-full p-4 max-sm:p-2 brightness-75 transition ease hover:brightness-100 " alt="">
@@ -1127,7 +1127,7 @@
                           بازی</h2>
                       </a>
                      
-                      <div class="details flex items-center px-3 w-3/4 justify-between -mt-2  max-sm:flex-wrap max-sm:w-full max-sm:justify-center max-sm:w-full max-sm:my-1">
+                      <div class="details flex items-center px-3 w-3/4 justify-between -mt-2  max-sm:flex-wrap max-md:w-full max-sm:justify-center max-sm:w-full max-sm:my-1">
                         <div class="date flex items-center">
                           <span class="material-symbols-outlined text-red-500 text-2xl">
                             calendar_month
@@ -1162,18 +1162,18 @@
                       چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
                       نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در بیشتری را برای
                       طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد
-                    </p> <a href="single_post.html" class="text-gold-500 text-[14px] sm:hidden  max-sm:py-6">ادامه مطلب  </a>
+                    </p> <a href="single_post.html" class="text-gold-500 text-[14px] md:hidden  max-sm:md-6">ادامه مطلب  </a>
 
 
                     <div class="btn-continue absolute left-6 bottom-7">
                       <a href="single_post.html"
-                        class="bg-transparent max-sm:hidden font-light transition ease-in  hover:bg-gold-500 text-gold-500  hover:text-white py-1.5 px-4  border border-gold-500 hover:border-transparent rounded text-base">
+                        class="bg-transparent max-md:hidden font-light transition ease-in  hover:bg-gold-500 text-gold-500  hover:text-white py-1.5 px-4  border border-gold-500 hover:border-transparent rounded text-base">
                         ادامه مطلب</a>
                     </div>
                   </div>
                 </div>
               </article>
-              <article class="mb-8 max-sm:mb-6 shadow-md">
+              <article class="mb-8 max-sm:mb-6 shadow-md ">
                 <div class="box bg-white h-[250px] rounded-[10px] p-2 flex max-2xl:h-[290px]  relative ">
                  <a href="" class="w-[270px] max-lg:w-[270px] h-full mx-auto">
                   <img src="../images/image_post_2.png" class="w-[270px] max-lg:w-[270px] h-full p-4 max-sm:p-2 brightness-75 transition ease hover:brightness-100 " alt="">
@@ -1186,7 +1186,7 @@
                           بازی</h2>
                       </a>
                      
-                      <div class="details flex items-center px-3 w-3/4 justify-between -mt-2  max-sm:flex-wrap max-sm:w-full max-sm:justify-center max-sm:w-full max-sm:my-1">
+                      <div class="details flex items-center px-3 w-3/4 justify-between -mt-2  max-sm:flex-wrap max-md:w-full max-sm:justify-center max-sm:w-full max-sm:my-1">
                         <div class="date flex items-center">
                           <span class="material-symbols-outlined text-red-500 text-2xl">
                             calendar_month
@@ -1221,18 +1221,18 @@
                       چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
                       نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در بیشتری را برای
                       طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد
-                    </p> <a href="single_post.html" class="text-gold-500 text-[14px] sm:hidden  max-sm:py-6">ادامه مطلب  </a>
+                    </p> <a href="single_post.html" class="text-gold-500 text-[14px] md:hidden  max-sm:md-6">ادامه مطلب  </a>
 
 
                     <div class="btn-continue absolute left-6 bottom-7">
                       <a href="single_post.html"
-                        class="bg-transparent max-sm:hidden font-light transition ease-in  hover:bg-gold-500 text-gold-500  hover:text-white py-1.5 px-4  border border-gold-500 hover:border-transparent rounded text-base">
+                        class="bg-transparent max-md:hidden font-light transition ease-in  hover:bg-gold-500 text-gold-500  hover:text-white py-1.5 px-4  border border-gold-500 hover:border-transparent rounded text-base">
                         ادامه مطلب</a>
                     </div>
                   </div>
                 </div>
               </article>
-              <article class="mb-8 max-sm:mb-6 shadow-md">
+              <article class="mb-8 max-sm:mb-6 shadow-md ">
                 <div class="box bg-white h-[250px] rounded-[10px] p-2 flex max-2xl:h-[290px]  relative ">
                  <a href="" class="w-[270px] max-lg:w-[270px] h-full mx-auto">
                   <img src="../images/image_post_2.png" class="w-[270px] max-lg:w-[270px] h-full p-4 max-sm:p-2 brightness-75 transition ease hover:brightness-100 " alt="">
@@ -1245,7 +1245,7 @@
                           بازی</h2>
                       </a>
                      
-                      <div class="details flex items-center px-3 w-3/4 justify-between -mt-2  max-sm:flex-wrap max-sm:w-full max-sm:justify-center max-sm:w-full max-sm:my-1">
+                      <div class="details flex items-center px-3 w-3/4 justify-between -mt-2  max-sm:flex-wrap max-md:w-full max-sm:justify-center max-sm:w-full max-sm:my-1">
                         <div class="date flex items-center">
                           <span class="material-symbols-outlined text-red-500 text-2xl">
                             calendar_month
@@ -1280,18 +1280,18 @@
                       چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
                       نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در بیشتری را برای
                       طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد
-                    </p> <a href="single_post.html" class="text-gold-500 text-[14px] sm:hidden  max-sm:py-6">ادامه مطلب  </a>
+                    </p> <a href="single_post.html" class="text-gold-500 text-[14px] md:hidden  max-sm:md-6">ادامه مطلب  </a>
 
 
                     <div class="btn-continue absolute left-6 bottom-7">
                       <a href="single_post.html"
-                        class="bg-transparent max-sm:hidden font-light transition ease-in  hover:bg-gold-500 text-gold-500  hover:text-white py-1.5 px-4  border border-gold-500 hover:border-transparent rounded text-base">
+                        class="bg-transparent max-md:hidden font-light transition ease-in  hover:bg-gold-500 text-gold-500  hover:text-white py-1.5 px-4  border border-gold-500 hover:border-transparent rounded text-base">
                         ادامه مطلب</a>
                     </div>
                   </div>
                 </div>
               </article>
-              <article class="mb-8 max-sm:mb-6 shadow-md">
+              <article class="mb-8 max-sm:mb-6 shadow-md ">
                 <div class="box bg-white h-[250px] rounded-[10px] p-2 flex max-2xl:h-[290px]  relative ">
                  <a href="" class="w-[270px] max-lg:w-[270px] h-full mx-auto">
                   <img src="../images/image_post_2.png" class="w-[270px] max-lg:w-[270px] h-full p-4 max-sm:p-2 brightness-75 transition ease hover:brightness-100 " alt="">
@@ -1304,7 +1304,7 @@
                           بازی</h2>
                       </a>
                      
-                      <div class="details flex items-center px-3 w-3/4 justify-between -mt-2  max-sm:flex-wrap max-sm:w-full max-sm:justify-center max-sm:w-full max-sm:my-1">
+                      <div class="details flex items-center px-3 w-3/4 justify-between -mt-2  max-sm:flex-wrap max-md:w-full max-sm:justify-center max-sm:w-full max-sm:my-1">
                         <div class="date flex items-center">
                           <span class="material-symbols-outlined text-red-500 text-2xl">
                             calendar_month
@@ -1339,18 +1339,18 @@
                       چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
                       نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در بیشتری را برای
                       طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد
-                    </p> <a href="single_post.html" class="text-gold-500 text-[14px] sm:hidden  max-sm:py-6">ادامه مطلب  </a>
+                    </p> <a href="single_post.html" class="text-gold-500 text-[14px] md:hidden  max-sm:md-6">ادامه مطلب  </a>
 
 
                     <div class="btn-continue absolute left-6 bottom-7">
                       <a href="single_post.html"
-                        class="bg-transparent max-sm:hidden font-light transition ease-in  hover:bg-gold-500 text-gold-500  hover:text-white py-1.5 px-4  border border-gold-500 hover:border-transparent rounded text-base">
+                        class="bg-transparent max-md:hidden font-light transition ease-in  hover:bg-gold-500 text-gold-500  hover:text-white py-1.5 px-4  border border-gold-500 hover:border-transparent rounded text-base">
                         ادامه مطلب</a>
                     </div>
                   </div>
                 </div>
               </article>
-              <article class="mb-8 max-sm:mb-6 shadow-md">
+              <article class="mb-8 max-sm:mb-6 shadow-md ">
                 <div class="box bg-white h-[250px] rounded-[10px] p-2 flex max-2xl:h-[290px]  relative ">
                  <a href="" class="w-[270px] max-lg:w-[270px] h-full mx-auto">
                   <img src="../images/image_post_2.png" class="w-[270px] max-lg:w-[270px] h-full p-4 max-sm:p-2 brightness-75 transition ease hover:brightness-100 " alt="">
@@ -1363,7 +1363,7 @@
                           بازی</h2>
                       </a>
                      
-                      <div class="details flex items-center px-3 w-3/4 justify-between -mt-2  max-sm:flex-wrap max-sm:w-full max-sm:justify-center max-sm:w-full max-sm:my-1">
+                      <div class="details flex items-center px-3 w-3/4 justify-between -mt-2  max-sm:flex-wrap max-md:w-full max-sm:justify-center max-sm:w-full max-sm:my-1">
                         <div class="date flex items-center">
                           <span class="material-symbols-outlined text-red-500 text-2xl">
                             calendar_month
@@ -1398,18 +1398,18 @@
                       چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
                       نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در بیشتری را برای
                       طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد
-                    </p> <a href="single_post.html" class="text-gold-500 text-[14px] sm:hidden  max-sm:py-6">ادامه مطلب  </a>
+                    </p> <a href="single_post.html" class="text-gold-500 text-[14px] md:hidden  max-sm:md-6">ادامه مطلب  </a>
 
 
                     <div class="btn-continue absolute left-6 bottom-7">
                       <a href="single_post.html"
-                        class="bg-transparent max-sm:hidden font-light transition ease-in  hover:bg-gold-500 text-gold-500  hover:text-white py-1.5 px-4  border border-gold-500 hover:border-transparent rounded text-base">
+                        class="bg-transparent max-md:hidden font-light transition ease-in  hover:bg-gold-500 text-gold-500  hover:text-white py-1.5 px-4  border border-gold-500 hover:border-transparent rounded text-base">
                         ادامه مطلب</a>
                     </div>
                   </div>
                 </div>
               </article>
-              <article class="mb-8 max-sm:mb-6 shadow-md">
+              <article class="mb-8 max-sm:mb-6 shadow-md ">
                 <div class="box bg-white h-[250px] rounded-[10px] p-2 flex max-2xl:h-[290px]  relative ">
                  <a href="" class="w-[270px] max-lg:w-[270px] h-full mx-auto">
                   <img src="../images/image_post_2.png" class="w-[270px] max-lg:w-[270px] h-full p-4 max-sm:p-2 brightness-75 transition ease hover:brightness-100 " alt="">
@@ -1422,7 +1422,7 @@
                           بازی</h2>
                       </a>
                      
-                      <div class="details flex items-center px-3 w-3/4 justify-between -mt-2  max-sm:flex-wrap max-sm:w-full max-sm:justify-center max-sm:w-full max-sm:my-1">
+                      <div class="details flex items-center px-3 w-3/4 justify-between -mt-2  max-sm:flex-wrap max-md:w-full max-sm:justify-center max-sm:w-full max-sm:my-1">
                         <div class="date flex items-center">
                           <span class="material-symbols-outlined text-red-500 text-2xl">
                             calendar_month
@@ -1457,71 +1457,12 @@
                       چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
                       نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در بیشتری را برای
                       طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد
-                    </p> <a href="single_post.html" class="text-gold-500 text-[14px] sm:hidden  max-sm:py-6">ادامه مطلب  </a>
+                    </p> <a href="single_post.html" class="text-gold-500 text-[14px] md:hidden  max-sm:md-6">ادامه مطلب  </a>
 
 
                     <div class="btn-continue absolute left-6 bottom-7">
                       <a href="single_post.html"
-                        class="bg-transparent max-sm:hidden font-light transition ease-in  hover:bg-gold-500 text-gold-500  hover:text-white py-1.5 px-4  border border-gold-500 hover:border-transparent rounded text-base">
-                        ادامه مطلب</a>
-                    </div>
-                  </div>
-                </div>
-              </article>
-              <article class="mb-8 max-sm:mb-6 shadow-md">
-                <div class="box bg-white h-[250px] rounded-[10px] p-2 flex max-2xl:h-[290px]  relative ">
-                 <a href="" class="w-[270px] max-lg:w-[270px] h-full mx-auto">
-                  <img src="../images/image_post_2.png" class="w-[270px] max-lg:w-[270px] h-full p-4 max-sm:p-2 brightness-75 transition ease hover:brightness-100 " alt="">
-
-                 </a>
-                  <div class="post w-full">
-                    <header>
-                      <a href="single_post.html">
-                        <h2 class="text-black-700 text-[17px] font-IRsansBold m-4 hover:opacity-80  max-sm:mt-3">Stay Human 2 Dying Light دانلود ترینر
-                          بازی</h2>
-                      </a>
-                     
-                      <div class="details flex items-center px-3 w-3/4 justify-between -mt-2  max-sm:flex-wrap max-sm:w-full max-sm:justify-center max-sm:w-full max-sm:my-1">
-                        <div class="date flex items-center">
-                          <span class="material-symbols-outlined text-red-500 text-2xl">
-                            calendar_month
-                          </span>
-                          <span class="text-black-500 text-sm mx-2">
-                            5 آذر 1399
-                          </span>
-                        </div>
-                        <div class="tag flex items-center">
-                          <span class="material-symbols-outlined text-green text-2xl">
-                            bookmark
-                          </span>
-                          <span class="text-black-500 text-sm mx-2">
-                            چیت و ترینر
-                          </span>
-                        </div>
-                        <div class="tag flex items-center">
-                          <span class="material-symbols-outlined text-purple text-2xl">
-                            comment
-                          </span>
-                          <span class="text-black-500 text-sm mx-2">
-                            5
-                          </span>
-                        </div>
-                      </div>
-                    </header>
-                    <div class="flex w-full">
-
-                    </div>
-                    <p class="text-[15px] p-3 pb-0 pt-1 text-black-500 leading-7 max-xl:leading-6  max-xl:text-base  ">
-                      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
-                      چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
-                      نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در بیشتری را برای
-                      طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد
-                    </p> <a href="single_post.html" class="text-gold-500 text-[14px] sm:hidden  max-sm:py-6">ادامه مطلب  </a>
-
-
-                    <div class="btn-continue absolute left-6 bottom-7">
-                      <a href="single_post.html"
-                        class="bg-transparent max-sm:hidden font-light transition ease-in  hover:bg-gold-500 text-gold-500  hover:text-white py-1.5 px-4  border border-gold-500 hover:border-transparent rounded text-base">
+                        class="bg-transparent max-md:hidden font-light transition ease-in  hover:bg-gold-500 text-gold-500  hover:text-white py-1.5 px-4  border border-gold-500 hover:border-transparent rounded text-base">
                         ادامه مطلب</a>
                     </div>
                   </div>
