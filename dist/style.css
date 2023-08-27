@@ -852,6 +852,10 @@ body {
   top: 25px;
 }
 
+.top-\[3px\] {
+  top: 3px;
+}
+
 .bottom-8 {
   bottom: 2rem;
 }
@@ -866,10 +870,6 @@ body {
 
 .top-\[10px\] {
   top: 10px;
-}
-
-.top-\[3px\] {
-  top: 3px;
 }
 
 .-top-\[2px\] {
@@ -1552,6 +1552,10 @@ body {
   height: 196px;
 }
 
+.h-\[1px\] {
+  height: 1px;
+}
+
 .h-\[63px\] {
   height: 63px;
 }
@@ -1570,10 +1574,6 @@ body {
 
 .h-\[400px\] {
   height: 400px;
-}
-
-.h-\[1px\] {
-  height: 1px;
 }
 
 .h-\[26px\] {
@@ -1852,6 +1852,10 @@ body {
   width: 320px;
 }
 
+.w-80 {
+  width: 20rem;
+}
+
 .w-\[730px\] {
   width: 730px;
 }
@@ -1866,10 +1870,6 @@ body {
 
 .w-\[2px\] {
   width: 2px;
-}
-
-.w-80 {
-  width: 20rem;
 }
 
 .w-\[26px\] {
@@ -2045,10 +2045,6 @@ body {
 
 .overflow-hidden {
   overflow: hidden;
-}
-
-.overflow-x-auto {
-  overflow-x: auto;
 }
 
 .overflow-y-auto {
@@ -2588,12 +2584,12 @@ body {
   padding-top: 0.25rem;
 }
 
-.pr-10 {
-  padding-right: 2.5rem;
-}
-
 .pb-6 {
   padding-bottom: 1.5rem;
+}
+
+.pr-10 {
+  padding-right: 2.5rem;
 }
 
 .pb-2 {
@@ -3308,6 +3304,15 @@ body {
   background-color: rgb(255 205 23 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-green:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 168 74 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-gray-100:hover {
+  background-color: rgb(227,222,221,0.71);
+}
+
 .hover\:fill-\[\#32AFE6\]:hover {
   fill: #32AFE6;
 }
@@ -3898,10 +3903,6 @@ body {
     justify-content: space-between;
   }
 
-  .max-lg\:overflow-x-hidden {
-    overflow-x: hidden;
-  }
-
   .max-lg\:bg-white {
     --tw-bg-opacity: 1;
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -4018,26 +4019,6 @@ body {
   .max-lg\:text-white {
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
-  }
-
-  .max-lg\:overflow-x-hidden {
-    overflow-x: hidden;
-  }
-
-  .max-lg\:overflow-x-hidden.scrollbar {
-    overflow-x: hidden;
-  }
-
-  .max-lg\:overflow-x-hidden {
-    overflow-x: hidden;
-  }
-
-  .max-lg\:overflow-x-hidden.scrollbar {
-    overflow-x: hidden;
-  }
-
-  .max-lg\:overflow-x-hidden.scrollbar-thin {
-    overflow-x: hidden;
   }
 }
 
@@ -4231,14 +4212,6 @@ body {
     justify-content: space-around;
   }
 
-  .max-md\:overflow-x-auto {
-    overflow-x: auto;
-  }
-
-  .max-md\:overflow-x-hidden {
-    overflow-x: hidden;
-  }
-
   .max-md\:border-none {
     border-style: none;
   }
@@ -4365,26 +4338,6 @@ body {
 
   .max-md\:text-xl {
     font-size: 16px;
-  }
-
-  .max-md\:overflow-x-hidden {
-    overflow-x: hidden;
-  }
-
-  .max-md\:overflow-x-hidden.scrollbar {
-    overflow-x: hidden;
-  }
-
-  .max-md\:overflow-x-hidden {
-    overflow-x: hidden;
-  }
-
-  .max-md\:overflow-x-hidden.scrollbar {
-    overflow-x: hidden;
-  }
-
-  .max-md\:overflow-x-hidden.scrollbar-thin {
-    overflow-x: hidden;
   }
 }
 
@@ -4712,11 +4665,6 @@ body {
     padding-bottom: 0.75rem;
   }
 
-  .max-sm\:py-6 {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-  }
-
   .max-sm\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
@@ -4840,10 +4788,6 @@ body {
     margin-right: 0.5rem;
   }
 
-  .sm\:hidden {
-    display: none;
-  }
-
   .sm\:h-6 {
     height: 1.5rem;
   }
@@ -4856,21 +4800,9 @@ body {
     overflow: hidden;
   }
 
-  .sm\:overflow-x-hidden {
-    overflow-x: hidden;
-  }
-
   .sm\:px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-  }
-
-  .sm\:overflow-x-hidden.scrollbar {
-    overflow-x: hidden;
-  }
-
-  .sm\:overflow-x-hidden.scrollbar-thin {
-    overflow-x: hidden;
   }
 }
 
@@ -4893,26 +4825,6 @@ body {
 
   .md\:w-full {
     width: 100%;
-  }
-
-  .md\:overflow-auto {
-    overflow: auto;
-  }
-
-  .md\:overflow-x-auto {
-    overflow-x: auto;
-  }
-
-  .md\:overflow-x-hidden {
-    overflow-x: hidden;
-  }
-
-  .md\:overflow-x-hidden.scrollbar {
-    overflow-x: hidden;
-  }
-
-  .md\:overflow-x-hidden.scrollbar-thin {
-    overflow-x: hidden;
   }
 }
 
