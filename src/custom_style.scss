@@ -1167,3 +1167,36 @@ li{
 }
 }
 }
+.sendticketbox{
+  position: relative;
+  &::after{
+    content: '';
+    position: absolute;
+    right: -20px;
+    top: 20px;
+    width: 0;
+    height: 0;
+    transform: rotate(270deg);
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid rgb(227,222,222);
+    clear: both;
+  }
+}
+
+.resiveticketbox{
+  position: relative;
+  &::after{
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 20px;
+    width: 0;
+    height: 0;
+    transform: rotate(-270deg);
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #FCD445;
+    clear: both;
+  }  
+}
