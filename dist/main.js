@@ -193,3 +193,30 @@ class TabHome{
     }
 
 }
+
+class FormComment{
+    clone = document.getElementById('comment_responde').cloneNode('true')
+    cancelbtn = this.clone.querySelector('.cancel')
+    replays = document.querySelectorAll('.replay-comment')
+    constructor(){
+        this.cancelbtn.classList.remove('hidden')
+        this.replays.forEach((replay) => {
+            replay.addEventListener('click', () => {
+                console.log()
+                replay.parentElement.parentElement.parentElement.appendChild(this.clone)
+                this.clone.querySelector('textarea').focus()
+
+                  this.cancelbtn.addEventListener('click', (e) => {
+                    e.preventDefault()
+                    replay.parentElement.parentElement.parentElement.removeChild(this.clone)
+            })
+               
+        })
+    })
+  }
+}
+
+    
+  
+    
+      
