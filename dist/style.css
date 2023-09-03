@@ -3870,6 +3870,10 @@ body {
     width: 270px;
   }
 
+  .max-lg\:w-80 {
+    width: 20rem;
+  }
+
   .max-lg\:flex-row {
     flex-direction: row;
   }
@@ -4107,6 +4111,22 @@ body {
     margin-top: 0.5rem;
   }
 
+  .max-md\:mt-5 {
+    margin-top: 1.25rem;
+  }
+
+  .max-md\:mb-1 {
+    margin-bottom: 0.25rem;
+  }
+
+  .max-md\:mt-7 {
+    margin-top: 1.75rem;
+  }
+
+  .max-md\:mb-2 {
+    margin-bottom: 0.5rem;
+  }
+
   .max-md\:hidden {
     display: none;
   }
@@ -4273,6 +4293,11 @@ body {
   .max-md\:py-4 {
     padding-top: 1rem;
     padding-bottom: 1rem;
+  }
+
+  .max-md\:py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
   }
 
   .max-md\:pt-2 {
@@ -4916,6 +4941,10 @@ body {
 
   .lg\:w-\[250px\] {
     width: 250px;
+  }
+
+  .lg\:w-4\/5 {
+    width: 80%;
   }
 
   .lg\:items-center {
