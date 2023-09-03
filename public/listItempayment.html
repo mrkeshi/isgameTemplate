@@ -499,7 +499,7 @@
         <label for="createuser" class="font-light mx-2 text-black-500 text-base">می خواهید یک حساب کاربری ایجاد کنید؟</label>
 
        </div>
-<div class="signUpBoxCart h-0 overflow-hidden">
+<div class="signUpBoxCart h-0 overflow-hidden transition-all ease-in">
   <div class="flex ">
     <div class="input-group w-full p-3 flex flex-col ">
       <label for="" class="text-black-500 text-base mb-[10px] max-sm:text-[13px] ">نام کاربری</label>
@@ -745,6 +745,16 @@
   <script>var exports = {};</script>
 <script src="../dist/main.js"></script>
   <script>
+
+
+document.getElementById('createuser').addEventListener('change',()=>{
+  if(document.getElementById('createuser').checked){
+  document.querySelector('.signUpBoxCart').style.height=190+'px';
+  }else{
+    document.querySelector('.signUpBoxCart').style.height=0+'px'
+
+  }
+})
             const header = document.querySelector(".accordion-header");
 
     header.addEventListener("click", function () {
