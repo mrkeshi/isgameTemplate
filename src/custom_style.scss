@@ -200,7 +200,7 @@ margin: 5px;
    display: none;
    &:checked {
     + label:after,
-    ~ label:after {
+    ~ label:after { 
      content: '#{$star--filled}';
      color: $filled-color;
      
