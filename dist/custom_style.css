@@ -758,9 +758,6 @@ li.mx-4 a.text-white:hover span, btn-mo:hover span {
     width: 200px;
     height: 220px;
   }
-  .image-games li div {
-    display: none !important;
-  }
 }
 @media (max-width: 720px) {
   .active_page_wallet {
@@ -817,8 +814,11 @@ li.mx-4 a.text-white:hover span, btn-mo:hover span {
     width: 100%;
     margin-bottom: 0;
   }
+  .image-games {
+    background-color: #4E4B4B !important;
+  }
   .image-games li:hover div {
-    display: flex;
+    display: flex !important;
   }
   #swiper .content-slider {
     position: absolute;
@@ -933,4 +933,11 @@ li.mx-4 a.text-white:hover span, btn-mo:hover span {
 .scrollbar::-webkit-scrollbar {
   width: 4px;
   height: 6px;
+}
+
+.image-games li {
+  cursor: pointer;
+}
+.image-games li:hover .hidden {
+  display: flex;
 }/*# sourceMappingURL=custom_style.css.map */
