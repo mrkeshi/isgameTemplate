@@ -777,10 +777,6 @@ body {
   bottom: 1.75rem;
 }
 
-.bottom-8 {
-  bottom: 2rem;
-}
-
 .bottom-\[2px\] {
   bottom: 2px;
 }
@@ -799,6 +795,10 @@ body {
 
 .left-1 {
   left: 0.25rem;
+}
+
+.left-14 {
+  left: 3.5rem;
 }
 
 .left-2 {
@@ -919,10 +919,6 @@ body {
 
 .top-\[8px\] {
   top: 8px;
-}
-
-.left-14 {
-  left: 3.5rem;
 }
 
 .-z-20 {
@@ -1285,6 +1281,10 @@ body {
   margin-top: 3rem;
 }
 
+.mt-14 {
+  margin-top: 3.5rem;
+}
+
 .mt-16 {
   margin-top: 4rem;
 }
@@ -1331,10 +1331,6 @@ body {
 
 .mt-\[14px\] {
   margin-top: 14px;
-}
-
-.mt-14 {
-  margin-top: 3.5rem;
 }
 
 .block {
@@ -1537,10 +1533,6 @@ body {
   height: 3px;
 }
 
-.h-\[400px\] {
-  height: 400px;
-}
-
 .h-\[40px\] {
   height: 40px;
 }
@@ -1635,6 +1627,10 @@ body {
 
 .h-screen {
   height: 100vh;
+}
+
+.h-\[56px\] {
+  height: 56px;
 }
 
 .max-h-0 {
@@ -1845,6 +1841,10 @@ body {
   width: 288px;
 }
 
+.w-\[290px\] {
+  width: 290px;
+}
+
 .w-\[29px\] {
   width: 29px;
 }
@@ -1951,10 +1951,6 @@ body {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[290px\] {
-  width: 290px;
 }
 
 .min-w-0 {
@@ -3340,23 +3336,9 @@ body {
   border-width: 4px;
 }
 
-.hover\:border-black-500:hover {
-  border-color: rgb(78,75,78,0.65);
-}
-
 .hover\:border-gold-500:hover {
   --tw-border-opacity: 1;
   border-color: rgb(255 205 23 / var(--tw-border-opacity));
-}
-
-.hover\:border-green:hover {
-  --tw-border-opacity: 1;
-  border-color: rgb(59 168 74 / var(--tw-border-opacity));
-}
-
-.hover\:border-purple:hover {
-  --tw-border-opacity: 1;
-  border-color: rgb(79 15 190 / var(--tw-border-opacity));
 }
 
 .hover\:border-red-500:hover {
@@ -4564,10 +4546,6 @@ body {
     margin-right: 0px;
   }
 
-  .max-sm\:mt-0 {
-    margin-top: 0px;
-  }
-
   .max-sm\:mt-1 {
     margin-top: 0.25rem;
   }
@@ -4640,8 +4618,8 @@ body {
     height: 300px;
   }
 
-  .max-sm\:h-\[420px\] {
-    height: 420px;
+  .max-sm\:h-\[400px\] {
+    height: 400px;
   }
 
   .max-sm\:h-\[45px\] {
@@ -4654,10 +4632,6 @@ body {
 
   .max-sm\:h-auto {
     height: auto;
-  }
-
-  .max-sm\:h-\[400px\] {
-    height: 400px;
   }
 
   .max-sm\:w-12 {
