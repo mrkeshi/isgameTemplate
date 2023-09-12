@@ -10,9 +10,9 @@
   <link rel="stylesheet" href="../dist/style.css">
 
   
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
   <link rel="stylesheet" href="../dist/custom_style.css">
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
 </head>
 <style>
   
@@ -830,7 +830,7 @@
 
         <div id="swiper" class="swiper w-full shop-slider   h-[380px]  ">
           <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
+          <div id="shop_slider" class="swiper-wrapper">
             <!-- Slides -->
 
 
@@ -1824,38 +1824,15 @@
     </div>
   </footer>
 
-  <script src="../dist/main.js"></script>
 
+  <script src="../dist/main.js"></script>
+  <script src="../dist/slider_bundle.js"></script>
 
   <script>
     new select_shop_sort();
- const swiper = new Swiper('#swiper', {
-      // Optional parameters
-
-      loop: false,
-
-      // If we need pagination
-    
-
-      // Navigation arrows
-      navigation: {
-        nextEl: '#prevslide',
-        prevEl: '#nextslide',
-      },
-
-      // And if we need scrollbar
-
-    });
-
-
-
-
-// end swiper
 
     let sort_selector=document.getElementById('sort_selector')
     let showSelector=document.getElementById('showSelector')
-  
-  
     const Boxes=new MangeBoxDropDown()
     const mobilemenu=new MobileMenu()
 document.addEventListener('click', (event) => {
