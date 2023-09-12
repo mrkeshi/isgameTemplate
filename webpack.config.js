@@ -1,7 +1,7 @@
 var path = require('path');
 const webpack = require('webpack');
 module.exports = {
-  mode: 'development',
+  mode: 'production',
   context: __dirname,
   entry: './dist/slider.js',
   output: {
