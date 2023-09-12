@@ -30,7 +30,11 @@
 
     "@glidejs/glide": "^3.6.0",
 
+    "css-loader": "^6.8.1",
+
     "flowbite": "^1.6.3",
+
+    "style-loader": "^3.3.3",
 
     "swiper": "^8.4.7",
 
