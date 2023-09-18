@@ -4,7 +4,10 @@ table tbody td {
 }
 
 .active_page_wallet > div {
-  background-color: #FCD445;
+  background-color: #FFCD17;
+}
+.active_page_wallet > div span {
+  color: white;
 }
 
 .active_tab_btn {
