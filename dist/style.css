@@ -921,6 +921,14 @@ body {
   top: 8px;
 }
 
+.-left-7 {
+  left: -1.75rem;
+}
+
+.-right-7 {
+  right: -1.75rem;
+}
+
 .-z-20 {
   z-index: -20;
 }
@@ -1583,6 +1591,10 @@ body {
 
 .h-\[56px\] {
   height: 56px;
+}
+
+.h-\[570px\] {
+  height: 570px;
 }
 
 .h-\[600px\] {
@@ -2303,7 +2315,7 @@ body {
 
 .bg-black-700 {
   --tw-bg-opacity: 1;
-  background-color: rgb(78 75 75 / var(--tw-bg-opacity));
+  background-color: rgb(118 114 114 / var(--tw-bg-opacity));
 }
 
 .bg-blue-300 {
@@ -2900,7 +2912,7 @@ body {
 
 .text-black-700 {
   --tw-text-opacity: 1;
-  color: rgb(78 75 75 / var(--tw-text-opacity));
+  color: rgb(118 114 114 / var(--tw-text-opacity));
 }
 
 .text-blue-300 {
@@ -3360,7 +3372,7 @@ body {
 
 .hover\:bg-black-700:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(78 75 75 / var(--tw-bg-opacity));
+  background-color: rgb(118 114 114 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-gold-100:hover {
@@ -3409,7 +3421,7 @@ body {
 
 .hover\:text-black-700:hover {
   --tw-text-opacity: 1;
-  color: rgb(78 75 75 / var(--tw-text-opacity));
+  color: rgb(118 114 114 / var(--tw-text-opacity));
 }
 
 .hover\:text-blue-300:hover {
@@ -3513,6 +3525,10 @@ body {
 @media not all and (min-width: 1536px) {
   .max-2xl\:h-\[290px\] {
     height: 290px;
+  }
+
+  .max-2xl\:h-\[470px\] {
+    height: 470px;
   }
 
   .max-2xl\:h-full {
@@ -3778,6 +3794,11 @@ body {
   .max-lg\:mx-auto {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .max-lg\:my-4 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 
   .max-lg\:my-8 {
@@ -4586,6 +4607,10 @@ body {
     margin-top: 2rem;
   }
 
+  .max-sm\:mb-3 {
+    margin-bottom: 0.75rem;
+  }
+
   .max-sm\:hidden {
     display: none;
   }
@@ -5000,10 +5025,6 @@ body {
     justify-content: space-around;
   }
 
-  .lg\:overflow-x-hidden {
-    overflow-x: hidden;
-  }
-
   .lg\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -5016,14 +5037,6 @@ body {
 
   .lg\:text-4xl {
     font-size: 28px;
-  }
-
-  .lg\:overflow-x-hidden.scrollbar {
-    overflow-x: hidden;
-  }
-
-  .lg\:overflow-x-hidden.scrollbar-thin {
-    overflow-x: hidden;
   }
 }
 
