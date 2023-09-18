@@ -1345,6 +1345,14 @@ body {
   margin-top: 14px;
 }
 
+.-mb-4 {
+  margin-bottom: -1rem;
+}
+
+.-mb-48 {
+  margin-bottom: -12rem;
+}
+
 .block {
   display: block;
 }
@@ -1647,6 +1655,18 @@ body {
 
 .h-screen {
   height: 100vh;
+}
+
+.h-40 {
+  height: 10rem;
+}
+
+.h-\[560\62D\637\] {
+  height: 560حط;
+}
+
+.h-\[560px\] {
+  height: 560px;
 }
 
 .max-h-0 {
@@ -2685,6 +2705,10 @@ body {
   padding-top: 1.25rem;
 }
 
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -2839,6 +2863,10 @@ body {
 
 .text-xl {
   font-size: 16px;
+}
+
+.text-\[12px\] {
+  font-size: 12px;
 }
 
 .font-bold {
@@ -3869,6 +3897,10 @@ body {
     margin-top: 3.5rem;
   }
 
+  .max-lg\:mt-16 {
+    margin-top: 4rem;
+  }
+
   .max-lg\:mt-20 {
     margin-top: 5rem;
   }
@@ -3887,6 +3919,22 @@ body {
 
   .max-lg\:mt-8 {
     margin-top: 2rem;
+  }
+
+  .max-lg\:mb-1 {
+    margin-bottom: 0.25rem;
+  }
+
+  .max-lg\:mt-2 {
+    margin-top: 0.5rem;
+  }
+
+  .max-lg\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
+  .max-lg\:mt-11 {
+    margin-top: 2.75rem;
   }
 
   .max-lg\:hidden {
@@ -4129,6 +4177,14 @@ body {
     left: 1.25rem;
   }
 
+  .max-md\:left-3 {
+    left: 0.75rem;
+  }
+
+  .max-md\:left-4 {
+    left: 1rem;
+  }
+
   .max-md\:-my-3 {
     margin-top: -0.75rem;
     margin-bottom: -0.75rem;
@@ -4216,6 +4272,14 @@ body {
 
   .max-md\:mt-8 {
     margin-top: 2rem;
+  }
+
+  .max-md\:mt-\[85px\] {
+    margin-top: 85px;
+  }
+
+  .max-md\:-mt-4 {
+    margin-top: -1rem;
   }
 
   .max-md\:hidden {
@@ -4312,6 +4376,10 @@ body {
 
   .max-md\:justify-around {
     justify-content: space-around;
+  }
+
+  .max-md\:overflow-hidden {
+    overflow: hidden;
   }
 
   .max-md\:border-none {
@@ -4502,6 +4570,26 @@ body {
     top: 0.5rem;
   }
 
+  .max-sm\:left-\[26px\] {
+    left: 26px;
+  }
+
+  .max-sm\:left-\[18px\] {
+    left: 18px;
+  }
+
+  .max-sm\:left-\[12px\] {
+    left: 12px;
+  }
+
+  .max-sm\:left-4 {
+    left: 1rem;
+  }
+
+  .max-sm\:left-3 {
+    left: 0.75rem;
+  }
+
   .max-sm\:float-left {
     float: left;
   }
@@ -4616,6 +4704,10 @@ body {
 
   .max-sm\:mt-8 {
     margin-top: 2rem;
+  }
+
+  .max-sm\:-mb-5 {
+    margin-bottom: -1.25rem;
   }
 
   .max-sm\:hidden {
@@ -4756,6 +4848,10 @@ body {
 
   .max-sm\:justify-between {
     justify-content: space-between;
+  }
+
+  .max-sm\:overflow-x-hidden {
+    overflow-x: hidden;
   }
 
   .max-sm\:rounded-sm {
@@ -4900,6 +4996,26 @@ body {
   .max-sm\:font-normal {
     font-weight: 400;
   }
+
+  .max-sm\:overflow-x-hidden {
+    overflow-x: hidden;
+  }
+
+  .max-sm\:overflow-x-hidden.scrollbar {
+    overflow-x: hidden;
+  }
+
+  .max-sm\:overflow-x-hidden {
+    overflow-x: hidden;
+  }
+
+  .max-sm\:overflow-x-hidden.scrollbar {
+    overflow-x: hidden;
+  }
+
+  .max-sm\:overflow-x-hidden.scrollbar-thin {
+    overflow-x: hidden;
+  }
 }
 
 @media (min-width: 640px) {
@@ -4998,6 +5114,14 @@ body {
 
   .lg\:mt-12 {
     margin-top: 3rem;
+  }
+
+  .lg\:mb-8 {
+    margin-bottom: 2rem;
+  }
+
+  .lg\:mt-8 {
+    margin-top: 2rem;
   }
 
   .lg\:hidden {

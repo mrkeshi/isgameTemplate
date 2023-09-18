@@ -7,7 +7,10 @@ table{
   }
 }
 .active_page_wallet>div{
-  background-color: #FCD445;
+  background-color: #FFCD17;
+  span{
+    color: white;
+  }
 }
 .active_tab_btn{
   pointer-events: none ;
