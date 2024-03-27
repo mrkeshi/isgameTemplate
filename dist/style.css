@@ -2681,6 +2681,10 @@ body {
   padding-top: 0.25rem;
 }
 
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
 .pt-14 {
   padding-top: 3.5rem;
 }
@@ -2695,10 +2699,6 @@ body {
 
 .pt-5 {
   padding-top: 1.25rem;
-}
-
-.pt-10 {
-  padding-top: 2.5rem;
 }
 
 .text-left {
@@ -3824,13 +3824,12 @@ body {
     margin-bottom: 1.5rem;
   }
 
-  .max-lg\:my-8 {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-  }
-
   .max-lg\:-mb-8 {
     margin-bottom: -2rem;
+  }
+
+  .max-lg\:-mb-\[6px\] {
+    margin-bottom: -6px;
   }
 
   .max-lg\:mb-1 {
@@ -3915,14 +3914,6 @@ body {
 
   .max-lg\:mt-8 {
     margin-top: 2rem;
-  }
-
-  .max-lg\:-mb-\[6px\] {
-    margin-bottom: -6px;
-  }
-
-  .max-lg\:-mb-\[60px\] {
-    margin-bottom: -60px;
   }
 
   .max-lg\:hidden {
@@ -4618,6 +4609,14 @@ body {
     margin-bottom: -6px;
   }
 
+  .max-sm\:-mt-4 {
+    margin-top: -1rem;
+  }
+
+  .max-sm\:-mt-8 {
+    margin-top: -2rem;
+  }
+
   .max-sm\:mb-1 {
     margin-bottom: 0.25rem;
   }
@@ -4680,18 +4679,6 @@ body {
 
   .max-sm\:mt-6 {
     margin-top: 1.5rem;
-  }
-
-  .max-sm\:-mt-6 {
-    margin-top: -1.5rem;
-  }
-
-  .max-sm\:-mt-8 {
-    margin-top: -2rem;
-  }
-
-  .max-sm\:-mt-4 {
-    margin-top: -1rem;
   }
 
   .max-sm\:hidden {
