@@ -223,10 +223,12 @@ margin: 5px;
   }
  }
 
-
+ .swiper-slide.relative.h-auto{
+  height: auto;
+ }
  .pagination{
   .material-symbols-outlined{
-    font-size: 23px;
+    font-size: 18px;
   }
   span{
     font-size: 13px;
