@@ -5,25 +5,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>پوگیم - برگه دسته بندی</title>
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@300" rel="stylesheet">
   <link rel="stylesheet" href="../dist/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="icon" type="image/x-icon" href="../images/pos2.png">
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <link rel="stylesheet" href="../dist/custom_style.css">
-
 </head>
 
 <body class="relative">
   <div class="z-40 w-full  h-full fixed top-0 right-0 backdrop-filter bg-opacity-60 bg-[#2f3c53] hidden"
     id="filter-overflow"></div>
 
+
   <div class=" w-full mx-auto">
 
     <!-- start navbar menu -->
     <div class="icon-top lg:hidden bg-black-700 w-full p-3 h-14  ">
 
+      <!--Top Mobile Menu -->
       <ul>
         <div class=" flex  ">
           <li class="absolute right-3 top-[7px]">
@@ -49,7 +49,7 @@
                 <div
                   class="w-10 h-10 rounded-full  text-white flex justify-center items-center relative hover:text-white hover:bg-black-700 ease-in transition">
                   <span
-                    class="absolute w-5 text-white text-center  rounded-full  text-mini -left-1 top-1  bg-gold-500">4</span>
+                    class="absolute w-5 text-white text-center  rounded-full  text-mini -left-1 top-1  bg-gold-500">۲</span>
                   <span class="material-symbols-outlined text-[22px]">
                     shopping_bag
                   </span>
@@ -63,7 +63,7 @@
 
         </div>
       </ul>
-
+      <!-- End Top Mobile Menu -->
 
 
     </div>
@@ -106,10 +106,10 @@
               <a href="blog.html" class="text-black-500 text-base hover:opacity-80">وبلاگ</a>
             </li>
             <li class="mx-4">
-              <a href="aboue.html" class="text-black-500 text-base hover:opacity-80">درباره ما</a>
+              <a href="about.html" class="text-black-500 text-base hover:opacity-80">درباره ما</a>
             </li>
             <li class="mx-4">
-              <a href="register-form.html"
+              <a href="register.html"
                 class="text-white text-mxl bg-gold-500 text-center transition ease-in font-medium p-3 px-4 rounded flex items-center hover:opacity-70">
                 <span class="material-symbols-outlined text-white text-3xl mx-1 ">
                   person
@@ -133,7 +133,7 @@
             </div>
 
           </div>
-        
+
         </div>
 
         <!-- End Hamber menu Button -->
@@ -162,6 +162,7 @@
             placeholder="جست و جو کنید" required="">
         </div>
         <hr class="text-black-500 w-full mr-2 my-4 lg:hidden">
+        <!-- Start Mobile Menu -->
         <nav
           class="flex lg:items-center  max-lg:flex-col h-full overflow-y-auto scrollbar scrollbar-thumb-gold-100 scrollbar-track-gray-500 scrollbar-w-[3px] overflow-x-hidden scrollbar-track-rounded-md scrollbar-thumb-rounded-lg ">
           <ul class="flex lg:items-center h-full max-lg:flex-col ">
@@ -203,7 +204,7 @@
               </li>
 
               <li class="mx-6">
-                <a href="aboue.html" class="text-black-500 max-lg:text-[#000] text-mxl hover:opacity-75 flex items-end">
+                <a href="about.html" class="text-black-500 max-lg:text-[#000] text-mxl hover:opacity-75 flex items-end">
                   <span class="material-symbols-outlined text-3xl text-black-500 ml-2 lg:hidden">
                     group
                   </span>
@@ -225,94 +226,103 @@
           </ul>
 
         </nav>
-
+        <!-- End Mobile Menu -->
         <!-- card drop down -->
         <ul class="flex relative ">
+          <!-- Start Shopping Cart Card -->
           <div id="showcardmanage"
-          class="bg-white rounded-xl	 z-20 h-auto  w-[350px] max-md:w-[300px] opacity-0 pointer-events-none ease-linear transition-opacity appearance-none -left-32 max-lg:-left-3 top-8  shadow-md mt-4 absolute">
-         <a href="cart.html" class="text-gold-100 flex items-center absolute top-4 left-4 text-base ">
-         رفتن به سبد خرید<span class="material-symbols-outlined text-mxl max-md:text-sm ">
-          keyboard_double_arrow_left
-          </span>
-        </a>
+            class="bg-white rounded-xl	 z-20 h-auto  w-[350px] max-md:w-[300px] opacity-0 pointer-events-none ease-linear transition-opacity appearance-none -left-32 max-lg:-left-3 top-8  shadow-md mt-4 absolute">
+            <a href="cart.html" class="text-gold-100 flex items-center absolute top-4 left-4 text-base ">
+              رفتن به سبد خرید<span class="material-symbols-outlined text-mxl max-md:text-sm ">
+                keyboard_double_arrow_left
+              </span>
+            </a>
 
-        <div class="posts flex flex-col mt-7 overflow-y-auto max-h-[440px] scrollbar scrollbar-thumb-gold-100 scrollbar-track-[#F5F4F4] scrollbar-w-[5px] scrollbar-track-rounded-md scrollbar-thumb-rounded-lg">
-          <li class="p-4 py-3 max-md:p-3">
+            <div
+              class="posts flex flex-col mt-7 overflow-y-auto max-h-[440px] scrollbar scrollbar-thumb-gold-100 scrollbar-track-[#F5F4F4] scrollbar-w-[5px] scrollbar-track-rounded-md scrollbar-thumb-rounded-lg">
+              <li class="p-4 py-3 max-md:p-3">
 
-            <div class="post flex items-center ">
-              <a href="single_product .html" class="img">
-                <img src="../images/lates_post.jpg" alt="" class="h-14 w-14 max-md:w-12 max-md:h-12 rounded-lg">
-              </a>
+                <div class="post flex items-center ">
+                  <a href="single_product .html" class="img">
+                    <img src="../images/lates_post.jpg" alt="" class="h-14 w-14 max-md:w-12 max-md:h-12 rounded-lg">
+                  </a>
 
-              <div class="head mx-3 ml-0 flex flex-col ">
-                <h2><a href="single_post.html" class="text-black-500 text-mxl font-IRsansBold transition-all max-md:text-base ease-linear hover:opacity-70">خرید سی دی بازی red dead 2</a></h2>
-                <div class="details flex mt-2 opacity-80 ">
-                  <div class="price  left-8 top-8 flex items-center">
-                    <div class="text-black-500  text-base font-light  right-[-60px] -top-2">
-                      <s>۱۸۱,۰۰۰</s>
-                  </div>
-                    <span class="text-gold-100 text-mxl max-md:text-sm font-IRsansBold">۱۱۹,۰۰۰</span>
-                    <span class="text-base mx-1 text-black-500">تومان</span>
-                    <div class="div">
-               
+                  <div class="head mx-3 ml-0 flex flex-col ">
+                    <h2><a href="single_post.html"
+                        class="text-black-500 text-mxl font-IRsansBold transition-all max-md:text-base ease-linear hover:opacity-70">خرید
+                        سی دی بازی red dead 2</a></h2>
+                    <div class="details flex mt-2 opacity-80 ">
+                      <div class="price  left-8 top-8 flex items-center">
+                        <div class="text-black-500  text-base font-light  right-[-60px] -top-2">
+                          <s>۱۸۱,۰۰۰</s>
+                        </div>
+                        <span class="text-gold-100 text-mxl max-md:text-sm font-IRsansBold">۱۱۹,۰۰۰</span>
+                        <span class="text-base mx-1 text-black-500">تومان</span>
+                        <div class="div">
+
+                        </div>
+                      </div>
+
+
                     </div>
                   </div>
 
-
                 </div>
-              </div>
 
-            </div>
+              </li>
 
-          </li>
-       
-          <li class="p-4 py-3 max-md:p-3">
+              <li class="p-4 py-3 max-md:p-3">
 
-            <div class="post flex items-center ">
-              <a href="single_product .html" class="img">
-                <img src="../images/2.webp" alt="" class="h-14 w-14 max-md:w-12 max-md:h-12 rounded-lg">
-              </a>
+                <div class="post flex items-center ">
+                  <a href="single_product .html" class="img">
+                    <img src="../images/2.webp" alt="" class="h-14 w-14 max-md:w-12 max-md:h-12 rounded-lg">
+                  </a>
 
-              <div class="head mx-3 ml-0 flex flex-col ">
-                <h2><a href="single_product .html" class="text-black-500 text-mxl font-IRsansBold transition-all max-md:text-base ease-linear hover:opacity-70">خرید  cd key اورجینال</a></h2>
-                <div class="details flex mt-2 opacity-80 ">
-                  <div class="price  left-8 top-8 flex items-center">
-                    <div class="text-black-500  text-base font-light  right-[-60px] -top-2">
-                      <s>۱۰۰,۰۰۰</s>
-                  </div>
-                    <span class="text-gold-100 text-mxl max-md:text-sm font-IRsansBold">۷۹,۰۰۰</span>
-                    <span class="text-base mx-1 text-black-500">تومان</span>
-                    <div class="div">
-               
+                  <div class="head mx-3 ml-0 flex flex-col ">
+                    <h2><a href="single_product .html"
+                        class="text-black-500 text-mxl font-IRsansBold transition-all max-md:text-base ease-linear hover:opacity-70">خرید
+                        cd key اورجینال</a></h2>
+                    <div class="details flex mt-2 opacity-80 ">
+                      <div class="price  left-8 top-8 flex items-center">
+                        <div class="text-black-500  text-base font-light  right-[-60px] -top-2">
+                          <s>۱۰۰,۰۰۰</s>
+                        </div>
+                        <span class="text-gold-100 text-mxl max-md:text-sm font-IRsansBold">۷۹,۰۰۰</span>
+                        <span class="text-base mx-1 text-black-500">تومان</span>
+                        <div class="div">
+
+                        </div>
+                      </div>
+
+
                     </div>
                   </div>
 
-
                 </div>
-              </div>
+
+              </li>
 
             </div>
-
-          </li>
-       
-        </div>   <div class="border-t border-gray-100 mt-2 p-4 px-5 flex justify-between items-center">
-          <div>
-            <h5 class="text-black-500 text-mxl max-md:text-base"> میلغ قابل پرداخت:</h5>
-            <h5 class="text-gold-100 font-medium  max-md:text-base">۱۹۸,۰۰۰ تومان</h5>
+            <div class="border-t border-gray-100 mt-2 p-4 px-5 flex justify-between items-center">
+              <div>
+                <h5 class="text-black-500 text-mxl max-md:text-base"> میلغ قابل پرداخت:</h5>
+                <h5 class="text-gold-100 font-medium  max-md:text-base">۱۹۸,۰۰۰ تومان</h5>
+              </div>
+              <a href="cart.html"
+                class="text-white text-mxl transition ease-in hover:text-gold-100 hover:bg-white  bg-gold-100 border p-3 py-2 border-gold-100 text-center font-medium rounded flex items-center">
+                ثبت سفارش
+              </a>
+            </div>
           </div>
-          <a href="cart.html" class="text-white text-mxl transition ease-in hover:text-gold-100 hover:bg-white  bg-gold-100 border p-3 py-2 border-gold-100 text-center font-medium rounded flex items-center">
-               ثبت سفارش
-          </a>
-        </div>
-        </div>
-
+          <!-- End Shopping Cart Card -->
           <li class="card_manage_icon">
             <a href="#">
               <div class="flex items-center mx-1">
                 <div
                   class="w-9 h-9 max-lg:hidden rounded-full bg-gray-300 text-black-700 flex justify-center items-center relative hover:text-white hover:bg-black-700 ease-in transition">
                   <span
-                    class="absolute text-white label flex justify-center h-5 w-5 text-center rounded-full  text-[11px] -l-3 -top-1">۲ </span>
+                    class="absolute text-white label flex justify-center h-5 w-5 text-center rounded-full  text-[11px] -l-3 -top-1">۲
+                  </span>
                   <span class="material-symbols-outlined text-[22px]">
                     shopping_bag
                   </span>
@@ -335,31 +345,26 @@
   <!--  box -->
   <div class="container mx-auto">
     <section class="relative ">
+      <!-- Start Breadcrumb -->
       <div class="pg-title mx-4 my-5 lg:my-8 max-sm:mb-6">
         <h2 class="font-IRsansBold text-black-700 text-3xl max-md:text-2xl max-sm:text-lxl mt-4">دسته بندی </h2>
         <h3 class="my-2 text-black-500 flex items-center">
-          
-          <a href="index.html" class="hover:text-black-700">ایزگیم</a>
+
+          <a href="index.html" class="hover:text-black-700">پوگیم</a>
           <span class="material-symbols-outlined text-gold-500 cursor-default	">
             chevron_left
-            </span> 
-            <a href="blog.html" class="hover:text-black-700">وبلاگ</a>
-   
-           <span class="material-symbols-outlined text-gold-500 cursor-default	">
+          </span>
+          <a href="blog.html" class="hover:text-black-700">وبلاگ</a>
+
+          <span class="material-symbols-outlined text-gold-500 cursor-default	">
             chevron_left
-            </span> 
-            <a href="category_blog.html" class="hover:text-black-700">دسته بندی</a>
-          
+          </span>
+          <a href="category_blog.html" class="hover:text-black-700">دسته بندی</a>
+
         </h3>
       </div>
-  
-
+      <!-- End Breadcrumb -->
       <!-- blog section -->
-
-
-
-
-
       <div class="flex p-2 mt-10 max-lg:mt-5 justify-between single_post max-lg:flex-wrap ">
         <!-- Start Section posts -->
         <div class="relative rounded-sm  ml-2 xl:w-[73%] max-xl:w-[69%] max-xl:ml-2 max-lg:ml-0 max-lg:w-full">
@@ -368,8 +373,8 @@
               <div class="post max-xl:w-[310px] w-[275px]  bg-white p-2  mx-2 mb-4 max-md:w-full">
                 <a href="single_post.html">
                   <img src="../images/16.jpg"
-                  class="w-full max-lg:h-[196px] h-[176px] rounded brightness-75 transition ease-in-out hover:brightness-150"
-                  alt="">
+                    class="w-full max-lg:h-[196px] h-[176px] rounded brightness-75 transition ease-in-out hover:brightness-150"
+                    alt="">
                 </a>
                 <div class="details flex px-2 items-center  justify-between mt-[14px] -mb-1 ">
                   <div class="date flex items-center">
@@ -385,7 +390,7 @@
                       bookmark
                     </span>
                     <span class="text-black-500 text-sm mx-1">
-                       آموزش
+                      آموزش
                     </span>
                   </div>
                   <div class="tag flex items-center">
@@ -394,14 +399,16 @@
 
                     </span>
                     <span class="text-black-500 text-sm mx-1">
-                      ۵ 
+                      ۵
                     </span>
                   </div>
                 </div>
                 <div class="flex flex-col px-2">
                   <h3 class="text-black-700 my-3 text-xl font-bold  hover:text-gold-500 transition"><a
                       href="single_post.html">آموزش کاهش پینگ در بازی های آنلاین</a></h3>
-                  <p class="text-black-500 text-base lg:hidden mb-2">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                  <p class="text-black-500 text-base lg:hidden mb-2">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                    صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان
+                    که لازم است</p>
 
                 </div>
 
@@ -409,8 +416,8 @@
               <div class="post  max-xl:w-[310px]  w-[275px]   bg-white p-2  mx-2 mb-5     max-md:w-full    ">
                 <a href="single_post.html">
                   <img src="../images/image_post_2.png"
-                  class="w-full max-lg:h-[196px] h-[176px] rounded brightness-75 transition ease-in-out hover:brightness-150"
-                  alt="">
+                    class="w-full max-lg:h-[196px] h-[176px] rounded brightness-75 transition ease-in-out hover:brightness-150"
+                    alt="">
                 </a>
 
                 <div class="details flex px-2 items-center  justify-between mt-[14px] -mb-1 ">
@@ -427,7 +434,7 @@
                       bookmark
                     </span>
                     <span class="text-black-500 text-sm mx-1">
-                       آموزش
+                      آموزش
                     </span>
                   </div>
                   <div class="tag flex items-center">
@@ -443,7 +450,9 @@
                 <div class="flex flex-col px-2">
                   <h3 class="text-black-700 my-3 text-xl font-bold hover:text-gold-500 transition"><a
                       href="single_post.html">دانلود Grand Theft Auto V</a></h3>
-                  <p class="text-black-500 text-base lg:hidden mb-2">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                  <p class="text-black-500 text-base lg:hidden mb-2">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                    صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان
+                    که لازم است</p>
                 </div>
 
               </div>
@@ -451,8 +460,8 @@
               <div class="post  max-xl:w-[310px] w-[275px]   bg-white p-2  mx-2 mb-5     max-md:w-full    ">
                 <a href="single_post.html">
                   <img src="../images/4.jpg"
-                  class="w-full max-lg:h-[196px] h-[176px] rounded brightness-75 transition ease-in-out hover:brightness-150"
-                  alt="">
+                    class="w-full max-lg:h-[196px] h-[176px] rounded brightness-75 transition ease-in-out hover:brightness-150"
+                    alt="">
                 </a>
 
                 <div class="details flex px-2 items-center  justify-between mt-[14px] -mb-1 ">
@@ -469,7 +478,7 @@
                       bookmark
                     </span>
                     <span class="text-black-500 text-sm mx-1">
-                       دانلودی 
+                      دانلودی
                     </span>
                   </div>
                   <div class="tag flex items-center">
@@ -485,7 +494,9 @@
                 <div class="flex flex-col px-2">
                   <h3 class="text-black-700 my-3 text-xl font-bold  hover:text-gold-500 transition"><a
                       href="single_post.html">دانلود بازی زولا نسخه ترکیه</a></h3>
-                  <p class="text-black-500 text-base lg:hidden mb-2"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                  <p class="text-black-500 text-base lg:hidden mb-2"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                    صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان
+                    که لازم است
 
                 </div>
 
@@ -494,8 +505,8 @@
               <div class="post max-xl:w-[310px] w-[275px]  bg-white p-2  mx-2 mb-4 max-md:w-full">
                 <a href="single_post.html">
                   <img src="../images/6.png"
-                  class="w-full max-lg:h-[196px] h-[176px] rounded brightness-75 transition ease-in-out hover:brightness-150"
-                  alt="">
+                    class="w-full max-lg:h-[196px] h-[176px] rounded brightness-75 transition ease-in-out hover:brightness-150"
+                    alt="">
                 </a>
                 <div class="details flex px-2 items-center  justify-between mt-[14px] -mb-1 ">
                   <div class="date flex items-center">
@@ -511,7 +522,7 @@
                       bookmark
                     </span>
                     <span class="text-black-500 text-sm mx-1">
-                       متفرقه
+                      متفرقه
                     </span>
                   </div>
                   <div class="tag flex items-center">
@@ -520,14 +531,16 @@
 
                     </span>
                     <span class="text-black-500 text-sm mx-1">
-                      ۳ 
+                      ۳
                     </span>
                   </div>
                 </div>
                 <div class="flex flex-col px-2">
                   <h3 class="text-black-700 my-3 text-xl font-bold  hover:text-gold-500 transition"><a
                       href="single_post.html">لیست سرورهای آنلاین</a></h3>
-                  <p class="text-black-500 text-base lg:hidden mb-2">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                  <p class="text-black-500 text-base lg:hidden mb-2">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                    صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان
+                    که لازم است</p>
 
                 </div>
 
@@ -535,8 +548,8 @@
               <div class="post  max-xl:w-[310px]  w-[275px]   bg-white p-2  mx-2 mb-5     max-md:w-full    ">
                 <a href="single_post.html">
                   <img src="../images/lates_post.jpg"
-                  class="w-full max-lg:h-[196px] h-[176px] rounded brightness-75 transition ease-in-out hover:brightness-150"
-                  alt="">
+                    class="w-full max-lg:h-[196px] h-[176px] rounded brightness-75 transition ease-in-out hover:brightness-150"
+                    alt="">
                 </a>
 
                 <div class="details flex px-2 items-center  justify-between mt-[14px] -mb-1 ">
@@ -553,7 +566,7 @@
                       bookmark
                     </span>
                     <span class="text-black-500 text-sm mx-1">
-                       دانلودی
+                      دانلودی
                     </span>
                   </div>
                   <div class="tag flex items-center">
@@ -569,7 +582,9 @@
                 <div class="flex flex-col px-2">
                   <h3 class="text-black-700 my-3 text-xl font-bold hover:text-gold-500 transition"><a
                       href="single_post.html">دانلود بازی red dead 2</a></h3>
-                  <p class="text-black-500 text-base lg:hidden mb-2">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                  <p class="text-black-500 text-base lg:hidden mb-2">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                    صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان
+                    که لازم است</p>
                 </div>
 
               </div>
@@ -577,8 +592,8 @@
               <div class="post  max-xl:w-[310px] w-[275px]   bg-white p-2  mx-2 mb-5     max-md:w-full    ">
                 <a href="single_post.html">
                   <img src="../images/3.png"
-                  class="w-full max-lg:h-[196px] h-[176px] rounded brightness-75 transition ease-in-out hover:brightness-150"
-                  alt="">
+                    class="w-full max-lg:h-[196px] h-[176px] rounded brightness-75 transition ease-in-out hover:brightness-150"
+                    alt="">
                 </a>
 
                 <div class="details flex px-2 items-center  justify-between mt-[14px] -mb-1 ">
@@ -595,7 +610,7 @@
                       bookmark
                     </span>
                     <span class="text-black-500 text-sm mx-1">
-                       اخبار 
+                      اخبار
                     </span>
                   </div>
                   <div class="tag flex items-center">
@@ -611,7 +626,9 @@
                 <div class="flex flex-col px-2">
                   <h3 class="text-black-700 my-3 text-xl font-bold  hover:text-gold-500 transition"><a
                       href="single_post.html">رازهای مخفی بازی کلش اف کلنز</a></h3>
-                  <p class="text-black-500 text-base lg:hidden mb-2"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                  <p class="text-black-500 text-base lg:hidden mb-2"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                    صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان
+                    که لازم است
 
                 </div>
 
@@ -619,8 +636,8 @@
               <div class="post max-xl:w-[310px] w-[275px]  bg-white p-2  mx-2 mb-4 max-md:w-full">
                 <a href="single_post.html">
                   <img src="../images/5.jpg"
-                  class="w-full max-lg:h-[196px] h-[176px] rounded brightness-75 transition ease-in-out hover:brightness-150"
-                  alt="">
+                    class="w-full max-lg:h-[196px] h-[176px] rounded brightness-75 transition ease-in-out hover:brightness-150"
+                    alt="">
                 </a>
                 <div class="details flex px-2 items-center  justify-between mt-[14px] -mb-1 ">
                   <div class="date flex items-center">
@@ -636,7 +653,7 @@
                       bookmark
                     </span>
                     <span class="text-black-500 text-sm mx-1">
-                       دانلودی
+                      دانلودی
                     </span>
                   </div>
                   <div class="tag flex items-center">
@@ -645,14 +662,16 @@
 
                     </span>
                     <span class="text-black-500 text-sm mx-1">
-                      ۴ 
+                      ۴
                     </span>
                   </div>
                 </div>
                 <div class="flex flex-col px-2">
                   <h3 class="text-black-700 my-3 text-xl font-bold  hover:text-gold-500 transition"><a
                       href="single_post.html">دانلود اساسین کرید ۳ ریمستر</a></h3>
-                  <p class="text-black-500 text-base lg:hidden mb-2">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                  <p class="text-black-500 text-base lg:hidden mb-2">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                    صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان
+                    که لازم است</p>
 
                 </div>
 
@@ -660,8 +679,8 @@
               <div class="post  max-xl:w-[310px]  w-[275px]   bg-white p-2  mx-2 mb-5     max-md:w-full    ">
                 <a href="single_post.html">
                   <img src="../images/14.webp"
-                  class="w-full max-lg:h-[196px] h-[176px] rounded brightness-75 transition ease-in-out hover:brightness-150"
-                  alt="">
+                    class="w-full max-lg:h-[196px] h-[176px] rounded brightness-75 transition ease-in-out hover:brightness-150"
+                    alt="">
                 </a>
 
                 <div class="details flex px-2 items-center  justify-between mt-[14px] -mb-1 ">
@@ -678,7 +697,7 @@
                       bookmark
                     </span>
                     <span class="text-black-500 text-sm mx-1">
-                       آموزش
+                      آموزش
                     </span>
                   </div>
                   <div class="tag flex items-center">
@@ -694,7 +713,9 @@
                 <div class="flex flex-col px-2">
                   <h3 class="text-black-700 my-3 text-xl font-bold hover:text-gold-500 transition"><a
                       href="single_post.html">دانلود مود need for speed rivals</a></h3>
-                  <p class="text-black-500 text-base lg:hidden mb-2">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                  <p class="text-black-500 text-base lg:hidden mb-2">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                    صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان
+                    که لازم است</p>
                 </div>
 
               </div>
@@ -702,8 +723,8 @@
               <div class="post  max-xl:w-[310px] w-[275px]   bg-white p-2  mx-2 mb-5     max-md:w-full    ">
                 <a href="single_post.html">
                   <img src="../images/17.jpg"
-                  class="w-full max-lg:h-[196px] h-[176px] rounded brightness-75 transition ease-in-out hover:brightness-150"
-                  alt="">
+                    class="w-full max-lg:h-[196px] h-[176px] rounded brightness-75 transition ease-in-out hover:brightness-150"
+                    alt="">
                 </a>
 
                 <div class="details flex px-2 items-center  justify-between mt-[14px] -mb-1 ">
@@ -720,7 +741,7 @@
                       bookmark
                     </span>
                     <span class="text-black-500 text-sm mx-1">
-                       آموزش 
+                      آموزش
                     </span>
                   </div>
                   <div class="tag flex items-center">
@@ -736,22 +757,24 @@
                 <div class="flex flex-col px-2">
                   <h3 class="text-black-700 my-3 text-xl font-bold  hover:text-gold-500 transition"><a
                       href="single_post.html">آموزش ساخت ترینر برای بازی ها</a></h3>
-                  <p class="text-black-500 text-base lg:hidden mb-2"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                  <p class="text-black-500 text-base lg:hidden mb-2"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                    صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان
+                    که لازم است
 
                 </div>
 
               </div>
-       
-        
+
+
             </div>
             <!-- pagination -->
             <div class="pagination my-8 mt-5 flex justify-center items-center">
               <span class="material-symbols-outlined rotate-[180deg] text-2xl">
                 arrow_back
               </span>
-              <span>1</span>
-              <span class="active">2</span>
-              <span>3</span>
+              <span>۱</span>
+              <span class="active">۲</span>
+              <span>۳</span>
               <span>4</span>
               <span class="material-symbols-outlined text-xl">
                 arrow_back
@@ -762,6 +785,9 @@
 
         </div>
         <!-- End Section Posts -->
+
+
+        <!-- Start Sidebar -->
         <aside class="aside mr-6 xl:w-[27%] max-xl:w-[31%] max-lg:mr-0 max-lg:w-full ">
           <!-- lates post box -->
           <div
@@ -806,7 +832,7 @@
                 <div class="post relative bg-white rounded-md p-4 pt-5 py-2 mt-4 mb-5">
                   <h3 class="text-mxl text-black-500 font-bold transition ease-in hover:text-gold-500">
                     <a href="single_post.html">
-                      دانلود بازی red dead 2 
+                      دانلود بازی red dead 2
                     </a>
                   </h3>
                   <div class="details flex items-center  justify-end  mt-4 mb-2 ">
@@ -858,7 +884,7 @@
                 <div class="post relative bg-white rounded-md p-4 pt-5 py-2 mt-4 mb-5">
                   <h3 class="text-mxl text-black-500 font-bold transition ease-in hover:text-gold-500">
                     <a href="single_product .html">
-                     آموزش خرید یوسی و سی پی در پوگیم
+                      آموزش خرید یوسی و سی پی در پوگیم
                     </a>
                   </h3>
                   <div class="details flex items-center  justify-end  mt-4 mb-2 ">
@@ -902,7 +928,7 @@
           <div class="sidebar_best_cheat mb-8 relative  h-auto">
             <div class="header flex items-center border border-gray-500  p-5 rounded justify-between">
               <span class="text-black-500 text-[17px] font-IRsansBold max-sm:text-xl">
-                 فروشگاه
+                فروشگاه
               </span>
               <span class="font-IRsansLight text-black-500 text-mxl">
                 محصولات برتر
@@ -921,7 +947,7 @@
                   </div>
                   <h3 class="text-white text-[17px] max-sm:text-xl font-medium mx-4 relative bottom-3 hover:opacity-60">
                     <a href="single_post.html">
-                      خرید گیفیت کارت گوگل پلی 
+                      خرید گیفیت کارت گوگل پلی
                     </a>
                   </h3>
                 </div>
@@ -967,7 +993,7 @@
                   </div>
                   <h3 class="text-white text-[17px] font-medium mx-4 hover:opacity-60 ">
                     <a href="single_product .html"></a>
-                  خرید سی پی بازی کالاف
+                    خرید سی پی بازی کالاف
                   </h3>
                 </div>
               </div>
@@ -979,7 +1005,7 @@
                     <span class="text-gold-500 text-[20px] text-center flex items-center justify-center h-full">5</span>
                   </div>
                   <h3 class="text-white text-[16px] font-medium mx-4  hover:opacity-60">
-                  <a href="single_post.html">لورم ایپسوم آزمایشی</a>
+                    <a href="single_post.html">لورم ایپسوم آزمایشی</a>
                   </h3>
                 </div>
               </div>
@@ -999,7 +1025,7 @@
 
               </h2>
               <p class=" text-mxl font-light  mx-6 text-black-500">
-                آخرین دیدگاه های ثبت شده در ایزگیم
+                آخرین دیدگاه های ثبت شده در پوگیم
               </p>
 
             </div>
@@ -1008,7 +1034,7 @@
                 style="border-width: 2px;">
                 <a href="single_post.html" class="text-black-500 hover:opacity-60">
                   <strong class="text-gold-500">علی</strong>
-                  در مطلب لورم ایپسوم  
+                  در مطلب لورم ایپسوم
                 </a>
                 <div class="details flex items-center  justify-end  mt-3 mb-1 ">
                   <div class="date flex ">
@@ -1026,7 +1052,7 @@
                 style="border-width: 2px;">
                 <a href="single_post.html" class="text-black-500 hover:opacity-60">
                   <strong class="text-gold-500">سارا</strong>
-                  در مطلب دانلود بازی کالاف  
+                  در مطلب دانلود بازی کالاف
                 </a>
                 <div class="details flex items-center  justify-end  mt-3 mb-1 ">
                   <div class="date flex ">
@@ -1095,7 +1121,7 @@
 
           <!-- end best cheat box -->
         </aside>
-
+        <!-- End SideBar  -->
 
 
       </div>
@@ -1106,7 +1132,7 @@
   <br><br>
 
 
-
+  <!-- Start Footer -->
   <footer class="relative  ">
     <svg viewBox="0 -20 700 110" width="100%" height="110" preserveAspectRatio="none">
       <path transform="translate(0, -20)" d="M0,10 c80,-22 240,0 350,18 c90,17 260,7.5 350,-20 v50 h-700"
@@ -1132,7 +1158,9 @@
             <h3 class="text-black-700 text-[17px] ">درباره ما</h3>
           </div>
 
-          <p class="text-right text-mxl leading-8 mt-2 text-black-500">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+          <p class="text-right text-mxl leading-8 mt-2 text-black-500">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+            صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+            است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
           </p><br>
           <div class="flex items-center">
             <div class="icon items-center ">
@@ -1214,9 +1242,9 @@
         <ul class="flex max-md:hidden">
           <li class="mx-6"><a href="index.html" class="text-black-500 text-mxl hover:opacity-70">خانه</a></li>
           <li class="mx-6"><a href="blog.html" class="text-black-500 text-mxl hover:opacity-70">بلاگ</a></li>
-          <li class="mx-6"><a href="register-form.html" class="text-black-500 text-mxl hover:opacity-70">ورود</a></li>
+          <li class="mx-6"><a href="register.html" class="text-black-500 text-mxl hover:opacity-70">ورود</a></li>
           <li class="mx-6"><a href="blog.html" class="text-black-500 text-mxl hover:opacity-70">آموزش</a></li>
-          <li class="mx-6"><a href="aboue.html" class="text-black-500 text-mxl hover:opacity-70">درباره ما</a></li>
+          <li class="mx-6"><a href="about.html" class="text-black-500 text-mxl hover:opacity-70">درباره ما</a></li>
         </ul>
         <div class="logo w-20 h-20 mx-10">
           <img src="../images/pos.png" alt="logo" title="logo">
@@ -1297,7 +1325,7 @@
 
 
   </footer>
-
+  <!-- End Footer -->
 
 
   <script src="../dist/main.js"></script>
