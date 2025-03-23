@@ -458,7 +458,7 @@
                   class="input-group relative flex flex-wrap items-stretch w-96 mb-4 rounded my-6 mt-0 mx-auto max-sm:w-full">
                   <input type="search"
                     class="form-control relative flex-auto min-w-0 block  px-3 py-1 text-base font-normal text-black-500 bg-gray-300 h-[55px]  bg-clip-padding border-none rounded-full transition ease-in-out m-0  text-left px-6 focus:outline-none w-[300px] max-sm:w-full"
-                    placeholder="https://mr-keshi.ir" aria-label="Search" aria-describedby="button-addon2" id="myInput">
+                  value="https://mr-keshi.ir"  placeholder="https://mr-keshi.ir" aria-label="Search" aria-describedby="button-addon2" id="myInput">
                   <span onclick=CopyTextClipBoard()
                     class="input-group-text flex items-center px-3 py-1.5  text-base font-normal right-1 top-3  text-gray-700 text-center whitespace-nowrap rounded absolute "
                     id="basic-addon2">
@@ -1330,38 +1330,6 @@
       });
     });
 
-
-
-    let Mobi = new MobileMenu()
-    let Boxes = new MangeBoxDropDown()
-    window.addEventListener('click', (event) => {
-      if (!Boxes.personBox.contains(event.target) && event.target.contains(filterBody)) {
-        Boxes.closePersonBox()
-      }
-      if (!Boxes.cardBox.contains(event.target) && event.target.contains(filterBody)) {
-        Boxes.closeCardBox()
-      }
-      // toggle menu mobile when click out:
-      if (!Mobi.SiteMenu.contains(event.target) && Mobi.StatusMobile && !Mobi.hamber.contains(event.target)) {
-        Mobi.close()
-
-      }
-    })
-
-    function CopyTextClipBoard() {
-
-
-      var copyText = document.getElementById("myInput");
-
-
-      copyText.select();
-      copyText.setSelectionRange(0, 99999)
-
-
-      navigator.clipboard.writeText(copyText.value);
-
-
-    }
 
   </script>
 

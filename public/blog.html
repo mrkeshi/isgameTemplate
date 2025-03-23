@@ -1574,43 +1574,7 @@
 
 
   <script src="../dist/main.js"></script>
-  <script>
-    let Mobi = new MobileMenu()
-    let Boxes = new MangeBoxDropDown()
-    window.addEventListener('click', (event) => {
 
-
-      if (!Boxes.cardBox.contains(event.target) && event.target.contains(filterBody)) {
-        Boxes.closeCardBox()
-      }
-      // toggle menu mobile when click out:
-      if (!Mobi.SiteMenu.contains(event.target) && Mobi.StatusMobile && !Mobi.hamber.contains(event.target)) {
-        Mobi.close()
-
-      }
-    })
-
-    const swiper2 = new Swiper('#swiper2', {
-      // Optional parameters
-
-      loop: true,
-
-      // If we need pagination
-      pagination: {
-        el: '#swiper-pagination2',
-      },
-
-      // Navigation arrows
-      navigation: {
-        nextEl: '#prevslide2',
-        prevEl: '#nextslide2',
-      },
-
-      // And if we need scrollbar
-
-    });
-
-  </script>
 </body>
 
 </html>

@@ -513,7 +513,7 @@
                   class="input-group relative flex flex-wrap items-stretch max-sm:w-full w-96  mb-4 rounded my-6 mt-0 mx-auto">
                   <input id="myInput" type="search"
                     class="form-control relative flex-auto min-w-0 block  px-3 py-1 text-base font-normal text-black-500 bg-gray-300 h-[55px]  bg-clip-padding border-none rounded-full transition ease-in-out m-0  text-left px-6 focus:outline-none w-[300px]"
-                    placeholder="https://mr-keshi.ir" aria-label="Search" aria-describedby="button-addon2">
+                    value="https://mr-keshi.ir"   placeholder="https://mr-keshi.ir" aria-label="Search" aria-describedby="button-addon2">
                   <span onclick="CopyTextClipBoard()"
                     class="input-group-text flex items-center z-50 px-3 py-1.5  text-base font-normal right-1 top-3  text-gray-700 text-center whitespace-nowrap rounded absolute "
                     id="basic-addon2">
@@ -981,21 +981,11 @@
 
 
     function CopyTextClipBoard() {
-
-
       var copyText = document.getElementById("myInput");
-
-
       copyText.select();
       copyText.setSelectionRange(0, 99999)
-
-
       navigator.clipboard.writeText(copyText.value);
-
-
     }
-
-
     const accordionHeader = document.querySelectorAll(".accordion-header");
     accordionHeader.forEach((header) => {
       header.addEventListener("click", function () {
@@ -1014,40 +1004,6 @@
         }
       });
     });
-
-
-    let seatcrmodal = document.querySelector('.search-modal');
-    let formsearch = seatcrmodal.querySelector('#formsea');
-    let btnsearch = document.getElementById('btnsearch');
-    let checkopenedsearc = false
-    function closeSearch() {
-      seatcrmodal.classList.remove('search-modal_show')
-      filterBody.classList.add('hidden')
-      checkopenedsearc = false
-
-    }
-    btnsearch.addEventListener('click', () => {
-      seatcrmodal.classList.add('search-modal_show')
-      filterBody.classList.remove('hidden')
-      checkopenedsearc = true
-
-    })
-
-    const Boxes = new MangeBoxDropDown()
-    const mobilemenu = new MobileMenu()
-
-    window.addEventListener('click', (event) => {
-      if (!Boxes.personBox.contains(event.target) && event.target.contains(filterBody)) {
-        Boxes.closePersonBox()
-      }
-      if (!formsearch.contains(event.target) && !event.target.classList.contains('material-symbols-outlined') && checkopenedsearc == true) {
-        closeSearch()
-      }
-      if (!mobilemenu.SiteMenu.contains(event.target) && mobilemenu.StatusMobile && event.target.contains(filterBody)) {
-        mobilemenu.close()
-      }
-
-    })
 
   </script>
 </body>

@@ -8,8 +8,6 @@
   <link rel="icon" type="image/x-icon" href="../images/pos2.png">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@300" rel="stylesheet">
   <link rel="stylesheet" href="../dist/style.css">
-
-
   <link rel="stylesheet" href="../dist/custom_style.css">
 
 
@@ -2028,47 +2026,8 @@
 
   <script src="../dist/main.js"></script>
   <script>
-
-
-    let seatcrmodal = document.querySelector('.search-modal');
-    let formsearch = seatcrmodal.querySelector('#formsea');
-    let btnsearch = document.getElementById('btnsearch');
-    let checkopenedsearc = false
-    function closeSearch() {
-      seatcrmodal.classList.remove('search-modal_show')
-      filterBody.classList.add('hidden')
-      checkopenedsearc = false
-
-    }
-    btnsearch.addEventListener('click', () => {
-      seatcrmodal.classList.add('search-modal_show')
-      filterBody.classList.remove('hidden')
-      checkopenedsearc = true
-
-    })
-
-    const Boxes = new MangeBoxDropDown()
-    const mobilemenu = new MobileMenu()
-
-    window.addEventListener('click', (event) => {
-      if (!Boxes.personBox.contains(event.target) && event.target.contains(filterBody)) {
-        Boxes.closePersonBox()
-      }
-      if (!formsearch.contains(event.target) && !event.target.classList.contains('material-symbols-outlined') && checkopenedsearc == true) {
-        closeSearch()
-      }
-      if (!mobilemenu.SiteMenu.contains(event.target) && mobilemenu.StatusMobile && event.target.contains(filterBody)) {
-        mobilemenu.close()
-      }
-
-    })
-
-
-
-
-    new TabHome()
-
-  </script>
+ new TabHome()
+</script>
 </body>
 
 </html>

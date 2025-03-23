@@ -462,8 +462,6 @@
     </main>
   </div>
 
-
-
   <footer>
     <div class="footer mt-20 pt-14 bg-white h-auto w-full max-xl:pt-10  p-6 max-md:p-6 max-lg:pt-8 max-lg:mt-6">
       <div class="flex  justify-around max-lg:flex-wrap max-md:justify-start">
@@ -643,52 +641,6 @@
     </div>
   </footer>
 
-
-
-
   <script   src="../dist/main.js"></script>
-
-
-  <script>
-    const ResponsiveDashboard=new DashbaordMobile()
-
-let seatcrmodal = document.querySelector('.search-modal');
-let formsearch = seatcrmodal.querySelector('#formsea');
-let btnsearch = document.getElementById('btnsearch');
-let checkopenedsearc=false
-function closeSearch() {
-  seatcrmodal.classList.remove('search-modal_show')
-  filterBody.classList.add('hidden')
-   checkopenedsearc=false
-
-}
-btnsearch.addEventListener('click', () => {
-  seatcrmodal.classList.add('search-modal_show')
-  filterBody.classList.remove('hidden')
-  checkopenedsearc=true
-
-})
-
-const Boxes=new MangeBoxDropDown()
-const mobilemenu=new MobileMenu()
-
-window.addEventListener('click', (event) => {
-  if(!Boxes.personBox.contains(event.target) && event.target.contains(filterBody)){
-    Boxes.closePersonBox()
-  }
-  if(!formsearch.contains(event.target) && !event.target.classList.contains('material-symbols-outlined') && checkopenedsearc==true){
-    closeSearch()
-  }
-  if(!mobilemenu.SiteMenu.contains(event.target) && mobilemenu.StatusMobile && event.target.contains(filterBody)){
-    mobilemenu.close()
-  }
-  
-  if(!ResponsiveDashboard.SiteMenu.contains(event.target) && ResponsiveDashboard.StatusMobile && event.target.contains(filterBody)){
-    ResponsiveDashboard.close()
-  }
- 
-})
-  
-</script>
 </body>
 </html>

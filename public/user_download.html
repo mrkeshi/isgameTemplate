@@ -682,10 +682,7 @@
   <script src="../dist/main.js"></script>
   <script>
 
-
-
-    let mobilemenu = new MobileMenu()
-    const ResponsiveDashboard = new DashbaordMobile()
+   
     const accordionHeader = document.querySelectorAll(".accordion-header");
     accordionHeader.forEach((header) => {
       header.addEventListener("click", function () {
@@ -704,43 +701,6 @@
         }
       });
     });
-
-
-    let seatcrmodal = document.querySelector('.search-modal');
-    let formsearch = seatcrmodal.querySelector('#formsea');
-    let btnsearch = document.getElementById('btnsearch');
-    let checkopenedsearc = false
-    function closeSearch() {
-      seatcrmodal.classList.remove('search-modal_show')
-      filterBody.classList.add('hidden')
-      checkopenedsearc = false
-
-    }
-    btnsearch.addEventListener('click', () => {
-      seatcrmodal.classList.add('search-modal_show')
-      filterBody.classList.remove('hidden')
-      checkopenedsearc = true
-
-    })
-
-    const Boxes = new MangeBoxDropDown()
-
-    window.addEventListener('click', (event) => {
-      if (!Boxes.personBox.contains(event.target) && event.target.contains(filterBody)) {
-        Boxes.closePersonBox()
-      }
-      if (!formsearch.contains(event.target) && !event.target.classList.contains('material-symbols-outlined') && checkopenedsearc == true) {
-        closeSearch()
-      }
-      if (!mobilemenu.SiteMenu.contains(event.target) && mobilemenu.StatusMobile && event.target.contains(filterBody)) {
-        mobilemenu.close()
-      }
-
-      if (!ResponsiveDashboard.SiteMenu.contains(event.target) && ResponsiveDashboard.StatusMobile && event.target.contains(filterBody)) {
-        ResponsiveDashboard.close()
-      }
-
-    })
 
 
 
