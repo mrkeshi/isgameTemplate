@@ -6,13 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>قالب فروشگاهی پوگیم - مرجع دانلود و فروش </title>
   <link rel="icon" type="image/x-icon" href="../images/pos2.png">
-
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@300" rel="stylesheet">
-
-
-
   <link rel="stylesheet" href="../dist/404_page.css">
-
   <link rel="stylesheet" href="../dist/style.css">
   <link rel="stylesheet" href="../dist/custom_style.css">
 
@@ -514,27 +509,7 @@
   <script src="../dist/main.js"></script>
 
   <script>
-
-
-
-
-    let Mobi = new MobileMenu()
-    let Boxes = new MangeBoxDropDown()
-    window.addEventListener('click', (event) => {
-      if (!Boxes.personBox.contains(event.target) && event.target.contains(filterBody)) {
-        Boxes.closePersonBox()
-      }
-      if (!Boxes.cardBox.contains(event.target) && event.target.contains(filterBody)) {
-        Boxes.closeCardBox()
-      }
-      // toggle menu mobile when click out:
-      if (!Mobi.SiteMenu.contains(event.target) && Mobi.StatusMobile && !Mobi.hamber.contains(event.target)) {
-        Mobi.close()
-
-      }
-    })
-
-
+   
   </script>
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 

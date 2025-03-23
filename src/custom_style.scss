@@ -1135,3 +1135,10 @@ btn-mo {
     clear: both;
   }
 }
+
+::-webkit-scrollbar {
+  width: 4px !important;
+}
+::-webkit-scrollbar-thumb{
+  width: 4px !important;
+}

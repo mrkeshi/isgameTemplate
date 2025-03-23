@@ -408,7 +408,7 @@
           <div class="messages  flex flex-col w-full mt-4">
             <div
               class="sendticketbox max-lg:p-4 p-6 rounded-xl bg-gradient-to-r bg-gray-500 relative  float-right  mb-6">
-              <h3 class="mb-1 text-mxl max-sm:text-base">علیرضا کشاورز (شما)</h3>
+              <h3 class="mb-1 text-mxl max-sm:text-base"> علیرضا(شما)</h3>
 
               <p class="text-mxl max-sm:text-base leading-8 max-lg:leading-7 text-black-300">
                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
@@ -700,51 +700,7 @@
         header.parentElement.classList.remove("bg-indigo-50");
       }
     });
-
-
-    let mobilemenu = new MobileMenu()
-    const ResponsiveDashboard = new DashbaordMobile()
-
-
-    let seatcrmodal = document.querySelector('.search-modal');
-    let formsearch = seatcrmodal.querySelector('#formsea');
-    let btnsearch = document.getElementById('btnsearch');
-    let checkopenedsearc = false
-    function closeSearch() {
-      seatcrmodal.classList.remove('search-modal_show')
-      filterBody.classList.add('hidden')
-      checkopenedsearc = false
-
-    }
-    btnsearch.addEventListener('click', () => {
-      seatcrmodal.classList.add('search-modal_show')
-      filterBody.classList.remove('hidden')
-      checkopenedsearc = true
-
-    })
-
-    const Boxes = new MangeBoxDropDown()
-
-    window.addEventListener('click', (event) => {
-      if (!Boxes.personBox.contains(event.target) && event.target.contains(filterBody)) {
-        Boxes.closePersonBox()
-      }
-      if (!formsearch.contains(event.target) && !event.target.classList.contains('material-symbols-outlined') && checkopenedsearc == true) {
-        closeSearch()
-      }
-      if (!mobilemenu.SiteMenu.contains(event.target) && mobilemenu.StatusMobile && event.target.contains(filterBody)) {
-        mobilemenu.close()
-      }
-
-      if (!ResponsiveDashboard.SiteMenu.contains(event.target) && ResponsiveDashboard.StatusMobile && event.target.contains(filterBody)) {
-        ResponsiveDashboard.close()
-      }
-
-    })
-
-
-
-  </script>
+ </script>
 
 </body>
 

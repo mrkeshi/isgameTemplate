@@ -371,7 +371,7 @@
           </div>
           <div class="flex mx-4 flex-col ">
             <span class="text-black-700 text-xl">جزئیات پرداخت</span>
-            <span class="text-black-500 text-mxl">فهرست اقلام خود را مدیریت کنید</span>
+            <span class="text-black-500 text-mxl">اطلاعات مورد نیاز را وارد کنید</span>
           </div>
         </div>
         <div class="step3 max-md:px-0 p-4 flex justify-center items-center ">
@@ -618,27 +618,7 @@
 
   <script>var exports = {};</script>
   <script src="../dist/main.js"></script>
-  <script>
 
-
-
-
-
-    let Mobi = new MobileMenu()
-    let Boxes = new MangeBoxDropDown()
-    window.addEventListener('click', (event) => {
-
-
-      if (!Boxes.cardBox.contains(event.target) && event.target.contains(filterBody)) {
-        Boxes.closeCardBox()
-      }
-      // toggle menu mobile when click out:
-      if (!Mobi.SiteMenu.contains(event.target) && Mobi.StatusMobile && !Mobi.hamber.contains(event.target)) {
-        Mobi.close()
-
-      }
-    })
-  </script>
 </body>
 
 </html>

@@ -1484,20 +1484,7 @@
 
 <script src="../dist/main.js"></script>
 <script>
-let Mobi=new MobileMenu()
-let Boxes=new MangeBoxDropDown()
-    window.addEventListener('click', (event) => {
-    
- 
-      if(!Boxes.cardBox.contains(event.target) && event.target.contains(filterBody)){
-        Boxes.closeCardBox()
-      }
-      // toggle menu mobile when click out:
-      if (!Mobi.SiteMenu.contains(event.target)  && Mobi.StatusMobile && !Mobi.hamber.contains(event.target)){
-        Mobi.close()
-        
-      }
-    })
+// Tab Code
 let article=document.getElementById('article_tab');
 let product=document.getElementById('product_tab');
 
